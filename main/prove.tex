@@ -1,0 +1,80 @@
+\section{证明}
+\subsection{\ref{eq:hyperbolic_functions_1}}
+\begin{displaymath}
+\begin{split}
+\sinh x\cosh x &= \left(\frac{e^x-e^{-x}}{2}\right)\left(\frac{e^x+e^{-x}}{2}\right) \\
+&=\left(\frac{1}{2}\right)\left(\frac{e^{2x}-e^{-2x}}{2}\right) \\
+&= \frac{1}{2}\sinh (2x) \\
+\sinh (2x) &= 2\sinh x\cosh x
+\end{split}
+\end{displaymath}
+
+\subsection{\ref{eq:hyperbolic_functions_2}}
+\begin{displaymath}
+\begin{split}
+\cosh^2x-\sinh^2x &=\left(\frac{e^x+e^{-x}}{2}+\frac{e^x-e^{-x}}{2}\right)\left(\frac{e^x+e^{-x}}{2}-\frac{e^x-e^{-x}}{2}\right) \\
+&= e^x\times e^{-x} \\
+&=1
+\end{split}
+\end{displaymath}
+
+\subsection{\ref{eq:hyperbolic_functions_3}}
+\begin{displaymath}
+\begin{split}
+\cosh^2x+\sinh^2x &=\left(\frac{e^x+e^{-x}}{2}\right)^2+\left(\frac{e^x-e^{-x}}{2}\right)^2 \\
+&=\frac{2e^{2x}+2e^{-2x}}{4} \\
+&=\frac{e^{2x}+e^{-2x}}{2} \\
+&=\cosh (2x)
+\end{split}
+\end{displaymath}
+
+\subsection{\ref{eq:hyperbolic_functions_4}}
+\begin{displaymath}
+\begin{split}
+\cosh (2x)  &=\cosh^2x+\sinh^2x \\
+&=\sinh^2x +1 +\sinh^2x \\
+&=2\sinh^2x +1 \\
+\cosh x &=2\sinh^2\frac{x}{2}+1
+\end{split}
+\end{displaymath}
+\subsection{\ref{sequence_bounded}}
+    \begin{center}
+       $\varepsilon =1,\ \exists N>0,\ \mbox{当n>N时}\left|X_n-a\right|<1$\\
+        $\left|X_n\right|=\left|(X_n-a)+a\right|$\\
+        $\qquad\leqslant \left|x_n-a\right|+\left|a\right|$\\
+        $\leqslant 1+\left|a\right|$\\
+        $M=\max\{\left|X_n\right|,\left|X_2\right|,\dots,\left|X_n\right|,1+\left|a\right|\}$\\
+        $\forall n,\ \left|X_n\right|\leqslant M$
+    \end{center}
+\subsection{\ref{Serial_number_preservation}}
+       
+\subsection{\ref{limit_sequence}}
+\begin{displaymath}
+    \begin{split}
+        \mbox{反设}&\lim\limits_{n \to \infty}x_n =a,\ \lim\limits_{n \to \infty}x_n =b,\mbox{且}a<b\\
+        \varepsilon&=\frac{b-a}{3}\begin{cases}
+            \exists N_1,\ n>N_1,\ \left|x_n-a\right|<\frac{b-a}{3}\\
+            \exists N_2,\ n>N_2,\ \left|x_n-b\right|<\frac{b-a}{3}
+        \end{cases}\\
+        N&=\max\{N_1,N_2\},\ n>N\Rightarrow\begin{cases}
+            n>N_1\\
+            n>N_2
+        \end{cases}\\
+        b-a&=\left|(x_n-a)-(x_n-b)\right|\\
+        &\leqslant \left|x_n-a\right|+\left|x_n-b\right|\\
+        &<\frac{b-a}{3}+\frac{b-a}{3}\\
+        &<\frac{2(b-a)}{3}
+    \end{split}
+\end{displaymath}
+
+\subsection{\ref{eq:squeeze_theorem}}
+\begin{center}
+    $\forall \varepsilon > 0$\\
+$\left|x_n-a\right|<\varepsilon\qquad\forall n>N_1$\\
+$\left|y_n-a\right|<\varepsilon\qquad\forall n>N_2$\\
+$\mbox{令}N = \max\left\{{N_1,N_2,N_0}\right\}\mbox{,则当}n > N\mbox{时有}$\\
+$a-\varepsilon<x_n\le z_n\le y_n < a+\varepsilon$\\
+$\left|z_n-a\right|<\varepsilon$\\
+$\lim\limits_{{n}\to{\infty}}z_n = a$
+\end{center}
+

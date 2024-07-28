@@ -1,0 +1,62 @@
+\section{并集，交集}
+\subsection{定义}
+\begin{center}
+    (\(\vee\) 或,\(\land\) 与) \\
+$A\cup B=\{x\in A\vee x\in B\}$ \\
+$A\cap B=\{x\in A\land x\in B\}$
+\end{center}
+\subsection{运算}
+
+运算满足$\begin{cases}
+    \mbox{交换律} \begin{cases}
+        A\cup B&= B\cup A  \\
+        A\cap B&= B\cap A
+    \end{cases} \\
+    \mbox{结合律}\begin{cases}
+        (A\cup B)\cup C = A\cup(B\cup C) \\
+        (A\cap B)\cap C = A\cap(B\cap C)
+    \end{cases} \\
+    \mbox{分配律}\begin{cases}
+        (A\cup B)\cap C = (A\cap C)\cup (B \cap C) \\
+        (A\cap B)\cup C = (A\cup C)\cap (B \cup C) \\
+    \end{cases}\\
+    \mbox{对偶律}\begin{cases}
+        (A\cup B)^C = A^C\cap B^C \\
+        (A\cap B)^C = A^C\cup B^C
+    \end{cases}
+\end{cases}$
+\begin{center}
+    $A\cup A= A = A\cap A $\\
+    $A = B \Leftrightarrow A\subset B\land A\supset B$  \\
+    $A\cup\varnothing = A {\qquad}A\cap\varnothing = \varnothing $
+\end{center}
+
+
+\subsection{性质}
+性质\ 1.
+\begin{equation}
+A\subset(A\cup B) {\qquad}A\supset(A\cap B)
+\end{equation}
+性质\ 2.
+\begin{equation}
+A\cup B = B\Leftrightarrow A\subset B
+\end{equation}
+性质\ 3.
+\begin{equation}
+A\cap B = A\Leftrightarrow A\subset B
+\end{equation}
+性质\ 4.\ (\(n\in N\) )
+\begin{equation}
+A\cup(B_1\cap B_2\cap\cdots\cap B_n) = (A\cup B_1)\cap(A\cup B_2)\cap\cdots\cap(A\cup B_n)
+\end{equation}
+性质\ 5.\ (\(n\in N\) )
+\begin{equation}
+A\cap(B_1\cup B_2\cup\cdots\cup B_n) = (A\cap B_1)\cup(A\cap B_2)\cup\cdots\cup(A\cap B_n)
+\end{equation}
+
+\subsection{gustus De Morgan定理}
+$$\neg(A\vee B)\Leftrightarrow(\neg A)\land(\neg B)$$
+$$\neg(A\land B)\Leftrightarrow(\neg A)\vee(\neg B)$$
+\subsection{德摩根律\ 定理}
+$$\left(\bigcup\limits_{\alpha}^{}E_\alpha\right)^C =\  \bigcap\limits_{\alpha}^{}(E_\alpha^C)$$
+$$\left(\bigcap\limits_{\alpha}^{}E_\alpha\right)^C =\  \bigcup\limits_{\alpha}^{}(E_\alpha^C)$$

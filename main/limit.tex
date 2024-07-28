@@ -1,0 +1,43 @@
+\section{极限}
+\subsection{数列极限}
+\subsubsection{数列的定义}
+$Def:\ \ \{x_n\}: N^+\rightarrow R $
+$$x_n = f(n)$$
+\subsubsection{数列极限的定义}
+$Def:\ \{x_n\},\ n\in N^+,\exists  a,\ \forall\varepsilon>0,\exists N,\ n>N\Rightarrow \left|x_n-a\right|<\varepsilon$\\
+$\lim\limits_{n \to \infty}{x_n}=a$\\ 
+$\mbox{极限存在，为收敛，不存在为发散}$
+\subsubsection{有界数列}
+$\mbox{若}\exists M>0,\{M\in\mbox{正数}\}$\\
+$\mbox{使得}\forall n,\quad\left|x_n\right|\leqslant M$\\
+$\mbox{则称数列$\{x_n\}$为有界数列}$
+\subsubsection{收敛数列的有界性}
+\begin{align}
+    \mbox{收敛数列必有界}\label{sequence_bounded}
+\end{align}
+\subsubsection{收敛数列的保号性}
+\begin{align}
+    \mbox{如果$\lim\limits{n \to\infty}x_n=a$存在，且$a>0$,则$\exists N>0\{N\in N^+\}$当$n>N$时，都有$x_n>0$}\label{Serial_number_preservation}
+\end{align}
+
+%趋向无穷大的定义\\
+%$\forall M>0,\exists N,\mbox{当$n>N$时，$X_n>M$,}$\\
+%趋向无穷小的定义
+\subsection{函数极限}
+\subsubsection{性质}
+\begin{align}
+\mbox{极限的唯一性}\label{limit_sequence}
+\end{align}
+\subsection{运算}
+\begin{align}
+&\lim\limits_{n\to\infty}{(x_n\pm y_n)} = \lim\limits_{n\to\infty}x_n\pm\lim\limits_{n\to\infty}y_n \\
+&\lim\limits_{n\to\infty}{(x_n y_n)} = \lim\limits _{n\to\infty}(x_n)\lim\limits_{n\to\infty}(y_n) \\
+&\lim\limits_{n\to\infty}{\frac{x_n}{y_n}} = \frac{\lim\limits_{n\to\infty}{x_n}}{\lim\limits_{n\to\infty}{y_n}}
+\end{align}
+\subsubsection{夹逼定理(三明治定理)}
+\begin{equation}\label{eq:squeeze_theorem}
+\begin{split}
+&x_n\leqslant z_n\leqslant y_n \qquad \forall b>N_0 \\
+&\mbox{若}\lim\limits_{n\to{\infty}}x_n = \lim\limits_{n\to\infty}y_n = a \mbox{则}\lim\limits_{n\to\infty}z_n = a
+\end{split}
+\end{equation}
