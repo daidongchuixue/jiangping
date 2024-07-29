@@ -7,6 +7,10 @@ $$x_n = f(n)$$
 $Def:\ \{x_n\},\ n\in N^+,\exists  a,\ \forall\varepsilon>0,\exists N,\ n>N\Rightarrow \left|x_n-a\right|<\varepsilon$\\
 $\lim\limits_{n \to \infty}{x_n}=a$\\ 
 $\mbox{极限存在，为收敛，不存在为发散}$
+\subsubsection{极限的唯一性}
+\begin{align}
+\mbox{数列收敛，极限的唯一性}\label{limit_sequence}
+\end{align}
 \subsubsection{有界数列}
 $\mbox{若}\exists M>0,\{M\in\mbox{正数}\}$\\
 $\mbox{使得}\forall n,\quad\left|x_n\right|\leqslant M$\\
@@ -17,16 +21,72 @@ $\mbox{则称数列$\{x_n\}$为有界数列}$
 \end{align}
 \subsubsection{收敛数列的保号性}
 \begin{align}
-    \mbox{如果$\lim\limits{n \to\infty}x_n=a$存在，且$a>0$,则$\exists N>0\{N\in N^+\}$当$n>N$时，都有$x_n>0$}\label{Serial_number_preservation}
+   &\mbox{如果$\lim\limits_{n \to\infty}x_n=a$存在，且$a>0$,则$\exists N>0\{N\in N^+\}$当$n>N$时，$\Leftrightarrow x_n>0$}\label{Serial_number_preservation_a}\\
+    &\lim\limits_{n\to\infty}x_n=a,\lim\limits_{n\to\infty}b_n=b,a<b,\ \exists N,n>N,a_n<b_n \label{Serial_number_preservation_b}
 \end{align}
+\subsubsection{收敛数列和子数列
+}
+$\{x_n\},\lim\limits_{n\to\infty}x_n=a,\ \{x_{n_k}\}\subset\{x_n\}\Rightarrow \lim\limits_{n\to\infty}x_{n_k}=a$
+\\证明\ $K=N\ k>K$\\
+$n_k>n_K\geqslant N$\\
+$\left|x_{n_k}-a\right|<\varepsilon$\\
+$\lim\limits_{n\to\infty}x_{n_k}=a$
 
 %趋向无穷大的定义\\
 %$\forall M>0,\exists N,\mbox{当$n>N$时，$X_n>M$,}$\\
 %趋向无穷小的定义
 \subsection{函数极限}
-\subsubsection{性质}
+\subsubsection{极限的定义}
+$Def: \forall \varepsilon >0\begin{cases}
+    \exists X>0\begin{cases}
+        \mbox{当}x>X&\mbox{时都有}\ \ \left|f(x)-A\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to +\infty}f(x)=A\\
+        \mbox{当}x<-X&\mbox{时都有}\ \ \left|f(x)-A\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to -\infty}f(x)=A\\
+        \mbox{当}\left|x\right|>X&\mbox{时都有}\ \ \left|f(x)-A\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to \infty}f(x)=A
+    \end{cases}\\
+    \exists\delta>0\begin{cases}
+        \mbox{当}x_0<x<x_0+\delta,\mbox{时}\ \left|f(x)-A\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0^+}f(x)=A\\
+        \mbox{当}x_0-\delta<x<x_0 ,\mbox{时}\ \left|f(x)-A\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0^-}f(x)=A\\
+        \mbox{当}0<\left|x-x_0\right|<\delta,\mbox{时}\ \left|f(x)-A\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0}f(x)=A
+    \end{cases}
+\end{cases}$
+\begin{center}
+    注意1\\定义中$0<\left|x-x_0\right|$表示$x\neq x_0$讨论$x\rightarrow x_0$,只考虑$x\neq x_0$\\
+    注意2\\$\lim\limits_{x\to x_0}f(x)$是否存在与$f(x_0)$是否有定义取什么值无关。\\
+\end{center}
+    \begin{align}
+        \lim\limits_{x\to x_0}f(x)\mbox{存在}\Leftrightarrow \lim\limits_{x\to x_0^+}f(x)=\lim\limits_{x\to x_0^-}f(x)\label{limit_left_right}
+    \end{align}
+图
+\subsubsection{极限的性质}
+1\ 函数的极限的唯一性\\
+如果$\lim f(x)$存在必唯一。\\
+2\ 局部有界性\\
+$\lim\limits_{x\to x_0}f(x)=A\Rightarrow\exists M>0,\delta >0\mbox{使}0<\left|x-x_0\right|<\delta,\left|f(x)\right|\leqslant M$\\
+3\ 保号性\\
+$\lim\limits_{x\to x_0}=A,\ A>0,\Rightarrow \exists \delta >0,\mbox{当},0<\left|x-x_0\right|<\delta\mbox{时}f(x)>0$
+\\4\ 函数极限与数列极限的关系\\
+如果$\lim\limits_{x\to x_0}f(x)$存在，$\{x_n\}$为$f(x)$定义域的任一收敛于$x_0$的数列，则满足$x_n\neq x_0$\\
+则$\lim\limits_{n\to \infty}f(x_n)=\lim\limits_{x\to x_0}f(x),\ x_n\rightarrow x_0$
+
+\subsection{无穷小与无穷大}
+\subsubsection{定义}
+一\ 无穷小\\
+$Def:\ \mbox{如果}\lim\limits_{x\to x_0}f(x)= 0\mbox{则称}f(x)\mbox{为}x\rightarrow x_0\mbox{时的无穷小}$\\
+$Def\mbox{无穷小}: \forall \varepsilon >0\begin{cases}
+    \exists X>0\begin{cases}
+        \mbox{当}x>X&\mbox{时都有}\ \ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to +\infty}f(x)=0\\
+        \mbox{当}x<-X&\mbox{时都有}\ \ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to -\infty}f(x)=0\\
+        \mbox{当}\left|x\right|>X&\mbox{时都有}\ \ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to \infty}f(x)=0
+    \end{cases}\\
+    \exists\delta>0\begin{cases}
+        \mbox{当}x_0<x<x_0+\delta,\mbox{时}\ \left|f(x)-0\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0^+}f(x)=0\\
+        \mbox{当}x_0-\delta<x<x_0 ,\mbox{时}\ \left|f(x)-0\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0^-}f(x)=0\\
+        \mbox{当}0<\left|x-x_0\right|<\delta,\mbox{时}\ \left|f(x)-0\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0}f(x)=0
+    \end{cases}
+\end{cases}$\\
+二\ 函数极限与无穷小的关系
 \begin{align}
-\mbox{极限的唯一性}\label{limit_sequence}
+    \mbox{在自变量的同一变化中。其中$\alpha$为无穷小。}\lim f(x)=A\Leftrightarrow f(x)=A+\alpha \label{limit_infinitesimal}
 \end{align}
 \subsection{运算}
 \begin{align}

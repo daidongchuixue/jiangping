@@ -46,8 +46,28 @@
         $M=\max\{\left|X_n\right|,\left|X_2\right|,\dots,\left|X_n\right|,1+\left|a\right|\}$\\
         $\forall n,\ \left|X_n\right|\leqslant M$
     \end{center}
-\subsection{\ref{Serial_number_preservation}}
-       
+\subsection{\ref{Serial_number_preservation_a}}
+    \begin{center}1\end{center}
+    $\mbox{由于}\lim\limits_{n\to\infty}x_n = a,\mbox{且}a>0$\\
+    $\varepsilon = \frac{a}{2},\ \exists N>0,n>N$\\
+    $\left|x_n-a\right|<\varepsilon$\\
+    $\left|x_n-a\right|<\frac{a}{2}$\\
+    $-\frac{a}{2}<x_n-a<\frac{a}{2}$\\
+    $\frac{a}{2}<x_n<1$
+    \begin{center}2\end{center}
+    用反证法，反设$a<0$.从某项起$x_n<0$矛盾
+\subsection{\ref{Serial_number_preservation_b}}
+\begin{displaymath}
+    \begin{split}
+        x_n&=b_n-a_n\\
+        \lim\limits_{n\to\infty} x_n &= \lim\limits_{n\to\infty} b_n-\lim\limits_{n\to\infty}a_n\\
+        \lim\limits_{n\to\infty} x_n &=b-a>0\\
+        \lim\limits_{n\to\infty} x_n &>0 \\
+        b_n-a_n&=x_n > 0\\
+        b_n&>a_n
+    \end{split}
+\end{displaymath}
+
 \subsection{\ref{limit_sequence}}
 \begin{displaymath}
     \begin{split}
@@ -66,7 +86,37 @@
         &<\frac{2(b-a)}{3}
     \end{split}
 \end{displaymath}
-
+\subsection{\ref{limit_left_right}}
+$\lim\limits_{x\to x_0}f(x)\mbox{存在}\Rightarrow \lim\limits_{x\to x_0^+}f(x)=\lim\limits_{x\to x_0^-}f(x)$
+\begin{center}
+    设$\lim\limits_{x\to x_0}=A$\\
+    $0<\left|x-x_0\right|<\delta,\ \left|f(x)-A\right|<\varepsilon$\\
+    $0<\left|x-x_0\right|<\delta\Leftrightarrow x\in \mathring{U}(x_0,\delta)$
+    $\begin{cases}
+        \mbox{当}x_0<x<x_0+\delta\mbox{时}0<\left|x-x_0\right|<\delta,\ \left|f(x)-A\right|<\varepsilon,\ \lim\limits_{x\to x_0^+}f(x)=A\\
+        \mbox{当}x_0-\delta<x<x_0\mbox{时}0<\left|x-x_0\right|<\delta,\ \left|f(x)-A\right|<\varepsilon,\ \lim\limits_{x\to x_0^-}f(x)=A
+    \end{cases}$
+    $\lim\limits_{x\to x_0^+}f(x)=A =\lim\limits_{x\to x_0^-}f(x)$
+\end{center}
+$\lim\limits_{x\to x_0}f(x)\mbox{存在}\Leftarrow\lim\limits_{x\to x_0^+}f(x)=\lim\limits_{x\to x_0^-}f(x)$
+\begin{center}
+    $A=\begin{cases}
+    \lim\limits_{x\to x_o^+},\forall\varepsilon>0,\exists\delta_1>0,x_0<x<x_0+\delta_1,\left|f(x)-A\right|<\varepsilon\\
+    \lim\limits_{x\to x_o^-},\forall\varepsilon>0,\exists\delta_2>0,x_0-\delta_2<x<x_0,\left|f(x)-A\right|<\varepsilon\\
+    \end{cases}$\\
+    $\delta = \min\{\delta_1,\delta_2\}$\\
+    $0<\left|x-x_0\right|<\delta\begin{cases}
+        x>x_0,x_0<x<x_0+\delta\leqslant x_0+\delta_1,\  \left|f(x)-A\right|<\varepsilon\\
+        x<x_0,x_0-\delta_2\leqslant x_0+\delta<x<x_0,\ \left|f(x)-A\right|<\varepsilon
+    \end{cases}$\\
+    $\lim\limits_{x\to x_0}f(x)=A$
+\end{center}
+\subsection{\ref{limit_infinitesimal}}
+设$\lim\limits_{x\to x_o}f(x)=A,\ \mbox{记}f(x)-A=\alpha$\\
+只需证$\alpha$为无穷小。\\
+$\forall\varepsilon>0,\exists\delta>0,\mbox{当}0<\left|x-x_0\right|<\delta,\mbox{时}\left|f(x)-A\right|<\varepsilon$\\
+即$\left|\alpha-0\right|<\varepsilon$\\
+$\alpha\mbox{为}x\rightarrow x_0\mbox{时的无穷小}$
 \subsection{\ref{eq:squeeze_theorem}}
 \begin{center}
     $\forall \varepsilon > 0$\\
