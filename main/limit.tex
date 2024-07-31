@@ -69,30 +69,104 @@ $\lim\limits_{x\to x_0}=A,\ A>0,\Rightarrow \exists \delta >0,\mbox{当},0<\left
 则$\lim\limits_{n\to \infty}f(x_n)=\lim\limits_{x\to x_0}f(x),\ x_n\rightarrow x_0$
 
 \subsection{无穷小与无穷大}
-\subsubsection{定义}
-一\ 无穷小\\
-$Def:\ \mbox{如果}\lim\limits_{x\to x_0}f(x)= 0\mbox{则称}f(x)\mbox{为}x\rightarrow x_0\mbox{时的无穷小}$\\
-$Def\mbox{无穷小}: \forall \varepsilon >0\begin{cases}
-    \exists X>0\begin{cases}
-        \mbox{当}x>X&\mbox{时都有}\ \ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to +\infty}f(x)=0\\
-        \mbox{当}x<-X&\mbox{时都有}\ \ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to -\infty}f(x)=0\\
-        \mbox{当}\left|x\right|>X&\mbox{时都有}\ \ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to \infty}f(x)=0
+\subsubsection{无穷小定义}
+$Def:\mbox{如果}\lim\limits_{x\to x_0}f(x)= 0\mbox{则称}f(x)\mbox{为}x\rightarrow x_0\mbox{时的无穷小}$\\
+$Def: \forall \varepsilon >0\begin{cases}\exists X>0\begin{cases}
+        \mbox{当}x>X&\mbox{时}\ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to +\infty}f(x)=0\\
+        \mbox{当}x<-X&\mbox{时}\ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to -\infty}f(x)=0\\
+        \mbox{当}\left|x\right|>X&\mbox{时}\ \left|f(x)-0\right|<\varepsilon \Leftrightarrow \lim\limits_{x\to \infty}f(x)=0
     \end{cases}\\
     \exists\delta>0\begin{cases}
         \mbox{当}x_0<x<x_0+\delta,\mbox{时}\ \left|f(x)-0\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0^+}f(x)=0\\
         \mbox{当}x_0-\delta<x<x_0 ,\mbox{时}\ \left|f(x)-0\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0^-}f(x)=0\\
         \mbox{当}0<\left|x-x_0\right|<\delta,\mbox{时}\ \left|f(x)-0\right|<\varepsilon\Leftrightarrow\lim\limits_{x\to x_0}f(x)=0
     \end{cases}
-\end{cases}$\\
-二\ 函数极限与无穷小的关系
+\end{cases}$
+\subsubsection{函数极限与无穷小的关系}
 \begin{align}
-    \mbox{在自变量的同一变化中。其中$\alpha$为无穷小。}\lim f(x)=A\Leftrightarrow f(x)=A+\alpha \label{limit_infinitesimal}
+    \mbox{在自变量的同一变化中。$\alpha$为无穷小。}\lim f(x)=A\Leftrightarrow f(x)=A+\alpha \label{limit_infinitesimal}
 \end{align}
+\subsubsection{无穷大与无穷小的关系} 
+在自变量同一变化过程中
+\begin{center}
+    \begin{align}
+        \mbox{如果$f(x)$为无穷大，则$\frac{1}{f(x)}$为无穷小。}\label{Infinity_infinitesimal}\\ 
+        \mbox{如果$f(x)$为无穷小，切$f(x)\neq 0$，则$\frac{1}{f(x)}$为无穷小。}
+    \end{align}
+\end{center}
+\subsubsection{无穷大定义}
+$Def:\forall M>0\begin{cases}
+    \exists X>0\begin{cases}
+        \mbox{当}x>X\begin{cases}
+            f(x)>M\Leftrightarrow \lim\limits_{x\to +\infty}f(x)=+\infty\\
+            f(x)<-M\Leftrightarrow \lim\limits_{x\to +\infty}f(x)=-\infty\\
+            \left|f(x)\right|>M\Leftrightarrow \lim\limits_{x\to +\infty}f(x)=\infty
+        \end{cases}\\
+        \mbox{当}x<-X\begin{cases}
+            f(x)>M\Leftrightarrow \lim\limits_{x\to -\infty}f(x)=+\infty\\
+            f(x)<M\Leftrightarrow \lim\limits_{x\to -\infty}f(x)=-\infty\\
+            \left|f(x)\right|>M\Leftrightarrow \lim\limits_{x\to -\infty}f(x)=\infty
+        \end{cases}\\
+        \mbox{当}\left|x\right|>X\begin{cases}
+            f(x)>M\Leftrightarrow \lim\limits_{x\to \infty}f(x)=+\infty\\
+            f(x)<-M\Leftrightarrow \lim\limits_{x\to \infty}f(x)=-\infty\\
+            \left|f(x)\right|>M\Leftrightarrow \lim\limits_{x\to \infty}f(x)=\infty
+        \end{cases}
+    \end{cases}\\
+    \exists\delta>0\begin{cases}
+        \mbox{当}x_0-\delta<x<x_0\begin{cases}
+            f(x)>M\Leftrightarrow \lim\limits_{x\to x_0^-}f(x)=+\infty\\
+            f(x)<-M\Leftrightarrow \lim\limits_{x\to x_0^-}f(x)=-\infty\\
+            \left|f(x)\right|>M\Leftrightarrow \lim\limits_{x\to x_0^-}f(x)=\infty
+        \end{cases}\\
+        \mbox{当}x_0<x<x_0+\delta\begin{cases}
+            f(x)>M\Leftrightarrow \lim\limits_{x\to x_0^+}f(x)=+\infty\\
+            f(x)<-M\Leftrightarrow \lim\limits_{x\to x_0^+}f(x)=-\infty\\
+            \left|f(x)\right|>M\Leftrightarrow \lim\limits_{x\to x_0^+}f(x)=\infty
+        \end{cases}\\
+        \mbox{当}0<\left|x-x_0\right|<\delta\begin{cases}
+            f(x)>M\Leftrightarrow \lim\limits_{x\to x_0}f(x)=+\infty\\
+            f(x)<-M\Leftrightarrow \lim\limits_{x\to x_0}f(x)=-\infty\\
+            \left|f(x)\right|>M\Leftrightarrow \lim\limits_{x\to x_0}f(x)=\infty
+        \end{cases}
+    \end{cases}
+\end{cases}$
+$$\lim\limits_{x\to x_0}f(x)=\infty,\ \mbox{直线}x=x_0\mbox{是}y=f(x)\mbox{垂直渐进线}$$
+
 \subsection{运算}
+\subsubsection{有限个无穷小的和仍为无穷小}
+\begin{center}
+设$\gamma=\alpha+\beta$\\
+$\alpha$和$\beta$同为$x\rightarrow x_0$时的无穷小\\
+$\forall \varepsilon >0,\ \exists\delta_1>0,\ $当$0<\left|x-x_0\right|<\delta_1$时，有$\left|\alpha\right|<\frac{\varepsilon}{2}$\\
+$\forall \varepsilon >0,\ \exists\delta_2>0,\ $当$0<\left|x-x_0\right|<\delta_2$时，有$\left|\beta\right|<\frac{\varepsilon}{2}$\\
+$\delta=min\{\delta_1,\delta_2\},$当$0<\left|x-x_0\right|<\delta$时\\
+$0<\left|x-x_0\right|<\delta_1,0<\left|x-x_0\right|<\delta_2$同时满足\\
+即$\left|\alpha\right|<\frac{\varepsilon}{2},\left|\beta\right|<\frac{\varepsilon}{2}$同时成立\\
+$\left|\gamma\right|=\left|\alpha+\beta\right|<\left|\alpha\right|+\left|\beta\right|< \frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon$
+\end{center}
+\subsubsection{有界函数与无穷小的乘积仍为无穷小}
+\begin{center}
+    设$\alpha$为$x\rightarrow x_0$时的一个无穷小\\
+$g(x)$为$x_0$的一个去心邻域$\mathring{U}(x_0,\delta_1)$有界\\
+$f(x)=g(x)\alpha$\\
+证$f(x)$为$x\rightarrow x_0$时的无穷小\\
+因为$g(x)\mbox{在}\mathring{U}(x_0,\delta_1)$有界\\
+$\exists M>0,\mbox{当}0<\left|x-x_0\right|<\delta_1$时$\left|g(x)\right|<M$\\
+因为$\alpha$是$x\rightarrow x_0$的无穷小\\
+$\exists\delta_2>0\mbox{当}0<\left|x-x_0\right|<\delta_2$时$\left|\alpha\right|<\frac{\varepsilon}{M}<\varepsilon$\\
+取$\delta=min\{delta_,\delta_2\}$当$0<\left|x-x_0\right|<\delta$时\\
+$\left|g(x)\right|\geqslant M,\left|\alpha\right|<\frac{\varepsilon}{M}$同时成立\\
+$\left|g(x)\alpha\right|=\left|g(x)\right|\ \left|\alpha\right|<M\frac{\varepsilon}{M}=\varepsilon$
+\end{center}
+$$\mbox{推论1.\ 常数与无穷小的乘积为无穷小}$$
+$$\mbox{推论2.\ 有限个无穷小的乘积为无穷小}$$
+\subsubsection{极限的四则运算}
+$\lim f(x)=A,\ \lim g(x)=B$
 \begin{align}
-&\lim\limits_{n\to\infty}{(x_n\pm y_n)} = \lim\limits_{n\to\infty}x_n\pm\lim\limits_{n\to\infty}y_n \\
-&\lim\limits_{n\to\infty}{(x_n y_n)} = \lim\limits _{n\to\infty}(x_n)\lim\limits_{n\to\infty}(y_n) \\
-&\lim\limits_{n\to\infty}{\frac{x_n}{y_n}} = \frac{\lim\limits_{n\to\infty}{x_n}}{\lim\limits_{n\to\infty}{y_n}}
+&\lim{(f(x)\pm g(x))} = \lim f(x)\pm\lim g(x) \label{Extreme Four Operations_1}\\
+&\lim{(f(x) g(x))} = \lim f(x)\lim g(x) \label{Extreme Four Operations_2}\\
+&\lim \left(\frac{f(x)}{g(x)}\right)= \frac{\lim{f(x)}}{\lim{g(x)}} \label{Extreme Four Operations_3}
 \end{align}
 \subsubsection{夹逼定理(三明治定理)}
 \begin{equation}\label{eq:squeeze_theorem}

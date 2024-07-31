@@ -112,11 +112,42 @@ $\lim\limits_{x\to x_0}f(x)\mbox{存在}\Leftarrow\lim\limits_{x\to x_0^+}f(x)=\
     $\lim\limits_{x\to x_0}f(x)=A$
 \end{center}
 \subsection{\ref{limit_infinitesimal}}
+$$\lim\limits_{x\to x_o}f(x)=A\Rightarrow \begin{cases}
+    \alpha\mbox{为}x\rightarrow x_0 \mbox{时的无穷小}\\
+    f(x)=\alpha+A
+\end{cases}$$
 设$\lim\limits_{x\to x_o}f(x)=A,\ \mbox{记}f(x)-A=\alpha$\\
 只需证$\alpha$为无穷小。\\
 $\forall\varepsilon>0,\exists\delta>0,\mbox{当}0<\left|x-x_0\right|<\delta,\mbox{时}\left|f(x)-A\right|<\varepsilon$\\
 即$\left|\alpha-0\right|<\varepsilon$\\
 $\alpha\mbox{为}x\rightarrow x_0\mbox{时的无穷小}$
+$$\lim\limits_{x\to x_o}f(x)=A\Leftarrow \begin{cases}
+    \alpha\mbox{为}x\rightarrow x_0 \mbox{时的无穷小}\\
+    f(x)=\alpha+A
+\end{cases}$$
+$\forall \varepsilon >0,\ \exists \delta >0,\ \mbox{当}0<\left|x-x+0\right|<\delta,\ \left|\alpha\right|<\varepsilon$\\
+$\mbox{即}\left|f(x)-A\right|<\varepsilon$
+$\lim\limits_{x\to x_0}f(x)=A$
+\subsection{\ref{Infinity_infinitesimal}}
+\begin{center}
+    设$\lim\limits_{x\to x_0}f(x)=\infty$\\
+对$f(x)$为$x\rightarrow$时无穷大\\
+对于$M=\frac{1}{\varepsilon}$.存在$\delta>0$\\
+当$0<\left|x-x_0\right|<\delta$时\\
+$\left|f(x)\right|>M=\frac{1}{\varepsilon}$\\
+$\left|\frac{1}{f(x)}\right|<\varepsilon$\\
+$\frac{1}{f(x)}$为$x\rightarrow x_0$时的无穷小
+\end{center}
+\subsection{\ref{Extreme Four Operations_2}}
+\begin{displaymath}
+    \begin{split}
+        f(x)g(x)&=\left[A+\alpha\right]\left[B+\beta\right]\\
+        &=AB+A\beta+B\alpha+\beta\alpha\\
+        &=AB+\gamma\qquad\qquad(\gamma\mbox{为无穷小})\\
+        \lim\left[f(x)g(x)\right]&=AB+\gamma=\lim f(x)\lim g(x)
+    \end{split}
+\end{displaymath}
+
 \subsection{\ref{eq:squeeze_theorem}}
 \begin{center}
     $\forall \varepsilon > 0$\\

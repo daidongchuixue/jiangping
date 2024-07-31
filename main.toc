@@ -11,61 +11,69 @@
 \contentsline {subsection}{\numberline {4.3}映射定义}{9}{}%
 \contentsline {section}{\numberline {5}函数与图像}{11}{}%
 \contentsline {subsection}{\numberline {5.1}函数的定义}{11}{}%
-\contentsline {subsection}{\numberline {5.2}函数的类型}{11}{}%
-\contentsline {subsection}{\numberline {5.3}函数的性质}{12}{}%
-\contentsline {subsubsection}{\numberline {5.3.1}函数的有界性}{12}{}%
-\contentsline {subsubsection}{\numberline {5.3.2}函数的单调性}{12}{}%
-\contentsline {subsubsection}{\numberline {5.3.3}函数的奇偶性}{12}{}%
-\contentsline {subsubsection}{\numberline {5.3.4}周期性}{12}{}%
-\contentsline {section}{\numberline {6}并集，交集}{14}{}%
-\contentsline {subsection}{\numberline {6.1}定义}{14}{}%
-\contentsline {subsection}{\numberline {6.2}运算}{14}{}%
-\contentsline {subsection}{\numberline {6.3}性质}{14}{}%
-\contentsline {subsection}{\numberline {6.4}gustus De Morgan定理}{15}{}%
-\contentsline {subsection}{\numberline {6.5}德摩根律\ 定理}{15}{}%
-\contentsline {section}{\numberline {7}群，环，域}{16}{}%
-\contentsline {subsection}{\numberline {7.1}群}{16}{}%
-\contentsline {subsubsection}{\numberline {7.1.1}M1}{16}{}%
-\contentsline {subsubsection}{\numberline {7.1.2}M2}{16}{}%
-\contentsline {subsubsection}{\numberline {7.1.3}M3}{16}{}%
-\contentsline {subsubsection}{\numberline {7.1.4}M4}{16}{}%
-\contentsline {subsubsection}{\numberline {7.1.5}sdas}{16}{}%
-\contentsline {subsection}{\numberline {7.2}环}{16}{}%
-\contentsline {subsection}{\numberline {7.3}域}{16}{}%
-\contentsline {section}{\numberline {8}极限}{17}{}%
-\contentsline {subsection}{\numberline {8.1}数列极限}{17}{}%
-\contentsline {subsubsection}{\numberline {8.1.1}数列的定义}{17}{}%
-\contentsline {subsubsection}{\numberline {8.1.2}数列极限的定义}{17}{}%
-\contentsline {subsubsection}{\numberline {8.1.3}极限的唯一性}{17}{}%
-\contentsline {subsubsection}{\numberline {8.1.4}有界数列}{17}{}%
-\contentsline {subsubsection}{\numberline {8.1.5}收敛数列的有界性}{17}{}%
-\contentsline {subsubsection}{\numberline {8.1.6}收敛数列的保号性}{17}{}%
-\contentsline {subsubsection}{\numberline {8.1.7}收敛数列和子数列 }{18}{}%
-\contentsline {subsection}{\numberline {8.2}函数极限}{18}{}%
-\contentsline {subsubsection}{\numberline {8.2.1}极限的定义}{18}{}%
-\contentsline {subsubsection}{\numberline {8.2.2}极限的性质}{18}{}%
-\contentsline {subsection}{\numberline {8.3}无穷小与无穷大}{19}{}%
-\contentsline {subsubsection}{\numberline {8.3.1}定义}{19}{}%
+\contentsline {subsection}{\numberline {5.2}函数的性质}{11}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}函数的有界性}{11}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}函数的单调性}{11}{}%
+\contentsline {subsubsection}{\numberline {5.2.3}函数的奇偶性}{11}{}%
+\contentsline {subsubsection}{\numberline {5.2.4}周期性}{12}{}%
+\contentsline {subsection}{\numberline {5.3}函数图像}{12}{}%
+\contentsline {section}{\numberline {6}并集，交集}{13}{}%
+\contentsline {subsection}{\numberline {6.1}定义}{13}{}%
+\contentsline {subsection}{\numberline {6.2}运算}{13}{}%
+\contentsline {subsection}{\numberline {6.3}性质}{13}{}%
+\contentsline {subsection}{\numberline {6.4}gustus De Morgan定理}{14}{}%
+\contentsline {subsection}{\numberline {6.5}德摩根律\ 定理}{14}{}%
+\contentsline {section}{\numberline {7}群，环，域}{15}{}%
+\contentsline {subsection}{\numberline {7.1}群}{15}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}M1}{15}{}%
+\contentsline {subsubsection}{\numberline {7.1.2}M2}{15}{}%
+\contentsline {subsubsection}{\numberline {7.1.3}M3}{15}{}%
+\contentsline {subsubsection}{\numberline {7.1.4}M4}{15}{}%
+\contentsline {subsubsection}{\numberline {7.1.5}sdas}{15}{}%
+\contentsline {subsection}{\numberline {7.2}环}{15}{}%
+\contentsline {subsection}{\numberline {7.3}域}{15}{}%
+\contentsline {section}{\numberline {8}极限}{16}{}%
+\contentsline {subsection}{\numberline {8.1}数列极限}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}数列的定义}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.2}数列极限的定义}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.3}极限的唯一性}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.4}有界数列}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.5}收敛数列的有界性}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.6}收敛数列的保号性}{16}{}%
+\contentsline {subsubsection}{\numberline {8.1.7}收敛数列和子数列 }{17}{}%
+\contentsline {subsection}{\numberline {8.2}函数极限}{17}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}极限的定义}{17}{}%
+\contentsline {subsubsection}{\numberline {8.2.2}极限的性质}{17}{}%
+\contentsline {subsection}{\numberline {8.3}无穷小与无穷大}{18}{}%
+\contentsline {subsubsection}{\numberline {8.3.1}无穷小定义}{18}{}%
+\contentsline {subsubsection}{\numberline {8.3.2}函数极限与无穷小的关系}{18}{}%
+\contentsline {subsubsection}{\numberline {8.3.3}无穷大与无穷小的关系}{18}{}%
+\contentsline {subsubsection}{\numberline {8.3.4}无穷大定义}{19}{}%
 \contentsline {subsection}{\numberline {8.4}运算}{19}{}%
-\contentsline {subsubsection}{\numberline {8.4.1}夹逼定理(三明治定理)}{19}{}%
-\contentsline {section}{\numberline {9}导数}{20}{}%
-\contentsline {subsection}{\numberline {9.1}幂数，指数，对数}{20}{}%
-\contentsline {subsection}{\numberline {9.2}三角函数}{20}{}%
-\contentsline {subsection}{\numberline {9.3}倒数运算}{21}{}%
-\contentsline {section}{\numberline {10}积分}{22}{}%
-\contentsline {subsection}{\numberline {10.1}幂数，指数，对数}{22}{}%
-\contentsline {subsection}{\numberline {10.2}三角函数}{22}{}%
-\contentsline {subsection}{\numberline {10.3}积分运算}{22}{}%
-\contentsline {section}{\numberline {11}零散的一些}{23}{}%
-\contentsline {section}{\numberline {12}证明}{25}{}%
-\contentsline {subsection}{\numberline {12.1}\ref {eq:hyperbolic_functions_1}}{25}{}%
-\contentsline {subsection}{\numberline {12.2}\ref {eq:hyperbolic_functions_2}}{25}{}%
-\contentsline {subsection}{\numberline {12.3}\ref {eq:hyperbolic_functions_3}}{25}{}%
-\contentsline {subsection}{\numberline {12.4}\ref {eq:hyperbolic_functions_4}}{25}{}%
-\contentsline {subsection}{\numberline {12.5}\ref {sequence_bounded}}{26}{}%
-\contentsline {subsection}{\numberline {12.6}\ref {Serial_number_preservation_a}}{26}{}%
-\contentsline {subsection}{\numberline {12.7}\ref {Serial_number_preservation_b}}{26}{}%
-\contentsline {subsection}{\numberline {12.8}\ref {limit_sequence}}{27}{}%
-\contentsline {subsection}{\numberline {12.9}\ref {limit_left_right}}{27}{}%
-\contentsline {subsection}{\numberline {12.10}\ref {limit_infinitesimal}}{28}{}%
-\contentsline {subsection}{\numberline {12.11}\ref {eq:squeeze_theorem}}{28}{}%
+\contentsline {subsubsection}{\numberline {8.4.1}有限个无穷小的和仍为无穷小}{19}{}%
+\contentsline {subsubsection}{\numberline {8.4.2}有界函数与无穷小的乘积仍为无穷小}{20}{}%
+\contentsline {subsubsection}{\numberline {8.4.3}极限的四则运算}{20}{}%
+\contentsline {subsubsection}{\numberline {8.4.4}夹逼定理(三明治定理)}{20}{}%
+\contentsline {section}{\numberline {9}导数}{21}{}%
+\contentsline {subsection}{\numberline {9.1}幂数，指数，对数}{21}{}%
+\contentsline {subsection}{\numberline {9.2}三角函数}{21}{}%
+\contentsline {subsection}{\numberline {9.3}倒数运算}{22}{}%
+\contentsline {section}{\numberline {10}积分}{23}{}%
+\contentsline {subsection}{\numberline {10.1}幂数，指数，对数}{23}{}%
+\contentsline {subsection}{\numberline {10.2}三角函数}{23}{}%
+\contentsline {subsection}{\numberline {10.3}积分运算}{23}{}%
+\contentsline {section}{\numberline {11}零散的一些}{24}{}%
+\contentsline {section}{\numberline {12}证明}{26}{}%
+\contentsline {subsection}{\numberline {12.1}\ref {eq:hyperbolic_functions_1}}{26}{}%
+\contentsline {subsection}{\numberline {12.2}\ref {eq:hyperbolic_functions_2}}{26}{}%
+\contentsline {subsection}{\numberline {12.3}\ref {eq:hyperbolic_functions_3}}{26}{}%
+\contentsline {subsection}{\numberline {12.4}\ref {eq:hyperbolic_functions_4}}{26}{}%
+\contentsline {subsection}{\numberline {12.5}\ref {sequence_bounded}}{27}{}%
+\contentsline {subsection}{\numberline {12.6}\ref {Serial_number_preservation_a}}{27}{}%
+\contentsline {subsection}{\numberline {12.7}\ref {Serial_number_preservation_b}}{27}{}%
+\contentsline {subsection}{\numberline {12.8}\ref {limit_sequence}}{28}{}%
+\contentsline {subsection}{\numberline {12.9}\ref {limit_left_right}}{28}{}%
+\contentsline {subsection}{\numberline {12.10}\ref {limit_infinitesimal}}{29}{}%
+\contentsline {subsection}{\numberline {12.11}\ref {Infinity_infinitesimal}}{29}{}%
+\contentsline {subsection}{\numberline {12.12}\ref {Extreme Four Operations_2}}{29}{}%
+\contentsline {subsection}{\numberline {12.13}\ref {eq:squeeze_theorem}}{30}{}%

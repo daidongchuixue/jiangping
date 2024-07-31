@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  29 JUL 2024 23:25
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  31 JUL 2024 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -713,73 +713,68 @@ LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10> not 
 
 
 
-]) [12] [13]
+]) [12]
 \openout2 = `"./main/Intersection and union.aux"'.
 
- (./main/Intersection and union.tex [14
+ (./main/Intersection and union.tex [13
 
 
 
-]) [15]
+]) [14]
 \openout2 = `./main/Groups_domains_rings.aux'.
 
- (./main/Groups_domains_rings.tex) [16
+ (./main/Groups_domains_rings.tex) [15
 
 
 
 ]
 \openout2 = `./main/limit.aux'.
 
- (./main/limit.tex [17
+ (./main/limit.tex [16
 
 
 
-] [18]
-Overfull \hbox (7.13452pt too wide) in paragraph at lines 73--88
-\OML/cmm/m/it/10 Def[] \OT1/cmr/m/n/10 : \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0 []$ 
- []
-
-) [19]
+] [17] [18] [19]) [20]
 \openout2 = `./main/derivative.aux'.
 
- (./main/derivative.tex [20
+ (./main/derivative.tex [21
 
 
 
-]) [21]
+]) [22]
 \openout2 = `./main/integral.aux'.
 
- (./main/integral.tex) [22
+ (./main/integral.tex) [23
 
 
 
 ]
 \openout2 = `./main/scattered.aux'.
 
- (./main/scattered.tex [23
+ (./main/scattered.tex [24
 
 
 
-]) [24]
+]) [25]
 \openout2 = `./main/prove.aux'.
 
- (./main/prove.tex [25
+ (./main/prove.tex [26
 
 
 
-] [26] [27]) [28] (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/derivative.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
+] [27] [28] [29]) [30] (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/derivative.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 20371 strings out of 474773
- 483417 string characters out of 5757724
- 1938839 words of memory out of 5000000
- 42062 multiletter control sequences out of 15000+600000
+ 39397 strings out of 474773
+ 884429 string characters out of 5757724
+ 2013839 words of memory out of 5000000
+ 61088 multiletter control sequences out of 15000+600000
  567276 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,21n,110p,434b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,21n,110p,434b,758s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (28 pages).
+Output written on main.pdf (30 pages).
