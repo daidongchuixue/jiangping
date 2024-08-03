@@ -37,7 +37,7 @@
 \cosh x &=2\sinh^2\frac{x}{2}+1
 \end{split}
 \end{displaymath}
-\subsection{\ref{sequence_bounded}}
+\subsection{\ref{sequence_bounded_1}}
     \begin{center}
        $\varepsilon =1,\ \exists N>0,\ \mbox{当n>N时}\left|X_n-a\right|<1$\\
         $\left|X_n\right|=\left|(X_n-a)+a\right|$\\
@@ -158,4 +158,123 @@ $a-\varepsilon<x_n\le z_n\le y_n < a+\varepsilon$\\
 $\left|z_n-a\right|<\varepsilon$\\
 $\lim\limits_{{n}\to{\infty}}z_n = a$
 \end{center}
+
+\subsection{\ref{limit_1_1}}
+\begin{center}
+    \begin{tikzpicture}[>=to]
+        \begin{scope}
+            \draw[->] (-1,0)--(3,0)node[right]{x};
+            \draw[->] (0,-1)--(0,3)node[above]{y};
+            \draw[] (2.5,0) arc(0:90:2.5) (1,2.5);
+            \draw[->] (1,0) arc(0:30:1) ({cos (pi/6 r)},{sin (pi/6 r)});
+            \draw (0,0)--(30:2.5)node[above]{B}--({(2.5)*(cos (pi/6 r))},0)node[below]{C};
+            \draw (0,0)--(2.5,{(2.5)*(tan (pi/6 r))})node[above]{D}--(2.5,0)node[below]{A};
+            \node at (-.2,-.2) {O};
+            \node at (1.1,.3) {x};
+        \end{scope}
+    \end{tikzpicture}\\
+    \begin{displaymath}
+        \begin{split}
+            OB&=OA=1\\
+            \vartriangle AOB&\leqslant \mbox{扇形面积}\leqslant\vartriangle AOD\\
+            \frac{1}{2}\sin x&\leqslant\frac{1}{2}x\leqslant\frac{1}{2}\tan x\\
+            \sin x&\leqslant x\leqslant \tan \\
+            1&\geqslant\frac{\sin x}{x}\geqslant \cos x\\
+            \lim\limits_{x\to 0}1&\geqslant\lim\limits_{x\to 0}\frac{\sin x}{x}\geqslant\lim\limits_{x\to 0}\cos x\\
+            1&\geqslant\lim\limits_{x\to 0}\frac{\sin x}{x}\geqslant1\\
+            \lim\limits_{x\to 0}\frac{\sin x}{x} &= 1
+        \end{split}
+    \end{displaymath}
+\end{center}
+\subsection{\ref{limit_1_2}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \left|1-\cos x\right|=1-\cos x&=2\sin^2 \frac{x}{2}\\
+        &\leqslant 2\left(\frac{x}{2}\right)^2\\
+        0\leqslant 1-\cos x &\leqslant \frac{x^2}{2}\\
+        \lim\limits_{x\to 0}0\leqslant\lim\limits_{x\to 0}\left(1-\cos x\right)&\leqslant\lim\limits_{x\to 0}{\frac{x^2}{2}}\\
+        0\leqslant\lim\limits_{x\to 0}\left(1-\cos x\right)&\leqslant 0\\
+        \lim\limits_{x\to 0}\left(1-\cos x\right) &=0\\
+        \lim\limits_{x\to 0}\cos x&=1
+    \end{split}
+\end{displaymath}
+\subsection{\ref{limit_1_3}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \lim\limits_{x\to 0}\frac{\tan x}{x}&=\lim\limits_{x\to 0}\frac{\sin x}{x}\frac{1}{\cos x}\\
+        &=\lim\limits_{x\to 0}\frac{\sin x}{x}\lim\limits_{x\to 0}\frac{1}{\cos x}\\
+        &=1
+    \end{split}
+\end{displaymath}
+\subsection{\ref{limit_1_4}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \lim\limits_{x\to 0}\frac{1-\cos x}{\frac{1}{2}x^2}&=\lim\limits_{x\to 0}\frac{2\sin^2\frac{x}{2}}{\frac{1}{2}x^2}\\
+        &=\lim\limits_{x\to 0}\left(\frac{\sin \frac{x}{2}}{\frac{x}{2}}\right)^2\\
+        &=1
+    \end{split}
+\end{displaymath}
+\subsection{\ref{limit_1_5}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        x=\sin t,\ t=\arcsin x\\ 
+        x\rightarrow 0,\ t\rightarrow 0\\
+        \lim\limits_{x\to 0}\frac{\arcsin x}{x}=\lim\limits_{x\to 0}\frac{t}{\sin t}=1
+    \end{split}
+\end{displaymath}
+\subsection{\ref{limit_1_6}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        x=\tan t,\ t=\arctan x\\ 
+        x\rightarrow 0,\ t\rightarrow 0\\
+        \lim\limits_{x\to 0}\frac{\arctan x}{x}=\lim\limits_{t\to 0}\frac{t}{\tan t}=1
+    \end{split}
+\end{displaymath}
+\subsection{\ref{limit_1_7}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \lim\limits_{x\to 0}\frac{\ln \left(1+x\right)}{x}=\lim\limits_{x\to 0}\ln \left(1+x\right)^\frac{1}{x}=\ln e=1
+    \end{split}
+\end{displaymath}
+\subsection{\ref{limit_1_8}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        e^x-1=t,\ x=\ln\left(t+1\right)\\
+        x\rightarrow 0,\ t\rightarrow 0\\
+        \lim\limits_{x\to 0}\frac{e^x-1}{x}=\lim\limits_{t\to 0}\frac{t}{\ln\left(t+1\right)}=1
+    \end{split}
+\end{displaymath}
+\subsection{\ref{limit_1_9}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \lim\limits_{x\to 0}\frac{\left(1+x\right)^n-1}{nx}=\lim\limits_{x\to 0}\left(\frac{e^{n\ln \left(1+x\right)}-1}{n\ln\left(1+x\right)}\cdot\frac{\ln\left(1+x\right)}{x}\right)=1
+    \end{split}
+\end{displaymath}
+
+\subsection{\ref{limit_2_1}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        x_n&=\left(1+\frac{1}{n}\right)^n=\sum_{m = 0}^{n} C_n^m 1^{n-m}\left(\frac{1}{n}\right)^m=\sum_{m = 0}^{n} C_n^m \left(\frac{1}{n}\right)^m\\
+        &=C_n^0\left(\frac{1}{n}\right)^0+C_n^1\left(\frac{1}{n}\right)^1+ \sum_{m = 2}^{n} C_n^m \left(\frac{1}{n}\right)^m\\
+        &=1+1+ \sum_{m = 2}^{n} \frac{n!}{m!\left(n-m\right)!} \left(\frac{1}{n}\right)^m\\
+        &=1+1+ \sum_{m = 2}^{n} \frac{\overbrace{\left(n\right)\left(n-1\right)\cdots\left(n-m+1\right)}^{m}}{m!} \left(\frac{1}{n}\right)^m\\
+        &=1+1+ \sum_{m = 2}^{n} \frac{1}{m!}\left(\frac{n}{n}\right)\left(\frac{n-1}{n}\right)\cdots\left(\frac{n-m+1}{n}\right) \\
+        &=1+1+ \sum_{m = 2}^{n} \frac{1}{m!}\left(1-\frac{1}{n}\right)\left(1-\frac{2}{n}\right)\cdots\left(1-\frac{m-1}{n}\right) \\
+        x_{n+1}&=1+1+ \sum_{m = 2}^{n+1} \frac{1}{m!}\left(1-\frac{1}{n+1}\right)\left(1-\frac{2}{n+1}\right)\cdots\left(1-\frac{m-1}{n+1}\right) \\
+        x_n&<x_{n+1}\qquad\mbox{单调增加}\\
+        x_n&<1+1+\frac{1}{2!}+\frac{1}{3!}+\cdots+\frac{1}{n!}\\
+        &<1+1+\frac{1}{2^2}+\frac{1}{2^3}+\cdots+\frac{1}{n^2}=1+\frac{1-\left(\frac{1}{2}\right)^2}{1-\frac{1}{2}}\\
+        &<1+\frac{1}{1-\frac{1}{2}}\\
+        &<3\qquad \mbox{有界}
+    \end{split}
+\end{displaymath}
 

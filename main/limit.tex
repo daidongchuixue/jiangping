@@ -15,9 +15,10 @@ $\mbox{极限存在，为收敛，不存在为发散}$
 $\mbox{若}\exists M>0,\{M\in\mbox{正数}\}$\\
 $\mbox{使得}\forall n,\quad\left|x_n\right|\leqslant M$\\
 $\mbox{则称数列$\{x_n\}$为有界数列}$
-\subsubsection{收敛数列的有界性}
+\subsubsection{收敛数列与有界性}
 \begin{align}
-    \mbox{收敛数列必有界}\label{sequence_bounded}
+    \mbox{收敛数列必有界}\label{sequence_bounded_1}\\
+    \mbox{单调有界数列必收敛}\label{sequence_bounded_2}
 \end{align}
 \subsubsection{收敛数列的保号性}
 \begin{align}
@@ -32,9 +33,6 @@ $n_k>n_K\geqslant N$\\
 $\left|x_{n_k}-a\right|<\varepsilon$\\
 $\lim\limits_{n\to\infty}x_{n_k}=a$
 
-%趋向无穷大的定义\\
-%$\forall M>0,\exists N,\mbox{当$n>N$时，$X_n>M$,}$\\
-%趋向无穷小的定义
 \subsection{函数极限}
 \subsubsection{极限的定义}
 $Def: \forall \varepsilon >0\begin{cases}
@@ -63,10 +61,12 @@ $Def: \forall \varepsilon >0\begin{cases}
 2\ 局部有界性\\
 $\lim\limits_{x\to x_0}f(x)=A\Rightarrow\exists M>0,\delta >0\mbox{使}0<\left|x-x_0\right|<\delta,\left|f(x)\right|\leqslant M$\\
 3\ 保号性\\
-$\lim\limits_{x\to x_0}=A,\ A>0,\Rightarrow \exists \delta >0,\mbox{当},0<\left|x-x_0\right|<\delta\mbox{时}f(x)>0$
-\\4\ 函数极限与数列极限的关系\\
+$\lim\limits_{x\to x_0}=A,\ A>0,\Rightarrow \exists \delta >0,\mbox{当},0<\left|x-x_0\right|<\delta\mbox{时}f(x)>0$\\
+4\ 保序性\\
+$f(x)\geqslant g(x),\ \lim f(x)=a,\ \lim g(x) = b,\ \mbox{则}a\geqslant b$\\
+4\ 函数极限与数列极限的关系\\
 如果$\lim\limits_{x\to x_0}f(x)$存在，$\{x_n\}$为$f(x)$定义域的任一收敛于$x_0$的数列，则满足$x_n\neq x_0$\\
-则$\lim\limits_{n\to \infty}f(x_n)=\lim\limits_{x\to x_0}f(x),\ x_n\rightarrow x_0$
+则$\lim\limits_{n\to \infty}f(x_n)=0=\lim\limits_{x\to x_0}f(x),\ x_n\rightarrow x_0$
 
 \subsection{无穷小与无穷大}
 \subsubsection{无穷小定义}
@@ -166,12 +166,62 @@ $\lim f(x)=A,\ \lim g(x)=B$
 \begin{align}
 &\lim{(f(x)\pm g(x))} = \lim f(x)\pm\lim g(x) \label{Extreme Four Operations_1}\\
 &\lim{(f(x) g(x))} = \lim f(x)\lim g(x) \label{Extreme Four Operations_2}\\
-&\lim \left(\frac{f(x)}{g(x)}\right)= \frac{\lim{f(x)}}{\lim{g(x)}} \label{Extreme Four Operations_3}
+&\lim \left(\frac{f(x)}{g(x)}\right)= \frac{\lim{f(x)}}{\lim{g(x)}} \label{Extreme Four Operations_3}\\
+&\lim\left[Cf(x)\right]=C\lim f(x)\\
+&\lim\left[f(x)\right]^n=\left[\lim f(x)\right]^n
 \end{align}
+\begin{align}
+    \lim\limits_{x\to \infty}\frac{a_0x^m+a_1x^{m-1}+\cdots +a_m}{a_0x^n+a_1x^{n-1}+\cdots +a_n}=\begin{cases}
+        \frac{a}{b}\qquad &m=n\\
+        \infty &m>n\\
+        0 &m<n
+    \end{cases}
+\end{align}
+\begin{equation}
+    \begin{split}
+        \lim\limits_{x\to x_0}g(x)=u_0,\ \lim\limits_{u\to u_0}f(x)=A\\
+        \exists \delta_0>0,\ x\in \mathring{U}\left(x_0,\delta_0\right),\ g(x)\neq u_0\\
+        \lim\limits_{x\to x_0}f\left[g(x)\right]=\lim\limits_{u\to u_0}f(u)=A
+    \end{split}
+\end{equation}
+
 \subsubsection{夹逼定理(三明治定理)}
 \begin{equation}\label{eq:squeeze_theorem}
 \begin{split}
-&x_n\leqslant z_n\leqslant y_n \qquad \forall b>N_0 \\
+&x_n\leqslant z_n\leqslant y_n \qquad \forall n>N_0 \\
 &\mbox{若}\lim\limits_{n\to{\infty}}x_n = \lim\limits_{n\to\infty}y_n = a \mbox{则}\lim\limits_{n\to\infty}z_n = a
 \end{split}
 \end{equation}
+
+\subsubsection{重要极限}
+\begin{center}
+    趋向$0$
+\end{center}
+\begin{align}
+    \lim\limits_{x\to 0}\frac{\sin x}{x}=1 \label{limit_1_1}\\
+    \lim\limits_{x\to 0}\cos x=1 \label{limit_1_2}\\
+    \lim\limits_{x\to 0}\frac{\tan x}{x}=1 \label{limit_1_3}\\
+    \lim\limits_{x\to 0}\frac{1-\cos x}{\frac{1}{2}x^2}=1 \label{limit_1_4}\\
+    \lim\limits_{x\to 0}\frac{\arcsin x}{x}=1 \label{limit_1_5}\\
+    \lim\limits_{x\to 0}\frac{\arctan x}{x}=1 \label{limit_1_6}\\
+    \lim\limits_{x\to 0}\frac{\ln \left(1+x\right)}{x}=1 \label{limit_1_7}\\
+    \lim\limits_{x\to 0}\frac{e^x-1}{x}=1 \label{limit_1_8}\\ 
+    \lim\limits_{x\to 0}\frac{\left(1+x\right)^n-1}{nx}=1 \label{limit_1_9}\\
+    \lim\limits_{x\to 0}\left(1+x\right)^\frac{1}{x}=e \label{limit_1_10}
+\end{align}
+\begin{center}
+    \newpage
+    趋向$\infty$
+\end{center}
+\begin{align}
+    \{x_n\}\qquad\lim\limits_{n\to \infty}\left(1+\frac{1}{n}\right)^n=e \label{limit_2_1}\\
+    \lim\limits_{x\to \infty}\left(1+\frac{1}{x}\right)^x=e \label{limit_2_2}
+\end{align}
+\subsubsection{无穷小比较}
+$\frac{0}{0}$型未定式\\
+$Def:\ \alpha,\beta$是同一极限过程的无穷小。\\
+$\left(1\right)$如果$\lim\frac{\beta}{\alpha}=0$则称$\beta$是$\alpha$的高阶无穷小，记作$\beta=\circ \left(\alpha\right)$\\
+$\left(2\right)$如果$\lim\frac{\beta}{\alpha}=\infty$则称$\beta$是$\alpha$的底阶无穷小。\\
+$\left(3\right)$如果$\lim\frac{\beta}{\alpha}=C$则称$\beta$是$\alpha$的同阶无穷小。\\
+$\left(4\right)$如果$\lim\frac{\beta}{\alpha^k}=C,k>0$则称$\beta$是$\alpha$的k阶无穷小。\\
+$\left(5\right)$如果$\lim\frac{\beta}{\alpha}=1$则称$\beta$是$\alpha$的等价阶无穷小。

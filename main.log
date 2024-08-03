@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  31 JUL 2024 23:28
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  3 AUG 2024 11:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -493,11 +493,23 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@expandcount=\count325
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+))) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count326
+\calc@Bcount=\count327
+\calc@Adimen=\dimen295
+\calc@Bdimen=\dimen296
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count328
+\calc@Cskip=\skip66
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/cases/cases.sty
 Package: cases 2020/03/29 ver 3.2
-\numc@numwid=\dimen295
+\numc@numwid=\dimen297
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
@@ -516,34 +528,34 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count326
-\Gm@cntv=\count327
-\c@Gm@tempcnt=\count328
-\Gm@bindingoffset=\dimen296
-\Gm@wd@mp=\dimen297
-\Gm@odd@mp=\dimen298
-\Gm@even@mp=\dimen299
-\Gm@layoutwidth=\dimen300
-\Gm@layoutheight=\dimen301
-\Gm@layouthoffset=\dimen302
-\Gm@layoutvoffset=\dimen303
+\Gm@cnth=\count329
+\Gm@cntv=\count330
+\c@Gm@tempcnt=\count331
+\Gm@bindingoffset=\dimen298
+\Gm@wd@mp=\dimen299
+\Gm@odd@mp=\dimen300
+\Gm@even@mp=\dimen301
+\Gm@layoutwidth=\dimen302
+\Gm@layoutheight=\dimen303
+\Gm@layouthoffset=\dimen304
+\Gm@layoutvoffset=\dimen305
 \Gm@dimlist=\toks37
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyref/fancyref.sty
 Package: fancyref 1999/02/03 v0.9c Fancy cross-referencing
  (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/varioref.sty
 Package: varioref 2022/01/09 v1.6f package for extended references (FMi)
-\c@vrcnt=\count329
+\c@vrcnt=\count332
 ))) (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip64
-\f@nch@O@elh=\skip65
-\f@nch@O@erh=\skip66
-\f@nch@O@olh=\skip67
-\f@nch@O@orh=\skip68
-\f@nch@O@elf=\skip69
-\f@nch@O@erf=\skip70
-\f@nch@O@olf=\skip71
-\f@nch@O@orf=\skip72
+\f@nch@headwidth=\skip67
+\f@nch@O@elh=\skip68
+\f@nch@O@erh=\skip69
+\f@nch@O@olh=\skip70
+\f@nch@O@orh=\skip71
+\f@nch@O@elf=\skip72
+\f@nch@O@erf=\skip73
+\f@nch@O@olf=\skip74
+\f@nch@O@orf=\skip75
 ) (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/derivative.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
 \openout1 = `main.aux'.
 
@@ -734,47 +746,47 @@ LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10> not 
 
 
 
-] [17] [18] [19]) [20]
+] [17] [18] [19] [20] [21]) [22]
 \openout2 = `./main/derivative.aux'.
 
- (./main/derivative.tex [21
+ (./main/derivative.tex [23
 
 
 
-]) [22]
+]) [24]
 \openout2 = `./main/integral.aux'.
 
- (./main/integral.tex) [23
+ (./main/integral.tex) [25
 
 
 
 ]
 \openout2 = `./main/scattered.aux'.
 
- (./main/scattered.tex [24
+ (./main/scattered.tex [26
 
 
 
-]) [25]
+]) [27]
 \openout2 = `./main/prove.aux'.
 
- (./main/prove.tex [26
+ (./main/prove.tex [28
 
 
 
-] [27] [28] [29]) [30] (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/derivative.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
+] [29] [30] [31] [32] [33] [34]) [35] (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/derivative.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 39397 strings out of 474773
- 884429 string characters out of 5757724
+ 39541 strings out of 474773
+ 887162 string characters out of 5757724
  2013839 words of memory out of 5000000
- 61088 multiletter control sequences out of 15000+600000
+ 61229 multiletter control sequences out of 15000+600000
  567276 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,21n,110p,434b,758s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,23n,110p,430b,765s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (30 pages).
+Output written on main.pdf (35 pages).
