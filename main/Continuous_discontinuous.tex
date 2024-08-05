@@ -1,0 +1,90 @@
+\section{连续与间断点}
+\subsection{定义}
+\subsubsection{点连续}
+$$Def1: \mbox{设}f(x)\mbox{在}x_0\mbox{的某邻域内有定义，如果}\lim\limits_{x\to x_0}=f(x_0)$$
+$$\mbox{则称}f(x)\mbox{在}x_0\mbox{处连续}$$
+
+\begin{tikzpicture}[>=latex]
+    \centering
+    \begin{scope}
+        \draw[->](0,0)--(4,0);
+        \draw[->](1,-1)--(1,3);
+        \draw[domain=0:4,samples=1000] plot(\x,{\x^(1/2)});
+        \draw[dashed] (1.5,{1.5^(1/2)})--(1.5,0)node[below]{$x_0$};
+        \draw[dashed] (3.5,{3.5^(1/2)})--(3.5,0)node[below]{$x$};
+        \draw[dashed] (1,{1.5^(1/2)})node[left]{$f(x_0)$}--(2.5,{1.5^(1/2)})--(3.5,{1.5^(1/2)});
+        \draw[|<->|] (1.5,{1.2^(1/2)})--(2.5,{1.2^(1/2)})node[below]{$\vartriangle x$}--(3.5,{1.2^(1/2)});
+        \draw[dashed] (1,{3.5^(1/2)})node[left]{$f(x)$}--(3.5,{3.5^(1/2)});
+        \draw[|<->|] (3.6,{3.5^(1/2)})--(3.6,{(3.5^(1/2)+1.5^(1/2))/2})node[right]{$\vartriangle y$}--(3.6,{1.5^(1/2)});
+    \end{scope}
+    \begin{scope}[xshift=6cm]
+        \node at (0,1)[right]{$\begin{cases}
+            \vartriangle x=x-x_0\\
+            \vartriangle y=\begin{cases}
+                f(x)-f(x_0)\\
+                f(x_0+\vartriangle x)-f(x_0)
+            \end{cases}
+        \end{cases}$};
+    \end{scope}
+\end{tikzpicture}
+$$Def2:\mbox{如果}\lim\limits_{\vartriangle x\to 0}\vartriangle y =\lim\limits_{\vartriangle x\to 0}\left[f(x_0+\vartriangle x)-f(x_0)\right]=0$$
+$$\mbox{则称}f(x)\mbox{在}x_0\mbox{处连续}$$
+\subsubsection{区间连续}
+$\forall x_0\in\left[a,b\right]\begin{cases}
+    \lim\limits_{x\to x_0}f(x)=f(x_0)&x_0\in\left(a,b\right) \Leftrightarrow f(x_0)=\begin{cases}
+    \lim\limits_{x \to x_0^-}f(x)= f(x_0^-)\\
+    \lim\limits_{x \to x_0^+}f(x)= f(x_0^+)
+\end{cases}\\
+    \lim\limits_{x\to x_0^+}f(x)=f(x_0^+)&x_0=a\ \left(\mbox{右连续}\right)\\
+    \lim\limits_{x\to x_0^-}f(x)=f(x_0^-)&x_0=b\ \left(\mbox{左连续}\right)
+\end{cases}$\\称在$\left[a,b\right]$内连续\\
+有界:$\exists M>0,x\in\left[a,b\right]$时，$\left|f(x)\right|\geqslant M$\\
+最大值:$\exists x_0\in\left[a,b\right]$时，$\forall x\in\left[a,b\right] ,f(x)\leqslant f(x_0)$称$f(x_0)$为$f(x)$在$\left[a,b\right]$上的最大值\\
+最小值:$\exists x_0\in\left[a,b\right]$时，$\forall x\in\left[a,b\right] ,f(x)\geqslant f(x_0)$称$f(x_0)$为$f(x)$在$\left[a,b\right]$上的最小值\\
+1,闭区间$\left[a,b\right]$上的连续函数$f(x)$有界,一定取得最大值与最小值。
+$$\mbox{零点定理}$$
+2,设$f(x)$在$\left[a,b\right]$上连续，且$f(a)\cdot f(b)<0$\\
+则至少存在一点$\xi \in \left(a,b\right)$使$f(\xi)=0$
+$$\mbox{介质定理}$$
+设$f(x)$在$\left[a,b\right]$上连续，且$f(a)=A,f(b)=B$\\
+$\forall C\in\left(A,B\right),$至少有一点$\xi,f(\xi)=C$
+\subsubsection{间断点}
+1,$f(x)$无定义\\
+2,$\lim\limits_{x\to x_0}f(x)$不存在\\
+3.$\lim\limits_{x\to x_0}f(x)$存在,但$\lim\limits_{x\to x_0}f(x)\neq f(x_0)$\\
+第一类间断点：$f(x_0^+)=\lim\limits_{x\to x_0^+}f(x)$与$f(x_0^-)=\lim\limits_{x\to x_0^-}f(x)$\\
+第二类间断点：不是第一类的。
+\subsection{连续函数的运算}
+函数$f(x),g(x)$在$x=x_0$连续。
+\begin{displaymath}
+    \begin{split}
+        \lim\limits_{x\to x_0}\left[f(x)+g(x)\right]&=\lim\limits_{x\to x_0}f(x)+\lim\limits_{x\to x_0}g(x)=f(x_0)+g(x_0)\\
+\lim\limits_{x\to x_0}\left[f(x)-g(x)\right]&=\lim\limits_{x\to x_0}f(x)-\lim\limits_{x\to x_0}g(x)=f(x_0)-g(x_0)\\
+\lim\limits_{x\to x_0}\left[f(x)\cdot g(x)\right]&=\lim\limits_{x\to x_0}f(x)\cdot \lim\limits_{x\to x_0}g(x)=f(x_0)\cdot g(x_0)\\
+\lim\limits_{x\to x_0}\left[\frac{f(x)}{g(x)}\right]&=\frac{\lim\limits_{x\to x_0}f(x)}{\lim\limits_{x\to x_0}g(x)}=\frac{f(x_0)}{g(x_0)}\qquad \left(g(x_0)\neq 0\right)
+    \end{split}
+\end{displaymath}
+反函数的连续性\\
+若$y=f(x)$在区间$I_x$上单调增加，且连续。\\
+则$y=f^-1(x)$在$I_y=\left\{y|y=f(x),x\in I_x\right\}$上也为单调增加，连续\\
+复合函数,$\begin{cases}
+    \mbox{内外都连续}\begin{cases}
+    \lim\limits_{x\to x_0}g(x)=g(x_0)=u_0\\
+    \lim\limits_{u\to u_0}f(x)=f(u_0)\\
+    \lim\limits_{x\to x_0}f\left[g(x)\right]=f\left[g(x_0)\right]=f(\lim\limits_{x\to x_o}g(x))
+\end{cases}\\
+    \mbox{外连续}\begin{cases}
+        x\rightarrow x_0\begin{cases}
+        \lim\limits_{x\to x_0}g(x)=u_0\\
+        \lim\limits_{u\to u_0}f(x)=f(u_0)\\
+        \lim\limits_{x\to x_0}f\left[g(x)\right]=f(u_0)=f(\lim\limits_{x\to x_o}g(x))
+    \end{cases}\\
+        x\rightarrow \infty\begin{cases}
+            \lim\limits_{x\to \infty}g(x)=u_0\\
+            \lim\limits_{u\to u_0}f(x)=f(u_0)\\
+            \lim\limits_{x\to \infty}f\left[g(x)\right]=f(u_0)=f(\lim\limits_{x\to \infty}g(x))
+        \end{cases}
+    \end{cases}
+\end{cases}$
+
+
