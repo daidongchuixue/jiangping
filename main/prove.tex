@@ -278,3 +278,78 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
     \end{split}
 \end{displaymath}
 
+\subsection{\ref{derivative_1}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}C&=\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0} \frac{C-C}{\vartriangle x}\\
+        &=0
+    \end{split}
+\end{displaymath}
+
+\subsection{\ref{derivative_2}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}x^a&=\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}\\
+        &=\frac{x^a-x_0^a}{x-x_0}\\
+        &=\frac{(x-x_0)\left(x^{a-1}+x^{a-2}x_0+\cdots+xx_0^{a-2}+x_0^{a-1}\right)}{x-x_0}\\
+        &=ax_0^{a-1}
+    \end{split}
+\end{displaymath}
+
+\subsection{\ref{derivative_3}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}a^x&=\lim\limits_{\vartriangle x\to 0}\frac{a^{x+\vartriangle x}-a^x}{\vartriangle x}\\
+        &=a^x\lim\limits_{\vartriangle x\to 0}\frac{a^{\vartriangle x}-1}{\vartriangle x}\\
+        &=a^x\lim\limits_{\vartriangle x\to 0}\frac{e^{\vartriangle x \ln a}-1}{\vartriangle x}\\
+        &=a^x\ln a
+    \end{split}
+\end{displaymath}
+
+\subsection{\ref{derivative_4}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}e^x=e^x\ln e=e^x
+    \end{split}
+\end{displaymath}
+\subsection{\ref{derivative_5}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\log_a^x&=\lim\limits_{\vartriangle x\to 0}\frac{\log_a^{x+\vartriangle x}-\log_a^x}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0}\frac{\log_a^{1+\frac{\vartriangle x}{x}}}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0}\frac{\ln{1+\frac{\vartriangle x}{x}}}{\ln a\vartriangle x}\\
+        &=\frac{1}{\ln a}\lim\limits_{\vartriangle x\to 0}\frac{\frac{\vartriangle x}{x}}{\vartriangle x}\\
+        &=\frac{1}{x\ln a}
+    \end{split}
+\end{displaymath}
+\subsection{\ref{derivative_6}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\ln^x&=\frac{1}{x\ln e}\\
+        &=\frac{1}{x}
+    \end{split}
+\end{displaymath}
+\subsection{\ref{derivative_sin}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\sin x&=\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\\
+        &=\frac{\sin (x_0 +\vartriangle x)-\sin x_0}{\vartriangle x}\\
+        &=\frac{2\cos(x_0+\frac{\vartriangle x}{2})\sin \frac{\vartriangle x}{2}}{\vartriangle x}\\
+        &=\cos(x_0+\frac{\vartriangle x}{2})\frac{\sin\frac{\vartriangle x}{2}}{\frac{\vartriangle x}{2}}\\
+        &=cos x_0
+    \end{split}
+\end{displaymath}
+\subsection{\ref{derivative_cos}}
+\begin{displaymath}
+    \centering
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\cos x&=\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}
+    \end{split}
+\end{displaymath}
+
