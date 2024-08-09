@@ -73,19 +73,19 @@ $f(x)$在$[a,b]$可导$\Leftrightarrow\begin{cases}
 &\frac{d}{\mathrm{d}{x}}\operatorname{arccot}{x} = -\frac{1}{1+x^2}\label{derivative_arccot}\\
 &\frac{d}{\mathrm{d}{x}}\sinh x = \cosh x \label{derivative_sinh}\\
 &\frac{d}{\mathrm{d}{x}}\cosh x = \sinh x \label{derivative_cosh}\\
-&\frac{d}{\mathrm{d}{x}}\tanh x = \frac{1}{cosh} \label{derivative_tanh}\\
-&\frac{d}{\mathrm{d}{x}}\operatorname{arcsinh}{x} =  \label{derivative_arcsinh}\\
-&\frac{d}{\mathrm{d}{x}}\operatorname{arccosh}{x} = \label{derivative_arccosh}\\
-&\frac{d}{\mathrm{d}{x}}\operatorname{arctanh}{x} = \label{derivative_arctanh}
+&\frac{d}{\mathrm{d}{x}}\tanh x = \frac{1}{cosh^2 x}=1-\tanh^2x \label{derivative_tanh}\\
+&\frac{d}{\mathrm{d}{x}}\operatorname{arcsinh}{x} =\frac{1}{\sqrt{x^2+1}} \label{derivative_arcsinh}\\
+&\frac{d}{\mathrm{d}{x}}\operatorname{arccosh}{x} =\frac{1}{\sqrt{x^2-1}} \label{derivative_arccosh}\\
+&\frac{d}{\mathrm{d}{x}}\operatorname{arctanh}{x} =\frac{1}{1-x^2} \label{derivative_arctanh}
 \end{align}
 
 \subsection{导数运算}
 $$U=u(x),V=v(x),\mbox{均在}x\mbox{点可导},C\mbox{为常数}$$
 \begin{align}
-  \frac{d(CU)}{\mathrm{d}{x}}= C\frac{d(U)}{\mathrm{d}{x}}\label{limit_operation_1}\\
-  \frac{d(U+V)}{\mathrm{d}{x}}=\frac{dU}{\mathrm{d}{x}}\pm \frac{dV}{\mathrm{d}{x}}\label{limit_operation_2}\\
-  \frac{d(UV)}{\mathrm{d}{x}}=\frac{dU}{\mathrm{d}{x}}V+\frac{dV}{\mathrm{d}{x}}U\label{limit_operation_3}\\
-  \frac{d(\frac{U}{V})}{\mathrm{d}{x}}=\frac{\frac{dU}{\mathrm{d}{x}}V-\frac{dV}{\mathrm{d}{x}}U}{V^2}\label{limit_operation_4}
+  \frac{d(CU)}{\mathrm{d}{x}}&= C\frac{d(U)}{\mathrm{d}{x}}\label{limit_operation_1}\\
+  \frac{d(U+V)}{\mathrm{d}{x}}&=\frac{dU}{\mathrm{d}{x}}\pm \frac{dV}{\mathrm{d}{x}}\label{limit_operation_2}\\
+  \frac{d(UV)}{\mathrm{d}{x}}&=\frac{dU}{\mathrm{d}{x}}V+\frac{dV}{\mathrm{d}{x}}U\label{limit_operation_3}\\
+  \frac{d(\frac{U}{V})}{\mathrm{d}{x}}&=\frac{\frac{dU}{\mathrm{d}{x}}V-\frac{dV}{\mathrm{d}{x}}U}{V^2}\label{limit_operation_4}
 \end{align}
 \subsection{反函数求导}
 如果函数$y=f(x)$在区间$(a,b)$内单调可导，且$f'(y)\neq 0$\\
