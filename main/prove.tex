@@ -1,5 +1,6 @@
 \section{证明}
-\subsection{\ref{eq:hyperbolic_functions_1}}
+\subsection{\centering 第\ref{zhang_trigonometric_function}章}
+\textbf{\large \ref{eq:hyperbolic_functions_1}}
 \begin{displaymath}
 \begin{split}
 \sinh x\cosh x &= \left(\frac{e^x-e^{-x}}{2}\right)\left(\frac{e^x+e^{-x}}{2}\right) \\
@@ -9,7 +10,7 @@
 \end{split}
 \end{displaymath}
 
-\subsection{\ref{eq:hyperbolic_functions_2}}
+\textbf{\large \ref{eq:hyperbolic_functions_2}}
 \begin{displaymath}
 \begin{split}
 \cosh^2x-\sinh^2x &=\left(\frac{e^x+e^{-x}}{2}+\frac{e^x-e^{-x}}{2}\right)\left(\frac{e^x+e^{-x}}{2}-\frac{e^x-e^{-x}}{2}\right) \\
@@ -18,7 +19,7 @@
 \end{split}
 \end{displaymath}
 
-\subsection{\ref{eq:hyperbolic_functions_3}}
+\textbf{\large \ref{eq:hyperbolic_functions_3}}
 \begin{displaymath}
 \begin{split}
 \cosh^2x+\sinh^2x &=\left(\frac{e^x+e^{-x}}{2}\right)^2+\left(\frac{e^x-e^{-x}}{2}\right)^2 \\
@@ -28,7 +29,7 @@
 \end{split}
 \end{displaymath}
 
-\subsection{\ref{eq:hyperbolic_functions_4}}
+\textbf{\large \ref{eq:hyperbolic_functions_4}}
 \begin{displaymath}
 \begin{split}
 \cosh (2x)  &=\cosh^2x+\sinh^2x \\
@@ -37,38 +38,9 @@
 \cosh x &=2\sinh^2\frac{x}{2}+1
 \end{split}
 \end{displaymath}
-\subsection{\ref{sequence_bounded_1}}
-    \begin{center}
-       $\varepsilon =1,\ \exists N>0,\ \mbox{当n>N时}\left|X_n-a\right|<1$\\
-        $\left|X_n\right|=\left|(X_n-a)+a\right|$\\
-        $\qquad\leqslant \left|x_n-a\right|+\left|a\right|$\\
-        $\leqslant 1+\left|a\right|$\\
-        $M=\max\{\left|X_n\right|,\left|X_2\right|,\dots,\left|X_n\right|,1+\left|a\right|\}$\\
-        $\forall n,\ \left|X_n\right|\leqslant M$
-    \end{center}
-\subsection{\ref{Serial_number_preservation_a}}
-    \begin{center}1\end{center}
-    $\mbox{由于}\lim\limits_{n\to\infty}x_n = a,\mbox{且}a>0$\\
-    $\varepsilon = \frac{a}{2},\ \exists N>0,n>N$\\
-    $\left|x_n-a\right|<\varepsilon$\\
-    $\left|x_n-a\right|<\frac{a}{2}$\\
-    $-\frac{a}{2}<x_n-a<\frac{a}{2}$\\
-    $\frac{a}{2}<x_n<1$
-    \begin{center}2\end{center}
-    用反证法，反设$a<0$.从某项起$x_n<0$矛盾
-\subsection{\ref{Serial_number_preservation_b}}
-\begin{displaymath}
-    \begin{split}
-        x_n&=b_n-a_n\\
-        \lim\limits_{n\to\infty} x_n &= \lim\limits_{n\to\infty} b_n-\lim\limits_{n\to\infty}a_n\\
-        \lim\limits_{n\to\infty} x_n &=b-a>0\\
-        \lim\limits_{n\to\infty} x_n &>0 \\
-        b_n-a_n&=x_n > 0\\
-        b_n&>a_n
-    \end{split}
-\end{displaymath}
 
-\subsection{\ref{limit_sequence}}
+\subsection{\centering 第\ref{zhang_limit}章}
+\textbf{\large \ref{limit_sequence}}
 \begin{displaymath}
     \begin{split}
         \mbox{反设}&\lim\limits_{n \to \infty}x_n =a,\ \lim\limits_{n \to \infty}x_n =b,\mbox{且}a<b\\
@@ -86,7 +58,40 @@
         &<\frac{2(b-a)}{3}
     \end{split}
 \end{displaymath}
-\subsection{\ref{limit_left_right}}
+
+\textbf{\large \ref{sequence_bounded_1}}
+    \begin{center}
+       $\varepsilon =1,\ \exists N>0,\ \mbox{当n>N时}\left|X_n-a\right|<1$\\
+        $\left|X_n\right|=\left|(X_n-a)+a\right|$\\
+        $\qquad\leqslant \left|x_n-a\right|+\left|a\right|$\\
+        $\leqslant 1+\left|a\right|$\\
+        $M=\max\{\left|X_n\right|,\left|X_2\right|,\dots,\left|X_n\right|,1+\left|a\right|\}$\\
+        $\forall n,\ \left|X_n\right|\leqslant M$
+    \end{center}
+\textbf{\large \ref{Serial_number_preservation_a}}
+    \begin{center}1\end{center}
+    $\mbox{由于}\lim\limits_{n\to\infty}x_n = a,\mbox{且}a>0$\\
+    $\varepsilon = \frac{a}{2},\ \exists N>0,n>N$\\
+    $\left|x_n-a\right|<\varepsilon$\\
+    $\left|x_n-a\right|<\frac{a}{2}$\\
+    $-\frac{a}{2}<x_n-a<\frac{a}{2}$\\
+    $\frac{a}{2}<x_n<1$
+    \begin{center}2\end{center}
+    用反证法，反设$a<0$.从某项起$x_n<0$矛盾
+
+\textbf{\large \ref{Serial_number_preservation_b}}
+\begin{displaymath}
+    \begin{split}
+        x_n&=b_n-a_n\\
+        \lim\limits_{n\to\infty} x_n &= \lim\limits_{n\to\infty} b_n-\lim\limits_{n\to\infty}a_n\\
+        \lim\limits_{n\to\infty} x_n &=b-a>0\\
+        \lim\limits_{n\to\infty} x_n &>0 \\
+        b_n-a_n&=x_n > 0\\
+        b_n&>a_n
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{limit_left_right}}
 $\lim\limits_{x\to x_0}f(x)\mbox{存在}\Rightarrow \lim\limits_{x\to x_0^+}f(x)=\lim\limits_{x\to x_0^-}f(x)$
 \begin{center}
     设$\lim\limits_{x\to x_0}=A$\\
@@ -111,24 +116,29 @@ $\lim\limits_{x\to x_0}f(x)\mbox{存在}\Leftarrow\lim\limits_{x\to x_0^+}f(x)=\
     \end{cases}$\\
     $\lim\limits_{x\to x_0}f(x)=A$
 \end{center}
-\subsection{\ref{limit_infinitesimal}}
-$$\lim\limits_{x\to x_o}f(x)=A\Rightarrow \begin{cases}
+
+\textbf{\large \ref{limit_infinitesimal}}
+\begin{center}
+   $\lim\limits_{x\to x_o}f(x)=A\Rightarrow \begin{cases}
     \alpha\mbox{为}x\rightarrow x_0 \mbox{时的无穷小}\\
     f(x)=\alpha+A
-\end{cases}$$
+\end{cases}$\\
 设$\lim\limits_{x\to x_o}f(x)=A,\ \mbox{记}f(x)-A=\alpha$\\
 只需证$\alpha$为无穷小。\\
 $\forall\varepsilon>0,\exists\delta>0,\mbox{当}0<\left|x-x_0\right|<\delta,\mbox{时}\left|f(x)-A\right|<\varepsilon$\\
 即$\left|\alpha-0\right|<\varepsilon$\\
-$\alpha\mbox{为}x\rightarrow x_0\mbox{时的无穷小}$
-$$\lim\limits_{x\to x_o}f(x)=A\Leftarrow \begin{cases}
+$\alpha\mbox{为}x\rightarrow x_0\mbox{时的无穷小}$\\
+$\lim\limits_{x\to x_o}f(x)=A\Leftarrow \begin{cases}
     \alpha\mbox{为}x\rightarrow x_0 \mbox{时的无穷小}\\
     f(x)=\alpha+A
-\end{cases}$$
+\end{cases}$\\
 $\forall \varepsilon >0,\ \exists \delta >0,\ \mbox{当}0<\left|x-x+0\right|<\delta,\ \left|\alpha\right|<\varepsilon$\\
 $\mbox{即}\left|f(x)-A\right|<\varepsilon$
 $\lim\limits_{x\to x_0}f(x)=A$
-\subsection{\ref{Infinity_infinitesimal}}
+\end{center}
+
+
+\textbf{\large \ref{Infinity_infinitesimal}}
 \begin{center}
     设$\lim\limits_{x\to x_0}f(x)=\infty$\\
 对$f(x)$为$x\rightarrow$时无穷大\\
@@ -138,7 +148,8 @@ $\left|f(x)\right|>M=\frac{1}{\varepsilon}$\\
 $\left|\frac{1}{f(x)}\right|<\varepsilon$\\
 $\frac{1}{f(x)}$为$x\rightarrow x_0$时的无穷小
 \end{center}
-\subsection{\ref{Extreme Four Operations_2}}
+
+\textbf{\large \ref{Extreme Four Operations_2}}
 \begin{displaymath}
     \begin{split}
         f(x)g(x)&=\left[A+\alpha\right]\left[B+\beta\right]\\
@@ -148,7 +159,7 @@ $\frac{1}{f(x)}$为$x\rightarrow x_0$时的无穷小
     \end{split}
 \end{displaymath}
 
-\subsection{\ref{eq:squeeze_theorem}}
+\textbf{\large \ref{eq:squeeze_theorem}}
 \begin{center}
     $\forall \varepsilon > 0$\\
 $\left|x_n-a\right|<\varepsilon\qquad\forall n>N_1$\\
@@ -159,7 +170,7 @@ $\left|z_n-a\right|<\varepsilon$\\
 $\lim\limits_{{n}\to{\infty}}z_n = a$
 \end{center}
 
-\subsection{\ref{limit_1_1}}
+\textbf{\large \ref{limit_1_1}}
 \begin{center}
     \begin{tikzpicture}[>=to]
         \begin{scope}
@@ -186,9 +197,9 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         \end{split}
     \end{displaymath}
 \end{center}
-\subsection{\ref{limit_1_2}}
+
+\textbf{\large \ref{limit_1_2}}
 \begin{displaymath}
-    \centering
     \begin{split}
         \left|1-\cos x\right|=1-\cos x&=2\sin^2 \frac{x}{2}\\
         &\leqslant 2\left(\frac{x}{2}\right)^2\\
@@ -199,25 +210,26 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         \lim\limits_{x\to 0}\cos x&=1
     \end{split}
 \end{displaymath}
-\subsection{\ref{limit_1_3}}
+
+\textbf{\large \ref{limit_1_3}}
 \begin{displaymath}
-    \centering
     \begin{split}
         \lim\limits_{x\to 0}\frac{\tan x}{x}&=\lim\limits_{x\to 0}\frac{\sin x}{x}\frac{1}{\cos x}\\
         &=\lim\limits_{x\to 0}\frac{\sin x}{x}\lim\limits_{x\to 0}\frac{1}{\cos x}\\
         &=1
     \end{split}
 \end{displaymath}
-\subsection{\ref{limit_1_4}}
+
+\textbf{\large \ref{limit_1_4}}
 \begin{displaymath}
-    \centering
     \begin{split}
         \lim\limits_{x\to 0}\frac{1-\cos x}{\frac{1}{2}x^2}&=\lim\limits_{x\to 0}\frac{2\sin^2\frac{x}{2}}{\frac{1}{2}x^2}\\
         &=\lim\limits_{x\to 0}\left(\frac{\sin \frac{x}{2}}{\frac{x}{2}}\right)^2\\
         &=1
     \end{split}
 \end{displaymath}
-\subsection{\ref{limit_1_5}}
+
+\textbf{\large \ref{limit_1_5}}
 \begin{displaymath}
     \centering
     \begin{split}
@@ -226,7 +238,8 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         \lim\limits_{x\to 0}\frac{\arcsin x}{x}=\lim\limits_{x\to 0}\frac{t}{\sin t}=1
     \end{split}
 \end{displaymath}
-\subsection{\ref{limit_1_6}}
+
+\textbf{\large \ref{limit_1_6}}
 \begin{displaymath}
     \centering
     \begin{split}
@@ -235,14 +248,16 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         \lim\limits_{x\to 0}\frac{\arctan x}{x}=\lim\limits_{t\to 0}\frac{t}{\tan t}=1
     \end{split}
 \end{displaymath}
-\subsection{\ref{limit_1_7}}
+
+\textbf{\large \ref{limit_1_7}}
 \begin{displaymath}
     \centering
     \begin{split}
         \lim\limits_{x\to 0}\frac{\ln \left(1+x\right)}{x}=\lim\limits_{x\to 0}\ln \left(1+x\right)^\frac{1}{x}=\ln e=1
     \end{split}
 \end{displaymath}
-\subsection{\ref{limit_1_8}}
+
+\textbf{\large \ref{limit_1_8}}
 \begin{displaymath}
     \centering
     \begin{split}
@@ -251,7 +266,8 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         \lim\limits_{x\to 0}\frac{e^x-1}{x}=\lim\limits_{t\to 0}\frac{t}{\ln\left(t+1\right)}=1
     \end{split}
 \end{displaymath}
-\subsection{\ref{limit_1_9}}
+
+\textbf{\large \ref{limit_1_9}}
 \begin{displaymath}
     \centering
     \begin{split}
@@ -259,7 +275,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
     \end{split}
 \end{displaymath}
 
-\subsection{\ref{limit_2_1}}
+\textbf{\large \ref{limit_2_1}}
 \begin{displaymath}
     \centering
     \begin{split}
@@ -278,9 +294,20 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
     \end{split}
 \end{displaymath}
 
-\subsection{\ref{derivative_1}}
+\subsection{\centering 第\ref{zhang_derivative}章}
+\textbf{\large \ref{derivative_continuity}}
 \begin{displaymath}
-    \centering
+    \begin{split}
+        f'(x_0)&=\lim\limits_{\vartriangle x\to 0}\frac{\vartriangle y}{\vartriangle x}\qquad\mbox{因为极限存在与无穷小的关系}\\
+        \frac{\vartriangle y}{\vartriangle x}&=f'(x_0)+\alpha\qquad\alpha \mbox{为}\vartriangle x\to 0\mbox{时的无穷小}\\
+        \vartriangle y&=f'(x_0)\vartriangle x+\alpha\vartriangle x\\
+        \lim\limits_{\vartriangle x\to 0}\vartriangle y&=\lim\limits_{\vartriangle x\to 0}\left[f'(x_0)\vartriangle x+\alpha\vartriangle x\right]=0\\
+        \lim\limits_{x\to x_0}f(x)&=f(x_0)\Leftrightarrow \lim\limits_{\vartriangle x\to 0}\left[f(x_0+\vartriangle x)-f(x_0)=0\right]\Leftrightarrow\lim\limits_{\vartriangle x\to 0}\vartriangle y=0 \\
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_1}}
+\begin{displaymath}
     \begin{split}
         \frac{d}{\mathrm{d}{x}}C&=\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0} \frac{C-C}{\vartriangle x}\\
@@ -288,9 +315,8 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
     \end{split}
 \end{displaymath}
 
-\subsection{\ref{derivative_2}}
+\textbf{\large \ref{derivative_2}}
 \begin{displaymath}
-    \centering
     \begin{split}
         \frac{d}{\mathrm{d}{x}}x^a&=\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}\\
         &=\frac{x^a-x_0^a}{x-x_0}\\
@@ -299,9 +325,8 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
     \end{split}
 \end{displaymath}
 
-\subsection{\ref{derivative_3}}
+\textbf{\large \ref{derivative_3}}
 \begin{displaymath}
-    \centering
     \begin{split}
         \frac{d}{\mathrm{d}{x}}a^x&=\lim\limits_{\vartriangle x\to 0}\frac{a^{x+\vartriangle x}-a^x}{\vartriangle x}\\
         &=a^x\lim\limits_{\vartriangle x\to 0}\frac{a^{\vartriangle x}-1}{\vartriangle x}\\
@@ -310,15 +335,15 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
     \end{split}
 \end{displaymath}
 
-\subsection{\ref{derivative_4}}
+\textbf{\large \ref{derivative_4}}
 \begin{displaymath}
     \begin{split}
         \frac{d}{\mathrm{d}{x}}e^x=e^x\ln e=e^x
     \end{split}
 \end{displaymath}
-\subsection{\ref{derivative_5}}
+
+\textbf{\large \ref{derivative_5}}
 \begin{displaymath}
-    \centering
     \begin{split}
         \frac{d}{\mathrm{d}{x}}\log_a^x&=\lim\limits_{\vartriangle x\to 0}\frac{\log_a^{x+\vartriangle x}-\log_a^x}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0}\frac{\log_a^{1+\frac{\vartriangle x}{x}}}{\vartriangle x}\\
@@ -327,29 +352,224 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         &=\frac{1}{x\ln a}
     \end{split}
 \end{displaymath}
-\subsection{\ref{derivative_6}}
+
+\textbf{\large \ref{derivative_6}}
 \begin{displaymath}
     \begin{split}
         \frac{d}{\mathrm{d}{x}}\ln^x&=\frac{1}{x\ln e}\\
         &=\frac{1}{x}
     \end{split}
 \end{displaymath}
-\subsection{\ref{derivative_sin}}
+
+\textbf{\large \ref{derivative_sin}}
 \begin{displaymath}
-    \centering
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\sin x&=\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\\
-        &=\frac{\sin (x_0 +\vartriangle x)-\sin x_0}{\vartriangle x}\\
-        &=\frac{2\cos(x_0+\frac{\vartriangle x}{2})\sin \frac{\vartriangle x}{2}}{\vartriangle x}\\
-        &=\cos(x_0+\frac{\vartriangle x}{2})\frac{\sin\frac{\vartriangle x}{2}}{\frac{\vartriangle x}{2}}\\
+        \frac{d}{\mathrm{d}{x}}\sin x&=\lim\limits_{\vartriangle x\to 0}\frac{\sin (x_0 +\vartriangle x)-\sin x_0}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0}\frac{2\cos(x_0+\frac{\vartriangle x}{2})\sin \frac{\vartriangle x}{2}}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0}\cos(x_0+\frac{\vartriangle x}{2})\frac{\sin\frac{\vartriangle x}{2}}{\frac{\vartriangle x}{2}}\\
         &=cos x_0
     \end{split}
 \end{displaymath}
-\subsection{\ref{derivative_cos}}
+
+\textbf{\large \ref{derivative_arcsin}}
 \begin{displaymath}
-    \centering
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\cos x&=\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}
+        \frac{d}{\mathrm{d}{x}}\arcsin x=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\sin y}{\mathrm{d}{y}}}\\
+        &=\frac{1}{\cos y}\\
+        &=\frac{1}{\sqrt{1-\sin^2 y}}\\
+        &=\frac{1}{\sqrt{1-x^2}}
     \end{split}
 \end{displaymath}
 
+\textbf{\large \ref{derivative_csc}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\csc x=\frac{d\frac{1}{\sin x}}{\mathrm{d}{x}}&=\frac{\frac{d 1}{\mathrm{d}{x}}\sin x-\frac{d\sin x}{\mathrm{d}{x}}\cdot 1}{\sin^2x}\\
+        &=\frac{-\cos x}{\sin^2x}\\
+        &=-\csc x\cdot\cot x
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_cos}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\cos x&=\lim\limits_{\vartriangle x\to 0}\frac{\cos(x_0+\vartriangle x)-cos(x_0)}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0}\frac{-2\sin \left(x_0+\frac{\vartriangle x}{2}\right)\sin\frac{\vartriangle x}{2}}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0}-\sin \left(x_0+\frac{\vartriangle x}{2}\right)\frac{\sin\frac{\vartriangle x}{2}}{\frac{\vartriangle x}{2}}\\
+        &=-\sin x
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_arccos}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\arccos x=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\cos y}{\mathrm{d}{y}}}\\
+        &=\frac{1}{-\sin y}\\
+        &=-\frac{1}{\sqrt{1-\cos^2 y}}\\
+        &=-\frac{1}{\sqrt{1-x^2}}
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_sec}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\sec x=\frac{d\frac{1}{\cos x}}{\mathrm{d}{x}}&=\frac{\frac{d 1}{\mathrm{d}{x}}\cos x-\frac{d\cos x}{\mathrm{d}{x}}\cdot 1}{\cos^2x}\\
+        &=\frac{\sin x}{\cos^2x}\\
+        &=\sec x\cdot\tan x
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_tan}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\tan x=\frac{d\frac{\sin x}{\cos x}}{\mathrm{d}{x}}&=\frac{\frac{d\sin x}{\mathrm{d}{x}}\cos x-\frac{d\cos x}{\mathrm{d}{x}}\sin x}{\cos^2x}\\
+        &=\frac{\cos^2 x+\sin^2 x}{\cos^2x}\\
+        &=\sec^2 x
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_arctan}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\arctan x=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\tan y}{\mathrm{d}{y}}}\\
+        &=\frac{1}{\sec y}\\
+        &=\frac{1}{1+\tan^2 y}\\
+        &=\frac{1}{1+x^2}
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_cot}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\cot x=\frac{d\frac{\cos x}{\sin x}}{\mathrm{d}{x}}&=\frac{\frac{d\cos x}{\mathrm{d}{x}}\sin x-\frac{d\sin x}{\mathrm{d}{x}}\cos x}{\sin^2x}\\
+        &=-\frac{\sin^2 x+\cos^2 x}{\cos^2x}\\
+        &=-\csc^2 x
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_arccot}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\operatorname{arccot}{x}=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\cot y}{\mathrm{d}{y}}}\\
+        &=\frac{1}{-\csc^2 y}\\
+        &=-\frac{1}{1+\cot^2 y}\\
+        &=-\frac{1}{1+x^2}
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_sinh}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\sinh x&=\frac{d}{\mathrm{d}{x}}\left(\frac{e^x-e^{-x}}{2}\right)\\
+                                    &=\frac{e^x+e^{-x}}{2}\\
+                                    &=\cosh x
+    \end{split}
+\end{displaymath}
+\textbf{\large \ref{derivative_cosh}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\cosh x&=\frac{d}{\mathrm{d}{x}}\left(\frac{e^x+e^{-x}}{2}\right)\\
+                                    &=\frac{e^x-e^{-x}}{2}\\
+                                    &=\sinh x
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_tanh}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\tanh x&=\frac{d}{\mathrm{d}{x}}\left(\frac{e^x-e^{-x}}{e^x+e^{-x}}\right)\\
+                                    &=\frac{\frac{d(e^x-e^{-x})}{\mathrm{d}{x}}(e^x+e^{-x})-\frac{d(e^x+e^{-x})}{\mathrm{d}{x}}(e^x-e^{-x})}{\left(e^x+e^{-x}\right)^2}\\
+                                    &=\frac{\left(e^x+e^{-x}\right)^2-\left(e^x-e^{-x}\right)^2}{\left(e^x+e^{-x}\right)^2}\\
+                                    &=\frac{2^2}{\left(e^x+e^{-x}\right)^2}\\
+                                    &=\frac{1}{\cosh x^2}
+                                \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_arcsinh}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\operatorname{arcsinh}{x} &=\frac{d}{\mathrm{d}{x}}\left[\ln(x+\sqrt{x^2+1})\right]\\
+                                    &=\frac{d \ln(x+\sqrt{x^2+1})}{\mathrm{d}{\left(x+\sqrt{x^2+1}\right)}}\cdot\frac{d \left(x+\sqrt{x^2+1}\right)}{\mathrm{d}{x}}\\
+                                    &=\frac{1}{x+\sqrt{x^2+1}}\cdot\left(\frac{dx}{dx}+\frac{d \left(\sqrt{x^2+1}\right)}{d\left(x^2+1\right)}\cdot\frac{d(x^2+1)}{dx}\right)\\
+                                    &=\frac{1}{x+\sqrt{x^2+1}}\cdot\left(1+\frac{1}{2\sqrt{x^2+1}}\cdot 2x\right)\\                                    
+                                    &=\frac{1}{x+\sqrt{x^2+1}}\cdot\frac{x+\sqrt{x^2+1}}{\sqrt{x^2+1}}\\
+                                    &=\frac{1}{\sqrt{x^2+1}}
+                                \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_arccosh}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\operatorname{arccosh}{x} &=\frac{d}{\mathrm{d}{x}}\left[\ln(x+\sqrt{x^2-1})\right]\\
+                                    &=\frac{d \ln(x+\sqrt{x^2-1})}{\mathrm{d}{\left(x+\sqrt{x^2-1}\right)}}\cdot\frac{d \left(x+\sqrt{x^2-1}\right)}{\mathrm{d}{x}}\\
+                                    &=\frac{1}{x+\sqrt{x^2-1}}\cdot\left(\frac{dx}{dx}+\frac{d \left(\sqrt{x^2-1}\right)}{d\left(x^2-1\right)}\cdot\frac{d(x^2-1)}{dx}\right)\\
+                                    &=\frac{1}{x+\sqrt{x^2-1}}\cdot\left(1+\frac{1}{2\sqrt{x^2-1}}\cdot 2x\right)\\                                    
+                                    &=\frac{1}{x+\sqrt{x^2-1}}\cdot\frac{x+\sqrt{x^2-1}}{\sqrt{x^2-1}}\\
+                                    &=\frac{1}{\sqrt{x^2-1}}
+                                \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_arctanh}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d}{\mathrm{d}{x}}\operatorname{arctanh}{x} &=\frac{d}{\mathrm{d}{x}}\left[\frac{1}{2}\ln(\frac{1+x}{1-x})\right]\\
+        &=\frac{1}{2}\cdot\frac{d\left[\ln(\frac{1+x}{1-x})\right]}{\mathrm{d}{\left(\frac{1+x}{1-x}\right)}}\cdot\frac{d\left(\frac{1+x}{1-x}\right)}{\mathrm{d}{x}}\\
+        &=\frac{1}{2}\cdot\frac{1}{\left(\frac{1+x}{1-x}\right)}\cdot\frac{\frac{d(1+x)}{\mathrm{d}{x}}(1-x)-\frac{d(1-x)}{\mathrm{d}{x}}(1+x)}{(1-x)^2}\\
+        &=\frac{1}{2}\cdot\frac{1-x}{1+x}\cdot\frac{(1-x)+(1+x)}{(1-x)^2}\\
+        &=\frac{1}{(1+x)(1-x)}\\
+        &=\frac{1}{1-x^2}
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{limit_operation_1}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d(CU)}{\mathrm{d}{x}}&=\lim\limits_{\vartriangle x\to 0}\frac{Cu(x+\vartriangle x)-Cu(x)}{\vartriangle x}\\
+        &=C\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)-u(x)}{\vartriangle x}\\
+        &=C\frac{d(U)}{\mathrm{d}{x}}
+    \end{split}
+\end{displaymath}
+\textbf{\large \ref{limit_operation_2}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d(U\pm V)}{\mathrm{d}{x}}&=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)-u(x)\pm v(x+\vartriangle x)-v(x)}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)-u(x)}{\vartriangle x}\pm\frac{v(x+\vartriangle x)-v(x)}{\vartriangle x}\\
+        &=\frac{d(U)}{\mathrm{d}{x}}\pm \frac{d(V)}{\mathrm{d}{x}}
+    \end{split}
+\end{displaymath}
+\textbf{\large \ref{limit_operation_3}}
+\begin{displaymath}
+    \begin{split}
+        \frac{d(UV)}{\mathrm{d}{x}}&=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)v(x+\vartriangle x)-u(x)v(x)-u(x)v(x+\vartriangle x)+u(x)v(x+\vartriangle x)}{\vartriangle x}\\
+            &=\lim\limits_{\vartriangle x\to 0}\frac{\left[u(x+\vartriangle x)+u(x)\right]v(x+\vartriangle x)+u(x)\left[v(x+\vartriangle x)-v(x)\right]}{\vartriangle x}\\
+            &=\frac{dU}{\mathrm{d}{x}}\lim\limits_{\vartriangle x\to 0}v(x+\vartriangle x)+u(x)\frac{dV}{\mathrm{d}{x}}\\
+            &=\frac{dU}{\mathrm{d}{x}}v(x)+u(x)\frac{dV}{\mathrm{d}{x}}
+    \end{split}
+\end{displaymath}
+\textbf{\large \ref{derivative_of_inverse_function}}
+\begin{displaymath}
+    \begin{split}
+        \left[f^{-1}(y)\right]'|_{y=y_0}&=\lim\limits_{y\to y_o}\frac{f^{-1}(y)-f^{-1}(y_0)}{y-y_0}\\
+        &=\lim\limits_{y\to y_o}\frac{x-x_0}{y-y_0}\\
+        &=\lim\limits_{x\to x_o}\frac{x-x_0}{f(x)-f(x_0)}\\
+        &=\lim\limits_{x\to x_o}\frac{1}{\frac{f(x)-f(x_0)}{x-x_0}}\\
+        &=\frac{1}{f'(x)}\\
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{derivative_of_composite_functions}}
+\begin{displaymath}
+    \begin{split}
+        \mbox{定义函数}\quad A(u)&=\begin{cases}
+            \frac{f(u)-f(u_0)}{u-u_0}. &u\neq u_0\\
+            f'(u_0),&u= u_0
+        \end{cases}\\
+        A(u)\mbox{在}u_o&\mbox{处连续,既有}\\
+        \lim\limits_{u\to u_o}A(u)&=A(u_0)=f'(u_0)\\
+        \mbox{由恒等式}f(u)-f(u_0)&=A(u)(u-u_0)\mbox{我们有}\\
+        \frac{F(x)-F(x_0)}{x-x_0}&=\frac{f\left[g(x)\right]-f\left[g(x_0)\right]}{x-x_0}\\
+        &=A\left[g(x)\right]\frac{g(x)-g(x_0)}{x-x_0}\\
+        \lim\limits_{x\to x_0}\frac{F(x)-F(x_0)}{x-x_0}&=\lim\limits_{x\to x_0}A\left[g(x)\right]\frac{g(x)-g(x_0)}{x-x_0}\\
+        F'(x_0)&=f'(g(x_0))g'(x_0)
+    \end{split}
+\end{displaymath}
