@@ -87,12 +87,20 @@
 \contentsline {subsection}{\numberline {10.9}高阶求导运算法则}{33}{}%
 \contentsline {subsection}{\numberline {10.10}隐函数求导}{33}{}%
 \contentsline {subsection}{\numberline {10.11}参数方程求导}{33}{}%
-\contentsline {section}{\numberline {11}积分}{34}{}%
-\contentsline {subsection}{\numberline {11.1}幂数，指数，对数}{34}{}%
-\contentsline {subsection}{\numberline {11.2}三角函数}{34}{}%
-\contentsline {subsection}{\numberline {11.3}积分运算}{34}{}%
-\contentsline {section}{\numberline {12}零散的一些}{35}{}%
-\contentsline {section}{\numberline {13}证明}{37}{}%
-\contentsline {subsection}{\numberline {13.1}\centering 第\ref {zhang_trigonometric_function}章}{37}{}%
-\contentsline {subsection}{\numberline {13.2}\centering 第\ref {zhang_limit}章}{38}{}%
-\contentsline {subsection}{\numberline {13.3}\centering 第\ref {zhang_derivative}章}{43}{}%
+\contentsline {section}{\numberline {11}微分}{34}{}%
+\contentsline {subsection}{\numberline {11.1}定义}{34}{}%
+\contentsline {subsection}{\numberline {11.2}微分法则}{34}{}%
+\contentsline {subsubsection}{\numberline {11.2.1}核心根本}{34}{}%
+\contentsline {subsubsection}{\numberline {11.2.2}四则运算}{34}{}%
+\contentsline {subsubsection}{\numberline {11.2.3}复合运算}{35}{}%
+\contentsline {subsubsection}{\numberline {11.2.4}近似计算公式}{35}{}%
+\contentsline {section}{\numberline {12}积分}{36}{}%
+\contentsline {subsection}{\numberline {12.1}幂数，指数，对数}{36}{}%
+\contentsline {subsection}{\numberline {12.2}三角函数}{36}{}%
+\contentsline {subsection}{\numberline {12.3}积分运算}{36}{}%
+\contentsline {section}{\numberline {13}零散的一些}{37}{}%
+\contentsline {section}{\numberline {14}证明}{39}{}%
+\contentsline {subsection}{\numberline {14.1}\centering 第\ref {zhang_trigonometric_function}章}{39}{}%
+\contentsline {subsection}{\numberline {14.2}\centering 第\ref {zhang_limit}章}{40}{}%
+\contentsline {subsection}{\numberline {14.3}\centering 第\ref {zhang_derivative}章}{45}{}%
+\contentsline {subsection}{\numberline {14.4}\centering 第\ref {zhang_differential}章}{52}{}%

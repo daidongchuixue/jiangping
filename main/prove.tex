@@ -309,7 +309,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_1}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}C&=\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\\
+        (C)'&=\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0} \frac{C-C}{\vartriangle x}\\
         &=0
     \end{split}
@@ -318,7 +318,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_2}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}x^a&=\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}\\
+        \left(x^a\right)'&=\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}\\
         &=\frac{x^a-x_0^a}{x-x_0}\\
         &=\frac{(x-x_0)\left(x^{a-1}+x^{a-2}x_0+\cdots+xx_0^{a-2}+x_0^{a-1}\right)}{x-x_0}\\
         &=ax_0^{a-1}
@@ -328,7 +328,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_3}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}a^x&=\lim\limits_{\vartriangle x\to 0}\frac{a^{x+\vartriangle x}-a^x}{\vartriangle x}\\
+        \left(a^x\right)'&=\lim\limits_{\vartriangle x\to 0}\frac{a^{x+\vartriangle x}-a^x}{\vartriangle x}\\
         &=a^x\lim\limits_{\vartriangle x\to 0}\frac{a^{\vartriangle x}-1}{\vartriangle x}\\
         &=a^x\lim\limits_{\vartriangle x\to 0}\frac{e^{\vartriangle x \ln a}-1}{\vartriangle x}\\
         &=a^x\ln a
@@ -338,14 +338,14 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_4}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}e^x=e^x\ln e=e^x
+        \left(e^x\right)'=e^x\ln e=e^x
     \end{split}
 \end{displaymath}
 
 \textbf{\large \ref{derivative_5}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\log_a^x&=\lim\limits_{\vartriangle x\to 0}\frac{\log_a^{x+\vartriangle x}-\log_a^x}{\vartriangle x}\\
+        \left(\log_a^x\right)'&=\lim\limits_{\vartriangle x\to 0}\frac{\log_a^{x+\vartriangle x}-\log_a^x}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0}\frac{\log_a^{1+\frac{\vartriangle x}{x}}}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0}\frac{\ln{1+\frac{\vartriangle x}{x}}}{\ln a\vartriangle x}\\
         &=\frac{1}{\ln a}\lim\limits_{\vartriangle x\to 0}\frac{\frac{\vartriangle x}{x}}{\vartriangle x}\\
@@ -356,7 +356,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_6}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\ln^x&=\frac{1}{x\ln e}\\
+        \left(\ln^x\right)'&=\frac{1}{x\ln e}\\
         &=\frac{1}{x}
     \end{split}
 \end{displaymath}
@@ -364,7 +364,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_sin}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\sin x&=\lim\limits_{\vartriangle x\to 0}\frac{\sin (x_0 +\vartriangle x)-\sin x_0}{\vartriangle x}\\
+        (\sin x)'&=\lim\limits_{\vartriangle x\to 0}\frac{\sin (x_0 +\vartriangle x)-\sin x_0}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0}\frac{2\cos(x_0+\frac{\vartriangle x}{2})\sin \frac{\vartriangle x}{2}}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0}\cos(x_0+\frac{\vartriangle x}{2})\frac{\sin\frac{\vartriangle x}{2}}{\frac{\vartriangle x}{2}}\\
         &=cos x_0
@@ -374,7 +374,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_arcsin}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\arcsin x=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\sin y}{\mathrm{d}{y}}}\\
+        (\arcsin x)'=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\sin y}{\mathrm{d}{y}}}\\
         &=\frac{1}{\cos y}\\
         &=\frac{1}{\sqrt{1-\sin^2 y}}\\
         &=\frac{1}{\sqrt{1-x^2}}
@@ -384,7 +384,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_csc}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\csc x=\frac{d\frac{1}{\sin x}}{\mathrm{d}{x}}&=\frac{\frac{d 1}{\mathrm{d}{x}}\sin x-\frac{d\sin x}{\mathrm{d}{x}}\cdot 1}{\sin^2x}\\
+        (\csc x)'=(\frac{1}{\sin x})‘&=\frac{(1)'\cdot sin x-(\sin x)'\cdot 1}{\sin^2x}\\
         &=\frac{-\cos x}{\sin^2x}\\
         &=-\csc x\cdot\cot x
     \end{split}
@@ -393,7 +393,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_cos}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\cos x&=\lim\limits_{\vartriangle x\to 0}\frac{\cos(x_0+\vartriangle x)-cos(x_0)}{\vartriangle x}\\
+        (\cos x)'&=\lim\limits_{\vartriangle x\to 0}\frac{\cos(x_0+\vartriangle x)-cos(x_0)}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0}\frac{-2\sin \left(x_0+\frac{\vartriangle x}{2}\right)\sin\frac{\vartriangle x}{2}}{\vartriangle x}\\
         &=\lim\limits_{\vartriangle x\to 0}-\sin \left(x_0+\frac{\vartriangle x}{2}\right)\frac{\sin\frac{\vartriangle x}{2}}{\frac{\vartriangle x}{2}}\\
         &=-\sin x
@@ -403,7 +403,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_arccos}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\arccos x=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\cos y}{\mathrm{d}{y}}}\\
+        (\arccos x)'=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\cos y}{\mathrm{d}{y}}}\\
         &=\frac{1}{-\sin y}\\
         &=-\frac{1}{\sqrt{1-\cos^2 y}}\\
         &=-\frac{1}{\sqrt{1-x^2}}
@@ -413,7 +413,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_sec}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\sec x=\frac{d\frac{1}{\cos x}}{\mathrm{d}{x}}&=\frac{\frac{d 1}{\mathrm{d}{x}}\cos x-\frac{d\cos x}{\mathrm{d}{x}}\cdot 1}{\cos^2x}\\
+        (\sec x)'=\left(\frac{1}{\cos x}\right)'&=\frac{(1)'\cdot\cos x-(\cos x)'\cdot 1}{\cos^2x}\\
         &=\frac{\sin x}{\cos^2x}\\
         &=\sec x\cdot\tan x
     \end{split}
@@ -422,7 +422,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_tan}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\tan x=\frac{d\frac{\sin x}{\cos x}}{\mathrm{d}{x}}&=\frac{\frac{d\sin x}{\mathrm{d}{x}}\cos x-\frac{d\cos x}{\mathrm{d}{x}}\sin x}{\cos^2x}\\
+        (\tan x)'=\left(\frac{\sin x}{\cos x}\right)'&=\frac{(\sin x)'\cos x-(\cos x)'\sin x}{\cos^2x}\\
         &=\frac{\cos^2 x+\sin^2 x}{\cos^2x}\\
         &=\sec^2 x
     \end{split}
@@ -431,7 +431,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_arctan}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\arctan x=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\tan y}{\mathrm{d}{y}}}\\
+        (\arctan x)'=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\tan y}{\mathrm{d}{y}}}\\
         &=\frac{1}{\sec y}\\
         &=\frac{1}{1+\tan^2 y}\\
         &=\frac{1}{1+x^2}
@@ -441,7 +441,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_cot}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\cot x=\frac{d\frac{\cos x}{\sin x}}{\mathrm{d}{x}}&=\frac{\frac{d\cos x}{\mathrm{d}{x}}\sin x-\frac{d\sin x}{\mathrm{d}{x}}\cos x}{\sin^2x}\\
+        (\cot x)'=\left(\frac{\cos x}{\sin x}\right)'&=\frac{(\cos x)'\sin x-(\sin x)'\cos x}{\sin^2x}\\
         &=-\frac{\sin^2 x+\cos^2 x}{\cos^2x}\\
         &=-\csc^2 x
     \end{split}
@@ -450,7 +450,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_arccot}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\operatorname{arccot}{x}=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\cot y}{\mathrm{d}{y}}}\\
+        (\operatorname{arccot}{x})'=\frac{1}{\frac{dx}{\mathrm{d}{y}}}&=\frac{1}{\frac{d\cot y}{\mathrm{d}{y}}}\\
         &=\frac{1}{-\csc^2 y}\\
         &=-\frac{1}{1+\cot^2 y}\\
         &=-\frac{1}{1+x^2}
@@ -460,7 +460,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_sinh}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\sinh x&=\frac{d}{\mathrm{d}{x}}\left(\frac{e^x-e^{-x}}{2}\right)\\
+        (\sinh x)'&=\left(\frac{e^x-e^{-x}}{2}\right)'\\
                                     &=\frac{e^x+e^{-x}}{2}\\
                                     &=\cosh x
     \end{split}
@@ -468,7 +468,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_cosh}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\cosh x&=\frac{d}{\mathrm{d}{x}}\left(\frac{e^x+e^{-x}}{2}\right)\\
+        (\cosh x)'&=\left(\frac{e^x+e^{-x}}{2}\right)'\\
                                     &=\frac{e^x-e^{-x}}{2}\\
                                     &=\sinh x
     \end{split}
@@ -477,7 +477,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_tanh}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\tanh x&=\frac{d}{\mathrm{d}{x}}\left(\frac{e^x-e^{-x}}{e^x+e^{-x}}\right)\\
+        (\tanh x)'&=\left(\frac{e^x-e^{-x}}{e^x+e^{-x}}\right)'\\
                                     &=\frac{\frac{d(e^x-e^{-x})}{\mathrm{d}{x}}(e^x+e^{-x})-\frac{d(e^x+e^{-x})}{\mathrm{d}{x}}(e^x-e^{-x})}{\left(e^x+e^{-x}\right)^2}\\
                                     &=\frac{\left(e^x+e^{-x}\right)^2-\left(e^x-e^{-x}\right)^2}{\left(e^x+e^{-x}\right)^2}\\
                                     &=\frac{2^2}{\left(e^x+e^{-x}\right)^2}\\
@@ -488,7 +488,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_arcsinh}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\operatorname{arcsinh}{x} &=\frac{d}{\mathrm{d}{x}}\left[\ln(x+\sqrt{x^2+1})\right]\\
+        (\operatorname{arcsinh}{x})' &=\left[\ln(x+\sqrt{x^2+1})\right]'\\
                                     &=\frac{d \ln(x+\sqrt{x^2+1})}{\mathrm{d}{\left(x+\sqrt{x^2+1}\right)}}\cdot\frac{d \left(x+\sqrt{x^2+1}\right)}{\mathrm{d}{x}}\\
                                     &=\frac{1}{x+\sqrt{x^2+1}}\cdot\left(\frac{dx}{dx}+\frac{d \left(\sqrt{x^2+1}\right)}{d\left(x^2+1\right)}\cdot\frac{d(x^2+1)}{dx}\right)\\
                                     &=\frac{1}{x+\sqrt{x^2+1}}\cdot\left(1+\frac{1}{2\sqrt{x^2+1}}\cdot 2x\right)\\                                    
@@ -500,7 +500,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_arccosh}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\operatorname{arccosh}{x} &=\frac{d}{\mathrm{d}{x}}\left[\ln(x+\sqrt{x^2-1})\right]\\
+        (\operatorname{arccosh}{x})' &=\left[\ln(x+\sqrt{x^2-1})\right]'\\
                                     &=\frac{d \ln(x+\sqrt{x^2-1})}{\mathrm{d}{\left(x+\sqrt{x^2-1}\right)}}\cdot\frac{d \left(x+\sqrt{x^2-1}\right)}{\mathrm{d}{x}}\\
                                     &=\frac{1}{x+\sqrt{x^2-1}}\cdot\left(\frac{dx}{dx}+\frac{d \left(\sqrt{x^2-1}\right)}{d\left(x^2-1\right)}\cdot\frac{d(x^2-1)}{dx}\right)\\
                                     &=\frac{1}{x+\sqrt{x^2-1}}\cdot\left(1+\frac{1}{2\sqrt{x^2-1}}\cdot 2x\right)\\                                    
@@ -512,7 +512,7 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{derivative_arctanh}}
 \begin{displaymath}
     \begin{split}
-        \frac{d}{\mathrm{d}{x}}\operatorname{arctanh}{x} &=\frac{d}{\mathrm{d}{x}}\left[\frac{1}{2}\ln(\frac{1+x}{1-x})\right]\\
+        (\operatorname{arctanh}{x})' &=\left[\frac{1}{2}\ln(\frac{1+x}{1-x})\right]'\\
         &=\frac{1}{2}\cdot\frac{d\left[\ln(\frac{1+x}{1-x})\right]}{\mathrm{d}{\left(\frac{1+x}{1-x}\right)}}\cdot\frac{d\left(\frac{1+x}{1-x}\right)}{\mathrm{d}{x}}\\
         &=\frac{1}{2}\cdot\frac{1}{\left(\frac{1+x}{1-x}\right)}\cdot\frac{\frac{d(1+x)}{\mathrm{d}{x}}(1-x)-\frac{d(1-x)}{\mathrm{d}{x}}(1+x)}{(1-x)^2}\\
         &=\frac{1}{2}\cdot\frac{1-x}{1+x}\cdot\frac{(1-x)+(1+x)}{(1-x)^2}\\
@@ -524,26 +524,26 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
 \textbf{\large \ref{limit_operation_1}}
 \begin{displaymath}
     \begin{split}
-        \frac{d(CU)}{\mathrm{d}{x}}&=\lim\limits_{\vartriangle x\to 0}\frac{Cu(x+\vartriangle x)-Cu(x)}{\vartriangle x}\\
+        \left[Cu(x)\right]'&=\lim\limits_{\vartriangle x\to 0}\frac{Cu(x+\vartriangle x)-Cu(x)}{\vartriangle x}\\
         &=C\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)-u(x)}{\vartriangle x}\\
-        &=C\frac{d(U)}{\mathrm{d}{x}}
+        &=Cu'(x)
     \end{split}
 \end{displaymath}
 \textbf{\large \ref{limit_operation_2}}
 \begin{displaymath}
     \begin{split}
-        \frac{d(U\pm V)}{\mathrm{d}{x}}&=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)-u(x)\pm v(x+\vartriangle x)-v(x)}{\vartriangle x}\\
-        &=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)-u(x)}{\vartriangle x}\pm\frac{v(x+\vartriangle x)-v(x)}{\vartriangle x}\\
-        &=\frac{d(U)}{\mathrm{d}{x}}\pm \frac{d(V)}{\mathrm{d}{x}}
+            (u(x)\pm v(x))'&=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)-u(x)\pm v(x+\vartriangle x)-v(x)}{\vartriangle x}\\
+        &=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)-u(x)}{\vartriangle x}\pm\lim\limits_{\vartriangle x\to 0}\frac{v(x+\vartriangle x)-v(x)}{\vartriangle x}\\
+        &=u'(x)\pm v'(x)
     \end{split}
 \end{displaymath}
 \textbf{\large \ref{limit_operation_3}}
 \begin{displaymath}
     \begin{split}
-        \frac{d(UV)}{\mathrm{d}{x}}&=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)v(x+\vartriangle x)-u(x)v(x)-u(x)v(x+\vartriangle x)+u(x)v(x+\vartriangle x)}{\vartriangle x}\\
-            &=\lim\limits_{\vartriangle x\to 0}\frac{\left[u(x+\vartriangle x)+u(x)\right]v(x+\vartriangle x)+u(x)\left[v(x+\vartriangle x)-v(x)\right]}{\vartriangle x}\\
-            &=\frac{dU}{\mathrm{d}{x}}\lim\limits_{\vartriangle x\to 0}v(x+\vartriangle x)+u(x)\frac{dV}{\mathrm{d}{x}}\\
-            &=\frac{dU}{\mathrm{d}{x}}v(x)+u(x)\frac{dV}{\mathrm{d}{x}}
+        \left[u(x)\cdot v(x)\right]'&=\lim\limits_{\vartriangle x\to 0}\frac{u(x+\vartriangle x)v(x+\vartriangle x)-u(x)v(x)-u(x)v(x+\vartriangle x)+u(x)v(x+\vartriangle x)}{\vartriangle x}\\
+            &=\lim\limits_{\vartriangle x\to 0}\frac{\left[u(x+\vartriangle x)-u(x)\right]v(x+\vartriangle x)+u(x)\left[v(x+\vartriangle x)-v(x)\right]}{\vartriangle x}\\
+            &=u'(x)\lim\limits_{\vartriangle x\to 0}v(x+\vartriangle x)+u(x)v'(x)\\
+            &=u'(x)v(x)+v'(x)u(x)
     \end{split}
 \end{displaymath}
 \textbf{\large \ref{derivative_of_inverse_function}}
@@ -573,3 +573,26 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         F'(x_0)&=f'(g(x_0))g'(x_0)
     \end{split}
 \end{displaymath}
+
+\subsection{\centering 第\ref{zhang_differential}章}
+\textbf{\large \ref{differential_to_derivative}}
+\begin{displaymath}
+    \begin{split}
+            \vartriangle y&=A\vartriangle x+\circ(\vartriangle x)\\
+            \frac{\vartriangle y}{\vartriangle x}&=A+\frac{\circ(\vartriangle x)}{\vartriangle x}\\
+            \lim\limits_{\vartriangle x\to 0}\frac{\vartriangle y}{\vartriangle x}&=\lim\limits_{\vartriangle x\to 0}\left[A+\frac{\circ(\vartriangle x)}{\vartriangle x}\right]\\
+            f'(x_0)&=A+0\\
+            f'(x_0)&=A
+        \end{split}
+\end{displaymath}
+\textbf{\large \ref{derivative_to_differential}}
+\begin{center}
+            $\mbox{设}f(x)\mbox{在}x_0\mbox{点可导},f'(x_0)=\lim\limits_{\vartriangle x \to 0}\frac{\vartriangle y}{\vartriangle x}\mbox{存在}$\\
+            $\left(\mbox{极限与无穷小的关系：}\lim f(x)=A\Leftrightarrow f(x)=A+\alpha\right)$\\
+            $\frac{\vartriangle y}{\vartriangle x}=f'(x_0)+\alpha$\\
+            $\vartriangle y=f'(x_0)\vartriangle x+\alpha \vartriangle x$\\
+            $\mbox{其中}\alpha \mbox{为}\vartriangle x\to 0\mbox{时的无穷小。}$\\
+            $\lim\limits_{\vartriangle x\to 0}\frac{\alpha \vartriangle x}{\vartriangle x}=\lim\limits_{\vartheta x\to 0}\alpha = 0$\\
+            $\alpha \vartriangle x=\circ(\vartriangle x)$\\
+            $\vartriangle y=f'(x_0)\vartriangle x+\circ(\vartriangle x)$
+\end{center}
