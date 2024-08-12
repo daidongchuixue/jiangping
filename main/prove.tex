@@ -170,6 +170,30 @@ $\left|z_n-a\right|<\varepsilon$\\
 $\lim\limits_{{n}\to{\infty}}z_n = a$
 \end{center}
 
+\textbf{\large \ref{limit_3_1}}
+\begin{displaymath}
+    \begin{split}
+        \left|f(x)-\sin x_0\right|&=\left|\sin x-\sin x_0\right|\\
+                                &=\left|2\cos(\frac{x+x_0}{2})\sin(\frac{x-x_0}{2})\right|\\
+                                &\leqslant 2\left|\sin(\frac{x-x_0}{2})\right|\\
+                                &\leqslant 2\frac{\left|x-x_0\right|}{2}= \left|x-x_0\right|
+    \end{split}
+\end{displaymath}
+\centerline{ $\forall \varepsilon,\exists \delta =\varepsilon,\mbox{当}0<\left|x-x_0\right|<\delta\mbox{时}$}
+\centerline{$\left|\sin x-\sin x_0\right| \leqslant\left|x-x_0\right|<\varepsilon$}
+
+\textbf{\large \ref{limit_3_2}}
+\begin{displaymath}
+    \begin{split}
+        \left|f(x)-\cos x_0\right|&=\left|\cos x-\cos x_0\right|\\
+                                &=\left|-2\sin(\frac{x+x_0}{2})\sin(\frac{x-x_0}{2})\right|\\
+                                &\leqslant 2\left|\sin(\frac{x-x_0}{2})\right|\\
+                                &\leqslant 2\frac{\left|x-x_0\right|}{2}= \left|x-x_0\right|
+    \end{split}
+\end{displaymath}
+\centerline{ $\forall \varepsilon,\exists \delta =\varepsilon,\mbox{当}0<\left|x-x_0\right|<\delta\mbox{时}$}
+\centerline{$\left|\cos x-\cos x_0\right| \leqslant\left|x-x_0\right|<\varepsilon$}
+
 \textbf{\large \ref{limit_1_1}}
 \begin{center}
     \begin{tikzpicture}[>=to]
@@ -596,3 +620,69 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
             $\alpha \vartriangle x=\circ(\vartriangle x)$\\
             $\vartriangle y=f'(x_0)\vartriangle x+\circ(\vartriangle x)$
 \end{center}
+
+\textbf{\large \ref{differential_operation_rule_1}}
+\begin{displaymath}
+    \begin{split}
+        d(u\pm v)&=(u\pm v)'dx\\
+                &=(u)'dx \pm (v')dx\\
+                &=du\pm dv
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{differential_operation_rule_2}}
+\begin{displaymath}
+    \begin{split}
+        d(u\cdot v)&=(u\cdot v)'dx\\
+                &=(u)'vdx - (v')udx\\
+                &=vdu - udv
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{differential_operation_rule_3}}
+\begin{displaymath}
+    \begin{split}
+        d\left(\frac{u}{v}\right)&=\left(\frac{u}{v}\right)'dx\\
+                &=\frac{(u)'v - (v')u}{v^2}dx\\
+                &=\frac{vdu - udv}{v^2}
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{Fermat_Lemma}}
+\begin{center}
+    $\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)}{\vartriangle x}=f'(x_0)$\\
+    $f(x_0+\vartriangle x)-f(x_0)\leqslant 0$\\
+    $\begin{cases}
+        \vartriangle x>0\begin{cases}
+            \frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\leqslant 0\Rightarrow f'(x_0^+) =\lim\limits_{\vartriangle x \to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\leqslant 0
+        \end{cases}\\
+        \vartriangle x<0\begin{cases}
+            \frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\geqslant 0\Rightarrow f'(x_0^-) =\lim\limits_{\vartriangle x \to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\geqslant 0
+        \end{cases}
+    \end{cases}$\\
+    $f'(x_0)=f'(x_0^+)=f'(x_0^-)\Rightarrow f'(x_0)= 0$
+\end{center}
+
+\textbf{\large \ref{Rolle's theorem}}
+\begin{center}
+    $M=\max\{f(x)|x\in[a,b]\},m=\min\{f(x)|x\in[a,b]\}$
+    $\begin{cases}
+        M=m\Rightarrow M=m=f(a)=f(b),\mbox{此时}f(x)\mbox{为常数},\forall \xi \in(a,b),f'(\xi)=0\\
+        M>m \begin{cases}
+            f(a)>m \Rightarrow \exists \xi \in(a,b),f(\xi)=m,\mbox{根据费马引理},f'(\xi)=0\\
+            f(a)<M5 \Rightarrow \exists \xi \in(a,b),f(\xi)=M,\mbox{根据费马引理},f'(\xi)=0\\
+        \end{cases}
+    \end{cases}$
+\end{center}
+
+\textbf{\large \ref{Lagrange's theorem}}
+\begin{displaymath}
+    \begin{split}
+        \varphi(x)&=f(x)-\frac{f(b)-f(a)}{b-a}x\\
+        \varphi(a)&=f(a)-\frac{f(b)-f(a)}{b-a}a=\frac{bf(a)-af(b)}{b-a}\\
+        \varphi(b)&=f(b)-\frac{f(b)-f(a)}{b-a}b=\frac{bf(a)-af(b)}{b-a}\\
+        \varphi(a)&=\varphi(b),\exists \xi\in(a,b),\varphi'(\xi)=0\\
+        f'(\xi)&=\frac{f(b)-f(a)}{b-a}\\
+        f'(\xi)(b-a)&7=f(b)-f(a)
+    \end{split}
+\end{displaymath}

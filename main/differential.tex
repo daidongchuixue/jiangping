@@ -54,17 +54,113 @@
 \end{figure}
 \subsubsection{四则运算}
 \begin{align}
-    d\left(u\pm v\right)=du\pm dv\\
-    d(uv)=vdu+udv\\
-    d\left(\frac{u}{v}\right)=\frac{vdu+udv}{v^2}
+    d\left(u\pm v\right)=du\pm dv\label{differential_operation_rule_1}\\
+    d(uv)=vdu+udv \label{differential_operation_rule_2}\\
+    d\left(\frac{u}{v}\right)=\frac{vdu+udv}{v^2} \label{differential_operation_rule_3}
 \end{align}
 \subsubsection{复合运算}
 \begin{center}
-    $y=f(u),u=g(x)$可微，则$y=f(g(x))$也可微，且
-    $$dy=f'(u)du=f'(u)g(x)dx$$
+    可微$\begin{cases}
+        y=f(u)\\
+        u=g(x)
+    \end{cases}\Rightarrow \begin{cases}
+        dy=f'(u)du\\
+        du=g'(x)dx
+    \end{cases}$则$y=f(g(x))$也可微\\
+    且$  dy=f'(u)du=f'(u)g(x)dx$\\
     $u$是否为中间变量都成立，微分的不变性。
 \end{center}
 \subsubsection{近似计算公式}
-$\vartriangle x\rightarrow 0\mbox{时候}dy\approx \vartriangle y$
-$$f(x_0+\vartriangle x)-f(x_0)\approx dy=f'(x_0)\vartriangle x$$
-$$f(x_0+\vartriangle x)\approx f(x_0)+f'(x_0)\vartriangle x$$
+\begin{center}
+    $\vartriangle x\rightarrow 0, dy\approx \vartriangle y\begin{cases}
+        dy=f'(x_0)\vartriangle x\\
+        \vartriangle y=f(x_0+\vartriangle x)-f(x_0)
+    \end{cases}\begin{cases}
+        f(x_0+\vartriangle x)\approx f(x_0)+f'(x_0)\vartriangle x\\
+        f(x)\approx f(x_0)+f'(x_0)(x-x_0)\\
+        x_0=0\begin{cases}
+            f(x)\approx f(0)+f'(0)x\\
+            \sqrt{n}\approx 1+\frac{1}{n}x\\
+            \sin x \approx x\\
+            \tan x \approx x\\
+            e^x \approx 1+x\\
+            \ln(1+n)\approx x
+        \end{cases}
+    \end{cases}$\\
+\end{center}
+\subsubsection{奇偶函数导数}
+\begin{center}
+    偶函数导数为奇函数$f(x)=f(-x)\Leftrightarrow f'(x)=-f'(-x)$\\
+    奇函数导数为偶函数$f(x)=-f(-x)\Leftrightarrow f'(x)=f'(-x)$
+\end{center}
+\subsubsection{区间恒为0}
+$$\mbox{若}f'(x)\mbox{在区间恒为零，则}f(x)\mbox{在区间}I\mbox{上为一常数}$$
+$\mbox{设}x_1,x_2\mbox{为区间}I\mbox{内任意两点}x_1<x_2$\\
+$f(x_2)-f(x_1)=f'(\xi)(x_2-x_1)\equiv 0 $\\
+$f(x_2)\equiv f(x_1)=C$
+\subsection{中值定理}
+\subsubsection{费马引理}
+\begin{center}
+    $f(x)\qquad \forall x\in \mathring{U}(x_0)\begin{cases}
+        f(x)\leqslant f(x_0)\qquad f(x)\mbox{在}x_0\mbox{处取极大值}\\
+        f(x)\geqslant f(x_0)\qquad f(x)\mbox{在}x_0\mbox{处取极小值}
+    \end{cases}$
+\end{center}
+\begin{equation}
+    \mbox{如果可导函数}y=f(x)\mbox{在}x_0\mbox{取极值，则}f'(x_0)=0\label{Fermat_Lemma}
+\end{equation}
+\subsubsection{罗尔定理}
+\begin{center}
+    $\mbox{如果函数}f(x)\mbox{满}\begin{cases}
+    \mbox{在闭区间$\left[a,b\right]$上连续}\\
+    \mbox{在开区间(a,b)可导}\\
+    f(a)=f(b)
+    \end{cases}$\\
+    \begin{align}
+        \mbox{则至少有一点}\xi\in(a,b),f'(\xi)=0\label{Rolle's theorem}
+    \end{align}
+\end{center}
+\begin{figure}[htp]
+    \centering
+    \begin{tikzpicture}[>=latex]
+        \draw[->](-.5,0)--(8,0)node[right]{$x$};
+        \draw[->](0,-.5)--(0,4)node[above]{$y$};
+        \draw[domain=0:2*pi,samples=1000] plot(\x+1,{sin(\x r)+2});      
+        \draw[dashed] (1,{2})--(1,0)node[below]{$a$};    
+        \draw[dashed] ({1+(2*pi)},{2})--({1+(2*pi)},0)node[below]{$b$};   
+        \draw[dashed] (1,{2})node[left]{$A$}--({1+(2*pi)},{2})node[right]{$B$};
+        \draw[dashed] ({1+(.5*pi)},{sin(pi/2 r)+2})--({1+(.5*pi)},0)node[below]{$\xi$};
+        \draw[dashed] (1.5,{sin(pi/2 r)+2})--({.5+pi},{sin(pi/2 r)+2});
+    \end{tikzpicture}
+\end{figure}
+\subsubsection{拉格朗日定理$\left(\mbox{微分中值定理}\right)$}
+\begin{figure}[htp]
+    \centering
+    \begin{tikzpicture}[>=latex]
+        \draw[->](-.5,0)--(8,0)node[right]{$x$};
+        \draw[->](0,-.5)--(0,4)node[above]{$y$};
+        \draw[domain=0:2*pi,samples=1000] plot(\x+1,{sin(\x r)+(\x/2)+1});
+        \draw[dashed](1,1)--(1,0)node[below]{$a$};
+        \draw[dashed]({1+(2*pi)},{(2*pi/2)+1})--({1+(2*pi)},0)node[below]{$b$};
+        \draw[dashed](1,1)--({1+(2*pi)},{(2*pi/2)+1});
+        \draw[dashed]({1+(pi/2)},{sin(pi/2 r)+(pi/4)+1})--({1+(pi/2)},0)node[below]{$\xi$};
+        \draw[dashed]({1+(pi/2)-1},{sin(pi/2 r)+(pi/4)+1-.5})--({1+(pi/2)+1},{sin(pi/2 r)+(pi/4)+1+.5});
+    \end{tikzpicture}
+\end{figure}
+\begin{center}
+    $\mbox{如果函数}f(x)\mbox{满}\begin{cases}
+    \mbox{在闭区间$\left[a,b\right]$上连续}\\
+    \mbox{在开区间(a,b)可导}
+    \end{cases}$\\
+    $\mbox{则至少有一点}\xi\in(a,b)$\\
+    \begin{align}
+        f'(\xi)=\frac{f(b)-f(a)}{b-a}\Leftrightarrow f(b)-f(a)=f'(x)(b-a)\label{Lagrange's theorem}
+    \end{align}
+    在区间$\left[x,x+\vartriangle x\right]$用拉格朗日定理。\\
+    $f(x+\vartriangle x)-f(x)=f'(\xi)\vartriangle x$\\
+    $\xi\in(x,x+\vartriangle x)$记作:\ $\xi=x+\theta \vartriangle x\qquad 0<\theta <1$\\
+    $f(x+\vartriangle x)-f(x)=f(x+\theta \vartriangle x)\vartriangle x$\\
+    $\vartriangle y=f(x+\theta \vartriangle x)\vartriangle x$\\
+
+\end{center}
+\subsubsection{柯西定理}
