@@ -101,13 +101,20 @@
 \contentsline {subsubsection}{\numberline {11.3.2}罗尔定理}{36}{}%
 \contentsline {subsubsection}{\numberline {11.3.3}拉格朗日定理$\left (\mbox {微分中值定理}\right )$}{36}{}%
 \contentsline {subsubsection}{\numberline {11.3.4}柯西定理}{37}{}%
-\contentsline {section}{\numberline {12}积分}{38}{}%
-\contentsline {subsection}{\numberline {12.1}幂数，指数，对数}{38}{}%
-\contentsline {subsection}{\numberline {12.2}三角函数}{38}{}%
-\contentsline {subsection}{\numberline {12.3}积分运算}{38}{}%
-\contentsline {section}{\numberline {13}零散的一些}{39}{}%
-\contentsline {section}{\numberline {14}证明}{41}{}%
-\contentsline {subsection}{\numberline {14.1}\centering 第\ref {zhang_trigonometric_function}章}{41}{}%
-\contentsline {subsection}{\numberline {14.2}\centering 第\ref {zhang_limit}章}{42}{}%
-\contentsline {subsection}{\numberline {14.3}\centering 第\ref {zhang_derivative}章}{48}{}%
-\contentsline {subsection}{\numberline {14.4}\centering 第\ref {zhang_differential}章}{55}{}%
+\contentsline {subsubsection}{\numberline {11.3.5}三个定理关系}{37}{}%
+\contentsline {subsection}{\numberline {11.4}洛必达法则}{38}{}%
+\contentsline {subsection}{\numberline {11.5}泰勒公式}{38}{}%
+\contentsline {subsubsection}{\numberline {11.5.1}泰勒多项式}{38}{}%
+\contentsline {subsubsection}{\numberline {11.5.2}泰勒中值定理}{39}{}%
+\contentsline {subsection}{\numberline {11.6}麦克劳林公式}{39}{}%
+\contentsline {subsubsection}{\numberline {11.6.1}常用的麦克劳林展开}{39}{}%
+\contentsline {section}{\numberline {12}积分}{40}{}%
+\contentsline {subsection}{\numberline {12.1}幂数，指数，对数}{40}{}%
+\contentsline {subsection}{\numberline {12.2}三角函数}{40}{}%
+\contentsline {subsection}{\numberline {12.3}积分运算}{40}{}%
+\contentsline {section}{\numberline {13}零散的一些}{41}{}%
+\contentsline {section}{\numberline {14}证明}{43}{}%
+\contentsline {subsection}{\numberline {14.1}\centering 第\ref {zhang_trigonometric_function}章}{43}{}%
+\contentsline {subsection}{\numberline {14.2}\centering 第\ref {zhang_limit}章}{44}{}%
+\contentsline {subsection}{\numberline {14.3}\centering 第\ref {zhang_derivative}章}{50}{}%
+\contentsline {subsection}{\numberline {14.4}\centering 第\ref {zhang_differential}章}{57}{}%

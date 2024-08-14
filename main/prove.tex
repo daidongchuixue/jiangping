@@ -674,7 +674,6 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         \end{cases}
     \end{cases}$
 \end{center}
-
 \textbf{\large \ref{Lagrange's theorem}}
 \begin{displaymath}
     \begin{split}
@@ -685,4 +684,53 @@ $\lim\limits_{{n}\to{\infty}}z_n = a$
         f'(\xi)&=\frac{f(b)-f(a)}{b-a}\\
         f'(\xi)(b-a)&7=f(b)-f(a)
     \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{cauchy_theorem}}
+\begin{displaymath}
+    \begin{split}
+        \varphi(x)&=f(x)-\frac{f(b)-f(a)}{F(b)-F(a)}\left[F(x)-F(a)\right] \\
+        \varphi(a)&=\varphi(b)=f(a)\\
+        \varphi'(\xi)&=0\\
+        f'(\xi)&=\frac{f(b)-f(a)}{F(b)-F(a)}F'(\xi)\\
+        \frac{f'(\xi)}{F'(\xi)}&=\frac{f(b)-f(a)}{F(b)-F(a)}
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{l'hospital rule}}
+    \begin{center}
+        $f(x),F(x)\mbox{的去心邻域可导，}\lim\limits_{x\to x_0}\frac{f(x)}{F(x)}\mbox{与}f(x_0),F(x_0)\mbox{无关。规定}f(x_0)=0,F(x_0)=0$\\
+$\mbox{此时}\lim\limits_{x\to x_0}f(x)=0=f(x_0)\quad\lim\limits_{x\to x_0}F(x)=0=F(x_0)\quad\mbox{此时在$x_0$点处也连续}$\\
+    \end{center}
+    \begin{displaymath}
+        \begin{split}
+    \frac{f(x)}{F(x)}&=\frac{f(x)-f(x_0)}{F(x)-F(x_0)}=\frac{f'(\xi)}{F'(\xi)}\\
+    \lim\limits_{x\to x_0}\frac{f(x)}{F(x)}&=\lim\limits_{x\to x_0}\frac{f'(\xi)}{F'(\xi)}\\
+    x\rightarrow x_0,&\mbox{时}\xi\rightarrow x_0\qquad \mbox{符号$\xi$换成x}\\
+    \lim\limits_{x\to x_0}\frac{f(x)}{F(x)}&=\lim\limits_{\xi\to x_0}\frac{f'(\xi)}{F'(\xi)}=\lim\limits_{x\to x_0}\frac{f'(x)}{F'(x)}
+        \end{split}
+    \end{displaymath}
+
+\textbf{\large \ref{lagrange_remainder}}
+\begin{displaymath}
+    \begin{split}
+        \frac{R_n(x)}{(x-x_0)^{n+1}}&=\frac{R_n(x)-R_n(x_0)}{(x-x_0)^{n+1}-(x_0-x_0)^{n+1}}=\frac{R_n'(\xi_1)}{(n+1)(\xi_1-x_0)^n}\\
+        \frac{1}{n+1}\cdot\frac{R_n'(\xi_1)}{(\xi_2-x_0)^n}&=\frac{1}{n+1}\cdot\frac{R_n'(\xi_1)-R_n'(x_0)}{(\xi_1-x_0)^{n}-(x_0-x_0)^{n}}=\frac{1}{n+1}\cdot\frac{R_n''(\xi_2)}{(n)(\xi_2-x_0)^{n-1}}\\
+        &\vdots\\
+        \frac{R_n^{(n)}(\xi_n)}{(n+1)!(\xi_n-x_0)}&=\frac{R_n^{(n)}(\xi_n)-R_n^{(n)}(x_0)}{(n+1)!(\xi_n-x_0)-0}=\frac{R_n^{(n+1)}(\xi)}{(n+1)!}\\
+        \frac{R_n^{(n+1)}(\xi)}{(n+1)!}&=\frac{f^{(n+1)}(\xi)-P_n^{(n+1)}(\xi)}{(n+1)!}=\frac{f^{(n+1)}(\xi)}{(n+1)!}\\
+        R_n(x)&=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}
+\end{split}
+\end{displaymath}
+\centerline{$\xi_1\in(x,x_0),\xi_2\in(\xi_1,x_0),\xi_n\in(\xi_{n-1},x_0),\xi\in(\xi_n,x_0)$}
+
+\textbf{\large \ref{Piano_remainder}}
+\begin{displaymath}
+    \begin{split}
+      \lim\limits_{x\to x_0}\frac{R_n(x)}{(x-x_0)^n}&=\lim\limits_{x\to x_0}\frac{R_n'(x)}{n(x-x_0)^{n-1}}\\
+      &=\lim\limits_{x\to x_0}\frac{R_n''(x)}{n(n-1)(x-x_0)^{n-2}}\\
+      &=\lim\limits_{x\to x_0}\frac{R_n^{(n)}(x)}{n!}\\
+      &=\frac{1}{n}\cdot 0\\
+      &=0
+\end{split}
 \end{displaymath}

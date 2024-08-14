@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  12 AUG 2024 11:20
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  14 AUG 2024 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -767,40 +767,40 @@ LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10> not 
 
 
 
-] [35] [36]) [37]
+] [35] [36] [37] [38]) [39]
 \openout2 = `./main/integral.aux'.
 
- (./main/integral.tex) [38
+ (./main/integral.tex) [40
 
 
 
 ]
 \openout2 = `./main/scattered.aux'.
 
- (./main/scattered.tex [39
+ (./main/scattered.tex [41
 
 
 
-]) [40]
+]) [42]
 \openout2 = `./main/prove.aux'.
 
- (./main/prove.tex [41
+ (./main/prove.tex [43
 
 
 
-] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56]) [57] (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/Continuous_discontinuous.aux) (./main/derivative.aux) (./main/differential.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
+] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59]) [60] (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/Continuous_discontinuous.aux) (./main/derivative.aux) (./main/differential.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 47216 strings out of 474773
- 1047741 string characters out of 5757724
+ 47221 strings out of 474773
+ 1047828 string characters out of 5757724
  2013839 words of memory out of 5000000
- 68890 multiletter control sequences out of 15000+600000
+ 68895 multiletter control sequences out of 15000+600000
  567276 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,23n,110p,430b,766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (57 pages).
+Output written on main.pdf (60 pages).
