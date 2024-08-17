@@ -39,6 +39,79 @@
 \end{split}
 \end{displaymath}
 
+\subsection{\centering 第\ref{zhang_function}章}
+\textbf{\large \ref{monotonous_1}}
+\begin{displaymath}
+    \begin{split}
+        \mbox{设}\forall \ x_1,x_2&\in\left[a,b\right],x_1<x_2\\
+        f(x_2)-f(x_1)&=f'(\xi)(x_2-x_1)\qquad \xi\in(x_1,x_2)\subset[a,b]\\
+        f'(\xi)>0 ,&\ (x_2-x_1)>0\\
+        f(x_2)-f(x_1)&>0\\
+        f(x_2)&>f(x_1)
+    \end{split}
+\end{displaymath}
+\textbf{\large \ref{monotonous_2}}
+\begin{displaymath}
+    \begin{split}
+        \mbox{设}\forall\ x_1,x_2&\in\left[a,b\right],x_1<x_2\\
+        f(x_2)-f(x_1)&=f'(\xi)(x_2-x_1)\qquad \xi\in(x_1,x_2)\subset[a,b]\\
+        f'(\xi)<0 ,&\ (x_2-x_1)>0\\
+        f(x_2)-f(x_1)&<0\\
+        f(x_2)&<f(x_1)
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{monotonous_3}}
+\begin{center}
+    $\mbox{设}\forall\  x_1,x_2\in\left[a,b\right],x_1<x_2,x_0=\frac{x_1+x_2}{2},x_0-x_1=x_2-x_0=h$\\
+        $\varphi= \ding{173}f(x_0)-f(x_1)=f'(\xi_1)(x_0-x_1)\qquad \xi_1\in(x_1,x_0)$\\
+        $\psi =f(x_2)-f(x_0)=f'(\xi_2)(x_2-x_0)\qquad \xi_2\in(x_0,x_2)$
+\end{center}
+\begin{displaymath}
+    \begin{split}
+        \psi-\varphi=f(x_2)+f(x_1)-2f(x_0)&=\left[f'(\xi_2)-f'(\xi_1)\right]h\\
+         &=f''(\xi)(\xi_2-\xi_1)h\\
+         \mbox{因为}\ f''(x)>0,f''(\xi)>0,h&=x_0-x_1>0\\
+         f(x_2)+f(x_1)-2f(x_0)&>0\\
+        f(x_2)+f(x_1)&>2f(x_0)\\
+        f(x_0)&<\frac{f(x_2)+f(x_1)}{2}\\
+        f(\frac{x_1+x_2}{2})&<\frac{f(x_2)+f(x_1)}{2}
+    \end{split}
+\end{displaymath}
+
+\textbf{\large \ref{Arc_differentiation}}
+$$\vartriangle s=\wideparen{M_0M'}-\wideparen{M_0M}=\wideparen{MM'},\quad \left|MM'\right|^2=(\vartriangle x)^2+(\vartriangle y)^2,\quad \lim\limits_{M'\to M}\frac{\left|\wideparen{MM'}\right|}{\left|MM'\right|}=1$$
+\begin{align*}
+    \left(\frac{\vartriangle s}{\vartriangle x}\right)^2=\left|\frac{\wideparen{MM'}}{\vartriangle x}\right|^2
+   &=\left(\frac{\wideparen{MM'}}{\left|MM'\right|}\right)^2\cdot\left(\frac{\left|MM'\right|}{\vartriangle x}\right)^2\\
+   &=\left(\frac{\wideparen{MM'}}{\left|MM'\right|}\right)^2\cdot\frac{(\vartriangle x)^2+(\vartriangle y)^2}{(\vartriangle x)^2}\\
+   &=\left(\frac{\wideparen{MM'}}{\left|MM'\right|}\right)^2\cdot\left[1+\left(\frac{\vartriangle y}{\vartriangle x}\right)^2\right]\\
+   \lim\limits_{\vartriangle x \to 0}\left(\frac{\vartriangle s}{\vartriangle x}\right)^2&= \lim\limits_{\vartriangle x \to 0}\left(\frac{\wideparen{MM'}}{\left|MM'\right|}\right)^2\cdot\lim\limits_{\vartriangle x \to 0}\left[1+\left(\frac{\vartriangle y}{\vartriangle x}\right)^2\right]\\
+   (\vartriangle x \rightarrow 0,\vartriangle M' \rightarrow M)\qquad  &= \lim\limits_{M' \to M}\left(\frac{\wideparen{MM'}}{\left|MM'\right|}\right)^2\cdot\lim\limits_{\vartriangle x \to 0}\left[1+\left(\frac{\vartriangle y}{\vartriangle x}\right)^2\right]\\
+    \left(\frac{ds}{dx}\right)^2&=1\cdot (1+(y')^2)\\
+    \frac{ds}{dx}&=\sqrt{1+(y')^2}=\sqrt{1+\left[f'(x)\right]^2}\\
+    ds&=\sqrt{1+\left[f'(x)\right]^2}dx=\sqrt{(dx)^2+(dy)^2}
+\end{align*}
+
+\textbf{\large \ref{Mean_curvature}}
+\begin{align*}
+    \left|\frac{d\alpha}{ds}\right|&=\left|\frac{d\alpha}{dx}\cdot\frac{dx}{ds}\right|\\
+    &=\left|\frac{d\arctan y'}{dx}\cdot\frac{1}{\sqrt{1+(y')^2}}\right|\\
+    &=\left|\frac{y''}{1+(y')^2}\cdot\frac{1}{\sqrt{1+(y')^2}}\right|\\
+    &=\frac{\left|y''\right|}{\left(1+(y')^2\right)^{\frac{3}{2}}}
+\end{align*}
+
+\textbf{\large \ref{Point_curvature}}
+\begin{align*}
+    \frac{dy}{dx}&=\frac{\psi'(t)}{\phi'(t)}\\
+    \frac{d^2y}{dx^2}&=\frac{d\frac{\psi'(t)}{\phi'(t)}}{dt}\cdot\frac{dt}{dx}
+=\frac{\psi''(t)\phi'(t)-\psi'(t)\phi''(t)}{\left[\phi'(t)\right]^2}\cdot\frac{1}{\phi'(t)}\\
+&=\frac{\psi''(t)\phi'(t)-\psi'(t)\phi''(t)}{\left[\phi'(t)\right]^3}\\
+    \left|\frac{d\alpha}{ds}\right|&=\frac{\left|y''\right|}{\left(1+(y')^2\right)^{\frac{3}{2}}}\\
+    &=\frac{\psi''(t)\phi'(t)-\psi'(t)\phi''(t)}{\left[\phi'(t)\right]^3}\cdot\frac{1}{\left\{1+\left[\frac{\psi'(t)}{\phi'(t)}\right]^2\right\}^{\frac{3}{2}}}\\
+    &=\frac{\psi''(t)\phi'(t)-\psi'(t)\phi''(t)}{\left\{\left|\psi'(t)\right|^2+\left[\phi'(t)\right]^2\right\}^{\frac{3}{2}}}
+\end{align*}
+
 \subsection{\centering 第\ref{zhang_limit}章}
 \textbf{\large \ref{limit_sequence}}
 \begin{displaymath}

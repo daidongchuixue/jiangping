@@ -57,8 +57,8 @@ $f(x)$在$[a,b]$可导$\Leftrightarrow\begin{cases}
 &(\log_a^x)' = \frac{1}{x\ln a} \label{derivative_5}\\
 &(\ln{x})' = \frac{1}{x} \label{derivative_6}
 \end{align}
-
 \subsection{三角函数}
+\vspace{-10mm}
 \begin{align}
 &(\sin x)' = \cos x \label{derivative_sin}\\
 &(\arcsin x)' = \frac{1}{\sqrt{1-x^2}} \label{derivative_arcsin}\\
@@ -68,7 +68,7 @@ $f(x)$在$[a,b]$可导$\Leftrightarrow\begin{cases}
 &(\sec x)' = \sec x\tan x \label{derivative_sec}\\
 &(\operatorname{arcsec}{x})'=\frac{1}{\left|x\right|\sqrt{x^2-1}} \label{derivative_arcsec}\\
 &(\tan x)' = \sec^2x \label{derivative_tan}\\
-&(\arctan)' = \frac{1}{1+x^2} \label{derivative_arctan}\\
+&(\arctan x)' = \frac{1}{1+x^2} \label{derivative_arctan}\\
 &(\cot x)' = -\csc^2x \label{derivative_cot}\\
 &(\operatorname{arccot}{x})' = -\frac{1}{1+x^2}\label{derivative_arccot}\\
 &(\sinh x)' = \cosh x \label{derivative_sinh}\\
@@ -89,11 +89,11 @@ $f(x)$在$[a,b]$可导$\Leftrightarrow\begin{cases}
   \left(\frac{u(x)}{v(x)}\right)'&=\frac{u'(x)v(x)-v'(x)u(x)}{\left[v(x)\right]^2}\label{limit_operation_4}
 \end{align}
 \subsection{反函数求导}
-如果函数$y=f(x)$在区间$(a,b)$内单调可导，且$f'(y)\neq 0$\\
-$\begin{cases}
+如果函数$y=f(x)$在区间$(a,b)$内单调可导，且$f'(y)\neq 0$
+$$\begin{cases}
   \alpha=\min\{f(a)+0,f(b-0)\}\\
   \beta=\max\{f(a)+0,f(b-0)\}
-\end{cases}$\\
+\end{cases}$$
 则它的反函数$x=f^{-1}(y)$在区间$(\alpha,\beta)$内也可导
 \begin{align}
   \left[f^{-1}(y)\right]'=\frac{1}{f'(x)}\Leftrightarrow \frac{dy}{\mathrm{d}{x}}=\frac{1}{\frac{dx}{\mathrm{d}{y}}} \label{derivative_of_inverse_function}
@@ -111,12 +111,12 @@ $\begin{cases}
   \end{align}
 \end{center}
 \subsection{高阶求导}
-$Def:\begin{cases}
+$$Def:\begin{cases}
   \mbox{一阶导数} &y'\Leftrightarrow \frac{dy}{dx}\\
   \mbox{二阶导数}&y''\Leftrightarrow \frac{d^2y}{dx^2}\\
   \mbox{三阶导数}&y'''\Leftrightarrow \frac{d^3y}{dx^3}\\
   \mbox{三阶以上n阶导数}&y^{(n)}\Leftrightarrow \frac{d^ny}{dx^n}\\
-\end{cases}$
+\end{cases}$$
 \subsection{高阶求导公式}
 \begin{align}
   \left(e^x\right)^{(n)}&=e^x\\

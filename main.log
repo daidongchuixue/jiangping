@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  14 AUG 2024 16:28
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  18 AUG 2024 01:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -279,6 +279,39 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/yhmath/yhmath.sty
+Package: yhmath 2020/03/17 v1.6
+\symyhlargesymbols=\mathgroup7
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 29.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 49.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 51.
+LaTeX Font Info:    Redeclaring math delimiter \lmoustache on input line 53.
+LaTeX Font Info:    Redeclaring math delimiter \rmoustache on input line 55.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 57.
+LaTeX Font Info:    Redeclaring math delimiter \Arrowvert on input line 59.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 61.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 63.
+LaTeX Font Info:    Redeclaring math delimiter \uparrow on input line 65.
+LaTeX Font Info:    Redeclaring math delimiter \downarrow on input line 67.
+LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 69.
+LaTeX Font Info:    Redeclaring math delimiter \Uparrow on input line 71.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 73.
+LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 75.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 79.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 81.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 83.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 85.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 87.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 89.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 91.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 93.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 95.
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 97.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 99.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 101.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks24
 \pgfutil@tempdima=\dimen187
@@ -521,7 +554,16 @@ LaTeX Warning: Command \underbar  has changed.
 LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -556,7 +598,7 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip73
 \f@nch@O@olf=\skip74
 \f@nch@O@orf=\skip75
-) (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/Continuous_discontinuous.aux) (./main/derivative.aux) (./main/differential.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
+) (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function.aux) (./main/graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/Continuous_discontinuous.aux) (./main/derivative.aux) (./main/differential.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -579,7 +621,7 @@ LaTeX Font Info:    ... okay on input line 4.
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup7
+\symlegacymaths=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 4.
 LaTeX Font Info:    Redeclaring math accent \acute on input line 4.
@@ -680,127 +722,139 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 12.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/yhmath/OMXyhex.fd
+File: OMXyhex.fd 
+File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 ) [1
 
 
-] [2] (./main.toc [3] [4] [5])
+] [2] (./main.toc [3] [4] [5] [6])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-) [6]
+) [7]
 \openout2 = `./main/trigonometric_function.aux'.
 
  (./main/trigonometric_function.tex
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10> not available
 (Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on input line 31.
- [7
+ [8
 
 
 
-] [8]) [9]
+] [9]) [10]
 \openout2 = `./main/inequality.aux'.
 
- (./main/inequality.tex) [10
+ (./main/inequality.tex) [11
 
 
 
 ]
 \openout2 = `./main/permutation_combination.aux'.
 
- (./main/permutation_combination.tex) [11
+ (./main/permutation_combination.tex) [12
 
 
 
 ]
 \openout2 = `./main/interval_mapping.aux'.
 
- (./main/interval_mapping.tex) [12
+ (./main/interval_mapping.tex) [13
 
 
 
-] [13]
-\openout2 = `./main/function_graph.aux'.
+] [14]
+\openout2 = `./main/function.aux'.
 
- (./main/function_graph.tex [14
+ (./main/function.tex [15
 
 
 
-]) [15]
+] [16] [17] [18]) [19]
+\openout2 = `./main/graph.aux'.
+
+ (./main/graph.tex) [20
+
+
+
+]
 \openout2 = `"./main/Intersection and union.aux"'.
 
- (./main/Intersection and union.tex [16
+ (./main/Intersection and union.tex [21
 
 
 
-]) [17]
+]) [22]
 \openout2 = `./main/Groups_domains_rings.aux'.
 
- (./main/Groups_domains_rings.tex) [18
+ (./main/Groups_domains_rings.tex) [23
 
 
 
 ]
 \openout2 = `./main/limit.aux'.
 
- (./main/limit.tex [19
+ (./main/limit.tex [24
 
 
 
-] [20] [21] [22] [23] [24]) [25]
+] [25] [26] [27] [28] [29]) [30]
 \openout2 = `./main/Continuous_discontinuous.aux'.
 
- (./main/Continuous_discontinuous.tex [26
+ (./main/Continuous_discontinuous.tex [31
 
 
 
-]) [27] [28]
+]) [32] [33]
 \openout2 = `./main/derivative.aux'.
 
- (./main/derivative.tex [29
+ (./main/derivative.tex [34
 
 
 
-] [30] [31] [32]) [33]
+] [35] [36] [37]) [38]
 \openout2 = `./main/differential.aux'.
 
- (./main/differential.tex [34
+ (./main/differential.tex [39
 
 
 
-] [35] [36] [37] [38]) [39]
+] [40] [41] [42] [43]) [44]
 \openout2 = `./main/integral.aux'.
 
- (./main/integral.tex) [40
+ (./main/integral.tex [45
 
 
 
-]
+] [46]) [47]
 \openout2 = `./main/scattered.aux'.
 
- (./main/scattered.tex [41
+ (./main/scattered.tex [48
 
 
 
-]) [42]
+]) [49]
 \openout2 = `./main/prove.aux'.
 
- (./main/prove.tex [43
+ (./main/prove.tex [50
 
 
 
-] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59]) [60] (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function_graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/Continuous_discontinuous.aux) (./main/derivative.aux) (./main/differential.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
+] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68]) [69] (./main.aux (./main/contents.aux) (./main/trigonometric_function.aux) (./main/inequality.aux) (./main/permutation_combination.aux) (./main/interval_mapping.aux) (./main/function.aux) (./main/graph.aux) (./main/Intersection and union.aux) (./main/Groups_domains_rings.aux) (./main/limit.aux) (./main/Continuous_discontinuous.aux) (./main/derivative.aux) (./main/differential.aux) (./main/integral.aux) (./main/scattered.aux) (./main/prove.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 47221 strings out of 474773
- 1047828 string characters out of 5757724
+ 53364 strings out of 474773
+ 1175428 string characters out of 5757724
  2013839 words of memory out of 5000000
- 68895 multiletter control sequences out of 15000+600000
- 567276 words of font info for 99 fonts, out of 8000000 for 9000
+ 75012 multiletter control sequences out of 15000+600000
+ 570348 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,23n,110p,430b,766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,23n,110p,430b,788s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (60 pages).
+Output written on main.pdf (69 pages).
