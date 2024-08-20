@@ -1,0 +1,105 @@
+\begin{center}\section{不定积分}\label{chapter_Indefinite_integral}\end{center}
+\subsection{概念}
+\subsubsection{原函数}
+$$\forall x\in I,\ F'(x)=f(x),\quad F(x)\mbox{为}f(x)\mbox{的一个原函数}$$
+\begin{align}
+    \mbox{函数}f(x)\mbox{在区间}I\mbox{上连续一定有}F(x),\mbox{使}F'(x)=f(x)
+\end{align}
+\subsubsection{不定积分}
+区间$I$上，$f(x)$的带有任意常数的原函数,称为$f(x)$在区间I上的不定积分。\\
+记作：
+$$\int f(x)\ dx\quad\begin{cases}
+    \int&\mbox{积分符号}\\
+    f(x)&\mbox{被积函数}\\
+    f(x)\ dx\ &\mbox{被积表达式}\\
+    x &\mbox{积分变量}
+\end{cases}$$
+$\mbox{如果}F(x)\mbox{是}f(x)\mbox{的一个原函数}$
+$$\int f(x)dx=F(x)+C$$
+\subsubsection{不定积分性质}
+\begin{align*}
+    \left[\int f(x)\ dx\right]'&=f(x)\\
+    d\left[\int f(x)\ dx\right]&=f(x)\ dx\\
+    \int \ dF(x)&=\int F'(x)\ dx=F(x)+C
+\end{align*}
+\subsection{积分运算}
+\begin{align}
+    \int\left[f(x)+g(x)\right]\ dx&=\int f(x)\ dx+\int f(x)\ dx\label{Indefinite_integral_operation_1}\\
+    \int kf(x)\ dx&=k\int f(x)\ dx \quad(k\mbox{为常数})\label{Indefinite_integral_operation_2}\\
+    \int f\left[\varphi(x)\right]\varphi'(x)\ dx&\xlongequal[]{u=\varphi(x)}\left[\int f(u)du\right]_{x=\varphi(u) } =F\left[\varphi(x)\right]+C \label{Indefinite_integral_operation_3}\\
+    \int f(x)\ dx &\xlongequal[\varphi'(t)\neq 0]{x=\varphi(t)}\left[\int f\left[\varphi (t)\right]\varphi'(t)\ dt\right]_{t=\varphi^{-1}(x)}\label{Indefinite_integral_operation_4}\\
+    \int f(x)\ dx&=\int f(x)\ d(x+C)\label{Indefinite_integral_operation_5}
+\end{align}
+\subsubsection{分部积分法}
+\begin{align}
+    \int u\ dv=uv-\int v\ du\Leftrightarrow\int u v'\ dx=uv-\int u'v\ dx
+\end{align}
+\subsection{有理函数积分}
+\subsubsection{普通多项式}
+    $$\frac{P(x)}{Q(x)}\qquad P(x),Q(x)\mbox{是$x$多项式,且没有公因子，称为有理分式}$$
+    $$\mbox{有理分式}\begin{cases}
+        \mbox{真分式}\qquad P(x)\mbox{次数}<Q(x)\mbox{次数}\\
+        \mbox{假分式}\qquad P(x)\mbox{次数}\geqslant Q(x)\mbox{次数}
+    \end{cases}$$
+    $$\mbox{如果真分式中}Q(x)=Q_1(x)\cdot Q_2(x),\mbox{其中}Q_1(x),Q_2(x)\mbox{都为多项式}$$
+\begin{align}
+    \frac{P(x)}{Q(x)}=\frac{P_1(x)}{Q_1(x)}\cdot\frac{P_2(x)}{Q_2(x)}
+\end{align}
+$$\mbox{假分式}=\mbox{多项式}+\mbox{真分式}$$
+\begin{align*}
+    \mbox{最简分式}\quad\frac{A}{x-a}\quad\frac{A}{(x-a)^2}\quad\frac{Nx+M}{x^2+px+q}\quad\frac{Nx+m}{(x^2+px+q)^k}
+\end{align*}
+\subsubsection{三角函数多项式}
+$$\mbox{三角有理分式:}\ R(\sin x,\cos x)$$
+$$\mbox{万能代换:}\ \tan\frac{x}{2}=u,x=2\arctan u,dx=\frac{2\ du}{1+u^2}$$
+$$\sin x =2\sin \frac{x}{2}\cos \frac{x}{2}=2\frac{\tan \frac{x}{2}}{\sec^2 \frac{x}{2}}=2\frac{\tan \frac{x}{2}}{1+\tan^2 \frac{x}{2}}=\frac{2u}{1+u^2}$$
+$$\cos x=\cos^2\frac{x}{2}-\sin^2\frac{x}{2}=\cos^2\frac{x}{2}(1-\tan^2\frac{x}{2})=\frac{1-\tan^2\frac{x}{2}}{\sec^2\frac{x}{2}}=\frac{1-\tan^2\frac{x}{2}}{1+\tan^2\frac{x}{2}}=\frac{1-u^2}{1+u^2}$$
+$$\int R(\sin x,\cos x)\ dx=\int R(\frac{2u}{1+u^2},\frac{1-u^2}{1+u^2})\frac{2}{1+u^2}\ du=\int Y(u)\ du$$
+\centerline{$Y(u)$是$u$的有理函数}
+\subsection{积分公式}
+\subsubsection{幂数，指数，对数}
+\begin{align}
+&\int k\ dx=kx +C \label{integral_0_1}\\
+&\int x^a \ dx = \frac{x^{a+1}}{a+1} + C \label{integral_0_2}\\
+&\int a^x \ dx = \frac{a^x}{\ln a} + C \label{integral_0_3}\\
+&\int e^x \ dx = e^x + C \label{integral_0_4}\\
+&\int \frac{1}{x} \ dx = \ln\left|x\right| + C \label{integral_0_5}\\
+&\int \ln x\ dx=x\ln x-x+C \label{integral_0_6}
+\end{align}
+\subsubsection{三角函数}
+\begin{align}
+    &\int\sin x\ dx = -\cos x + C \label{integral_sin}\\
+    &\int\cos x \ dx = \sin x + C \label{integral_cos}\\
+    &\int\sec x \tan x\ dx= \sec x + C \label{integral_sec_tan}\\
+    &\int\csc x\cot x \ dx = -\csc x + C \label{integral_csc_cot}\\
+    &\int\sec^2 x \ dx = \tan x + C \label{integral_sec_sec}\\
+    &\int\csc^2 x\ dx= -\cot x +C \label{integral_csc_csc}\\
+    &\int\sinh x \ dx = \cosh x + C \label{integral_sinh}\\
+    &\int\cosh x \ dx = \sinh x + C \label{integral_cosh}\\
+    &\int\tan x\ dx=-\ln\left|\cos x\right|+C \label{integral_tan}\\
+&\int \csc x\ dx=\begin{cases}
+    \ln \left|\tan \frac{x}{2}\right|+C\\
+    \ln \left|\csc x -\cot x \right|+C
+\end{cases} \label{integral_csc}\\
+&\int \sec x\ dx=\ln \left|\sec x+\tan x\right|+C \label{integral_sec}\\
+&\int \arccos x\ dx= x\arccos x-\sqrt{1-x^2} +C \label{integral_arccos}\\
+&\int \arctan x\ dx= x\arctan x-\frac{1}{2}\ln (1+x^2)+C \label{integral_arctan}
+\end{align}
+
+\subsubsection{分式}
+\begin{align}
+    &\int \frac{1}{1+x^2}\ dx=\arctan x + C\\
+&\int\frac{1}{x^2+a^2} \ dx =\frac{1}{a} \tan \frac{x}{a} + C\\
+&\int \frac{1}{x^2-a^2}\ dx=\frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right|+C\\
+&\int\frac{1}{\sqrt{1-x^2}}\ dx=\begin{cases}
+    \arcsin x + C\\
+    -\arccos x +C_1
+\end{cases}  \\
+&\int\frac{1}{\sqrt{a^2-x^2}}\ dx=\begin{cases}
+    \arcsin \frac{x}{a}x + C\\
+    -\arccos \frac{x}{a} +C_1
+\end{cases}  \\
+&\int\frac{1}{\sqrt{x^2-a^2}}\ dx=\ln \left|x+\sqrt{x^2-a^2}\right|+C\\
+&\int\frac{1}{\sqrt{x^2+a^2}}\ dx=\ln(x+\sqrt{x^2+a^2})+C\\
+&\int\frac{1}{\left|x\right|\sqrt{x^2-1}}\ dx= \operatorname{arcsec} x + C 
+\end{align}

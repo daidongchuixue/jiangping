@@ -1,4 +1,4 @@
-\section{三角函数}\label{zhang_trigonometric_function}
+\begin{center}\section{ 三角函数}\label{chapter_trigonometric_function}\end{center}
 \subsection{三角恒等式}
 \begin{align}
     \sin(A+B)= \sin A\cos B+\cos A\sin B\\
@@ -20,30 +20,42 @@
     \sin(A)\sin(B)&=\frac{1}{2}\left[\cos(A-B)-\cos(A+B)\right]\\
     \cos(A)\cos(B)&=\frac{1}{2}\left[\cos(A+B)+\cos(A-B)\right]
 \end{align}
+\subsubsection{降幂}
+\begin{align}
+    \sin^2x&=\frac{1-\cos(2x)}{2}\\
+    \cos^2x&=\frac{1+\cos(2x)}{2}
+\end{align}
+\subsubsection{半角公式}
+\begin{align}
+    \sin\frac{x}{2}&=\sqrt{\frac{1-\cos(x)}{2}}\\
+    \cos\frac{x}{2}&=\sqrt{\frac{1+\cos(x)}{2}}\\
+    \tan\frac{x}{2}&=\csc x-\cot x \label{tan_.2}\\
+\end{align}
 \subsubsection{倍角公式}
-\begin{displaymath}
-    \centering
-    \begin{split}
-        \sin(2x)=2\sin x\cos x\\
-        \cos(2x)=\cos^2x-\sin^2x=1-2\sin^2 x\\
-        \tan(2x)=\frac{2\tan x}{1-\tan^2x}
-    \end{split}
-\end{displaymath}
+\begin{align}
+    \sin(2x)&=2\sin x\cos x\\
+    \cos(2x)&=\cos^2x-\sin^2x=1-2\sin^2 x\\
+    \tan(2x)&=\frac{2\tan x}{1-\tan^2x}
+\end{align}
 \subsubsection{反三角函数}
 \begin{align}
     \arcsin x+\arccos x =\frac{\pi}{2}\\
     \arctan x+\operatorname{arccot}{x} =\frac{\pi}{2}
 \end{align}
-\subsubsection{三角函数其他等式}
+\subsubsection{三角函数恒等式}
 \begin{align}
     \sin^2 x+\cos^2 =1\\
     1+\tan^2 x = \sec^2\\
     1+\cot^2 x = \csc^2
 \end{align}
+
 \subsection{双曲函数}
 \subsubsection{定义}
-$$\sinh x = \frac{e^x-e^{-x}}{2}\qquad \cosh x = \frac{e^x+e^{-x}}{2}$$
-$$\tanh x = \frac{e^x-e^{-x}}{e^x+e^{-x}}\qquad \coth x = \frac{e^x+e^{-x}}{e^x-e^{-x}}$$
+\begin{align*}
+    \sinh x = \frac{e^x-e^{-x}}{2}\qquad \cosh x = \frac{e^x+e^{-x}}{2}\\
+    \tanh x = \frac{e^x-e^{-x}}{e^x+e^{-x}}\qquad \coth x = \frac{e^x+e^{-x}}{e^x-e^{-x}}
+\end{align*}
+
 \subsubsection{反双曲函数}
 \begin{align}
     \operatorname{arsinh}{x}&=\ln(x+\sqrt{x^2+1})\\
@@ -51,7 +63,7 @@ $$\tanh x = \frac{e^x-e^{-x}}{e^x+e^{-x}}\qquad \coth x = \frac{e^x+e^{-x}}{e^x-
     \operatorname{artanh}{x}&=\frac{1}{2}\ln(\frac{1+x}{1-x})
 \end{align}
 
-\subsubsection{恒等式}
+\subsubsection{双曲函数恒等式}
 \begin{align}
 &\sinh (2x) = 2\sinh x\cosh x \label{eq:hyperbolic_functions_1} \\
 &\cosh^2x-\sinh^2x = 1 \label{eq:hyperbolic_functions_2} \\
