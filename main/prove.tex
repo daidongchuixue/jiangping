@@ -885,10 +885,8 @@ $\mbox{此时}\lim\limits_{x\to x_0}f(x)=0=f(x_0)\quad\lim\limits_{x\to x_0}F(x)
         &=\ln\left|\frac{\sqrt{x^2+a^2}}{a}+ \frac{x}{a}\right|+C\\
         &=\ln(x+\sqrt{x^2+a^2})+C_1\qquad C_1=C-\ln a
 \end{align*}
-
 \centerline{$x=a\sec t,a>0,\sec t =\frac{x}{a},\tan t=\frac{\sqrt{x^2-a^2}}{a},dx=a\sec t\tan t\ dt$}
-\vspace{-6mm}
-\centerline{x>a}
+\textbf{x>a}
 \begin{align*}
         \int \frac{1}{\sqrt{x^2-a^2}}\ dx&=\int\frac{1}{a} \frac{1}{\sqrt{\sec^2t-1}}a\sec t\tan t\ dt\\
         &=\int \frac{1}{\tan t}\sec t\tan t\ dt\\
@@ -897,7 +895,7 @@ $\mbox{此时}\lim\limits_{x\to x_0}f(x)=0=f(x_0)\quad\lim\limits_{x\to x_0}F(x)
         &=\ln\left|\frac{\sqrt{x^2-a^2}}{a}+ \frac{x}{a}\right|+C\\
         &=\ln(x+\sqrt{x^2-a^2})+C_1\qquad C_1=C-\ln a
 \end{align*}
-\centerline{x<-a,x=-t,dx=-dt}
+\textbf{x<-a,x=-t,dx=-dt}
 \begin{align*}
         \int \frac{1}{\sqrt{x^2-a^2}} \ dx&=-\int \frac{1}{\sqrt{t^2-a^2}} \ dt\\
         &=-\ln \left|t+\sqrt{t^2-a^2}\right|+C \\
@@ -906,4 +904,131 @@ $\mbox{此时}\lim\limits_{x\to x_0}f(x)=0=f(x_0)\quad\lim\limits_{x\to x_0}F(x)
         &=-\ln \left|\frac{-a^2}{x+\sqrt{x^2-a^2}}\right|+C\\
         &=-\ln\left|-a^2\right| +\ln\left|{x+\sqrt{x^2-a^2}}\right|+C\\
         &=\ln\left|{x+\sqrt{x^2-a^2}}\right|+C_1\qquad C_1=C-\ln\left|-a^2\right|
+\end{align*}
+\subsection{\centering 第\ref{chapter_definite_integral}章}
+\textbf{\large \ref{Definite_integral_property_1}}
+\begin{align*}
+	\int_{a}^{a}f(x)\ dx&=\lim\limits_{{\lambda}\to{0}}\sum_{i=1}^{n}f(\xi_i)\vartriangle x_i\\
+	&=\lim\limits_{{\lambda}\to{0}}\sum_{i=1}^{n}f(\xi_i)(x_i-x_{i-1})\\
+	&=\lim\limits_{{\lambda}\to{0}}\sum_{i=1}^{n}f(\xi_i)\cdot 0\\
+	&=0
+\end{align*}
+\textbf{\large \ref{Definite_integral_property_2}}
+\begin{align*}
+	\int_{a}^{b}\ dx&=\lim\limits_{{\lambda}\to{0}}\sum_{i=1}^{n}f(\xi_i)\vartriangle x_i\\
+	&=\lim\limits_{{\lambda}\to{0}}\sum_{i=1}^{n}\vartriangle x_i\\
+	&=\lim\limits_{{\lambda}\to{0}}\sum_{i=1}^{n}(x_i-x_{i-1})\\
+	&=\lim\limits_{{\lambda}\to{0}}(b-a)\\
+	&=b-a
+\end{align*}
+\textbf{\large \ref{Definite_integral_property_3}}
+$$	\begin{cases}
+	\sum_{i=1}^{n}\vartriangle x_i=\sum_{i=1}^{n}(x_i-x_{i-1})=b-a\\
+	\sum_{i=1}^{n}(x_{i-1}-x_i)=a-b
+\end{cases}$$	
+\begin{align*}
+	\int_{a}^{b}f(x)\ dx&=\lim\limits_{{\lambda}\to{0}}\sum_{i=1}^{n}f(\xi_i)\vartriangle x_i\\
+	&=\lim\limits_{{\lambda}\to{o}}\sum_{i=1}^{n}f(\xi_i)(x_i-x_{i-1})\\
+	&=-\lim\limits_{{\lambda}\to{o}}\sum_{i=1}^{n}f(\xi_i)(x_{i-1}-x_i)\\
+	&=-\int_{b}^{a}f(x)\ dx
+\end{align*}
+
+\textbf{\large \ref{Definite_integral_property_4}}
+\begin{align*}
+	\int_{a}^{c}f(x)\ dx&=\lim\limits_{\lambda \to 0}\sum_{i=1}^{n}f(\xi_i)\vartriangle x_i\\
+	&=\lim\limits_{\lambda \to 0}\sum_{i=1}^{b}f(\xi_i)\vartriangle x_i+\lim\limits_{\lambda \to 0}\sum_{i=b+1}^{n}f(\xi_i)\vartriangle x_i\\
+	&=\int_{a}^{b} f(x)\ dx+\int_{b}^{c}f(x)\ dx
+\end{align*}
+\textbf{\large \ref{Definite_integral_property_5}}
+\begin{align*}
+	\int_{a}^{c}f(x)\ dx&=\int_{a}^{b} f(x)\ dx+\int_{b}^{c}f(x)\ dx\\ 
+	\int_{a}^{b}f(x)\ dx&=\int_{a}^{c}f(x)\ dx-\int_{b}^{c}f(x)\ dx\\
+	&=\int_{a}^{c}f(x)\ dx+\int_{c}^{b}f(x)\ dx\\
+\end{align*}
+\textbf{\large \ref{Definite_integral_property_6}}
+\begin{align*}
+	\int_{a}^{b}kf(x)\ dx&=\lim\limits_{\lambda \to 0}\sum_{i=1}^{n}kf(\xi_i)\vartriangle x_i\\
+	&=k\lim\limits_{\lambda \to 0}\sum_{i=1}^{n}f(\xi_i)\vartriangle x_i\\
+	&=k\int_{a}^{b}f(x)\ dx
+\end{align*}
+\textbf{\large \ref{Definite_integral_property_7}}
+\begin{align*}
+	\int_{a}^{b}f(x)\pm g(x)\ dx&=\lim\limits_{\lambda \to 0}\sum_{i=1}^{n}\left[f(\xi_i)\pm g(\xi_i)\right]\vartriangle x_i\\
+	&=\lim\limits_{\lambda \to 0}\sum_{i=1}^{n}f(\xi_i)\vartriangle x_i\pm \lim\limits_{\lambda \to 0}\sum_{i=1}^{n}g(\xi_i)\vartriangle x_i\\
+	&=\int_{a}^{b}f(x)\ dx\pm \int_{a}^{b}g(x)\ dx
+\end{align*}
+\textbf{\large \ref{Definite_integral_property_8}}
+	$$f(x)\geqslant 0,\vartriangle x_i=(x_i-x_{i-1})>0\Rightarrow f(x_i)\vartriangle x_i\geqslant 0$$
+	$$\int_{a}^{b} f(x)\ dx=\lim\limits_{\lambda \to 0}\sum_{i=1}^{n}f(\xi_i)\vartriangle x_i\geqslant 0 $$
+\textbf{\large \ref{Definite_integral_property_9}}
+\begin{align*}
+	f(x)\geqslant g(x)\Rightarrow f(x)-g(x)&\geqslant 0\\
+	\int_{a}^{b} f(x)-g(x)\ dx&\geqslant 0\\
+	 \int_{a}^{b} f(x)\ dx-\int_{a}^{b}g(x)\ dx&\geqslant 0\\
+	 \int_{a}^{b} f(x)\ dx&\geqslant \int_{a}^{b}g(x)\ dx
+\end{align*}
+\textbf{\large \ref{Definite_integral_property_10}}
+	$$-\left|f(x)\right|\leqslant f(x)\leqslant\left|f(x)\right|$$
+	$$\int_{a}^{b} -\left|f(x)\right|\ dx\leqslant \int_{a}^{b}f(x)\ dx\leqslant \int_{a}^{b} \left|f(x)\right| \ dx$$
+	$$\left|\int_{a}^{b}f(x)\ dx\right|\leqslant \int_{a}^{b} \left|f(x)\right| \ dx$$
+\textbf{\large \ref{Integral_valuation_formula}}
+$$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
+\begin{align*}
+	\int_{a}^{b}m\ dx \leqslant \int_{a}^{b}f(x)\ dx\leqslant \int_{a}^{b}M\ dx\\
+	m\int_{a}^{b}\ dx \leqslant \int_{a}^{b}f(x)\ dx\leqslant M\int_{a}^{b}\ dx\\
+	m(b-a)\leqslant \int_{a}^{b}f(x)\ dx\leqslant M(b-a)
+\end{align*}
+\textbf{\large \ref{Integral_mean_value_theorem}}
+	$$M\mbox{为区间$\left[a,b\right]$最大值},m\mbox{为区间$\left[a,b\right]$最小值},a<b$$
+	$$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
+	$$m(b-a)\leqslant \int_{a}^{b}f(x)\ dx\leqslant M(b-a)$$
+	$$m\leqslant \frac{1}{(b-a)}\int_{a}^{b}f(x)\ dx\leqslant M$$
+	$$\exists \xi\in\left[a,b\right], f(\xi)=\frac{1}{(b-a)}\int_{a}^{b}f(x)\ dx$$
+	$$f(\xi)(b-a)=\int_{a}^{b}f(x)\ dx$$
+\textbf{\large \ref{integral_upper_limit_function_1}}
+\begin{align*}
+	\phi'(x)&=\lim\limits_{\vartriangle x\to 0}\frac{\phi(x+\vartriangle x)-\phi(x)=\begin{cases}
+			&\int_{a}^{x+\vartriangle x}f(u)\ du-\int_{a}^{x}f(u)\ du\\
+			&\int_{a}^{x}f(u)\ du+\int_{x}^{x+\vartriangle x}f(u)\ du-\int_{a}^{x}f(u)\ du\\
+			&\int_{x}^{x+\vartriangle x}f(u)\ du\\
+			&f(\xi)(x+\vartriangle x-x)\qquad(\xi\in\left[x,x+\vartriangle x\right])\\
+			&f(\xi)\vartriangle x
+	\end{cases}}{\vartriangle x}\\
+	&=\lim\limits_{\vartriangle x\to 0}\frac{f(\xi)\vartriangle x}{\vartriangle x}\\
+	&=\lim\limits_{\vartriangle x\to 0}f(\xi)\quad(\vartriangle x\rightarrow 0,\mbox{时},\xi \rightarrow x)\\
+	&=f(x)
+\end{align*}
+\begin{minipage}{.4\textwidth}
+	\begin{align*}
+		\phi'(x)&=\lim\limits_{\vartriangle x\to 0}\frac{\phi(x+\vartriangle x)-\phi(x)}{\vartriangle x}\\
+		&=\lim\limits_{\vartriangle x\to 0}\frac{f(\xi)\vartriangle x}{\vartriangle x}\\
+		&=\lim\limits_{\vartriangle x\to 0}f(\xi)\quad(\vartriangle x\rightarrow 0,\mbox{时},\xi \rightarrow x)\\
+		&=f(x)
+	\end{align*}
+\end{minipage}
+\hfill
+\hspace{0.5mm}
+\vline
+\hspace{0.5mm}
+\begin{minipage}{.4\textwidth}
+	\begin{align*}
+		&\phi(x+\vartriangle x)-\phi(x)\\
+		=&\int_{a}^{x+\vartriangle x}f(u)\ du-\int_{a}^{x}f(u)\ du\\
+		=&\int_{a}^{x}f(u)\ du+\int_{x}^{x+\vartriangle x}f(u)\ du-\int_{a}^{x}f(u)\ du\\
+		=&\int_{x}^{x+\vartriangle x}f(u)\ du\\
+		=&f(\xi)(x+\vartriangle x-x)\qquad(\xi\in\left[x,x+\vartriangle x\right])\\
+		=&f(\xi)\vartriangle x
+	\end{align*}
+\end{minipage}
+\textbf{\large \ref{integral_upper_limit_function_2}}
+\begin{align*}
+		\left[\phi(\psi (x))\right]'&=\frac{d}{dx}\left[\int_{a}^{\psi(x)}f(u)\ du\right]\\
+	&=\frac{d}{d\psi(x)}\left[\int_{a}^{\psi(x)}f(u)\ du\right]\cdot\frac{d\psi(x)}{dx}\\
+	&=f(\psi(x))\psi'(x)
+\end{align*}
+\textbf{\large \ref{integral_upper_limit_function_3}}
+\begin{align*}
+	\frac{d}{dx}\left[\int_{v(x)}^{\psi(x)}f(u)\ du\right]&=\frac{d}{dx}\left[\int_{0}^{\psi(x)}f(u)\ du+\int_{v(x)}^{0}f(u)\ du\right]\\
+	&=\frac{d}{dx}\left[\int_{0}^{\psi(x)}f(u)\ du\right]-\frac{d}{dx}\left[\int_{0}^{v(x)}f(u)\ du\right]\\
+	&=f\left[\psi(x)\right]\psi'(x)-f\left[v(x)\right]v'(x)
 \end{align*}

@@ -83,6 +83,8 @@
 \contentsline {subsubsection}{\numberline {10.1.2}区间连续}{31}{}%
 \contentsline {subsubsection}{\numberline {10.1.3}间断点}{32}{}%
 \contentsline {subsection}{\numberline {10.2}连续函数的运算}{32}{}%
+\contentsline {subsection}{\numberline {10.3}零点定理}{32}{}%
+\contentsline {subsection}{\numberline {10.4}介质定理}{33}{}%
 \contentsline {section}{\numberline {11} 导数}{34}{}%
 \contentsline {subsection}{\numberline {11.1}定义}{34}{}%
 \contentsline {subsubsection}{\numberline {11.1.1}导数定义}{34}{}%
@@ -135,11 +137,20 @@
 \contentsline {subsubsection}{\numberline {13.4.2}三角函数}{49}{}%
 \contentsline {subsubsection}{\numberline {13.4.3}分式}{50}{}%
 \contentsline {section}{\numberline {14} 定积分}{51}{}%
-\contentsline {section}{\numberline {15} 零散的一些}{52}{}%
-\contentsline {section}{\numberline {16}证明}{54}{}%
-\contentsline {subsection}{\numberline {16.1}\centering 第\ref {chapter_trigonometric_function}章}{54}{}%
-\contentsline {subsection}{\numberline {16.2}\centering 第\ref {chapter_function}章}{55}{}%
-\contentsline {subsection}{\numberline {16.3}\centering 第\ref {chapter_limit}章}{58}{}%
-\contentsline {subsection}{\numberline {16.4}\centering 第\ref {chapter_derivative}章}{65}{}%
-\contentsline {subsection}{\numberline {16.5}\centering 第\ref {chapter_differential}章}{72}{}%
-\contentsline {subsection}{\numberline {16.6}\centering 第\ref {chapter_Indefinite_integral}章}{75}{}%
+\contentsline {subsection}{\numberline {14.1}定积分的定义}{51}{}%
+\contentsline {subsection}{\numberline {14.2}可积的充分条件}{51}{}%
+\contentsline {subsection}{\numberline {14.3}定积分的性质}{52}{}%
+\contentsline {subsection}{\numberline {14.4}积分估值公式}{52}{}%
+\contentsline {subsection}{\numberline {14.5}积分中值定理}{52}{}%
+\contentsline {subsection}{\numberline {14.6}积分上限函数}{53}{}%
+\contentsline {subsubsection}{\numberline {14.6.1}定义}{53}{}%
+\contentsline {subsubsection}{\numberline {14.6.2}性质}{53}{}%
+\contentsline {section}{\numberline {15} 零散的一些}{54}{}%
+\contentsline {section}{\numberline {16}证明}{56}{}%
+\contentsline {subsection}{\numberline {16.1}\centering 第\ref {chapter_trigonometric_function}章}{56}{}%
+\contentsline {subsection}{\numberline {16.2}\centering 第\ref {chapter_function}章}{57}{}%
+\contentsline {subsection}{\numberline {16.3}\centering 第\ref {chapter_limit}章}{60}{}%
+\contentsline {subsection}{\numberline {16.4}\centering 第\ref {chapter_derivative}章}{67}{}%
+\contentsline {subsection}{\numberline {16.5}\centering 第\ref {chapter_differential}章}{74}{}%
+\contentsline {subsection}{\numberline {16.6}\centering 第\ref {chapter_Indefinite_integral}章}{77}{}%
+\contentsline {subsection}{\numberline {16.7}\centering 第\ref {chapter_definite_integral}章}{83}{}%
