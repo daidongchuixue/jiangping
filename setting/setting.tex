@@ -15,18 +15,27 @@
 %\sectionfont{\fontsize{11}{12}\selectfont\centering}% 设置section的字体大小
 %\subsectionfont{\fontsize{11}{12}\selectfont}% 设置section的字体大小
 
-% 设置页面的环境,a4纸张大小，左右上下边距信息
-\usepackage[a5paper,left=5mm,right=5mm,top=14mm,bottom=5mm]{geometry}
+
+\usepackage[a5paper,left=5mm,right=4mm,top=14mm,bottom=1mm]{geometry}% 设置页面的环境,a4纸张大小，左右上下边距信息
 \usepackage{fancyref}
 %\usepackage{graphicx}
-% 使用indentfirst宏包
-\usepackage{indentfirst}
-% 设置首行缩进距离
-\setlength{\parindent}{0em}
+
+\usepackage{indentfirst}% 使用indentfirst宏包
+
+\setlength{\parindent}{0em} % 设置首行缩进距离
 
 
-%\centering %居中
 \headsep=2mm
 
-
-\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{fancyhdr}%设置页码
+\fancypagestyle{mystyle}{%
+	\fancyhf{} % 清空页眉和页脚的设置
+	%\rhead{\thepage}
+	\setcounter{page}{1}
+	%\fancyhead[L]{\thepage} % 在页眉左侧显示页码
+	\fancyhead[R]{\S\leftmark$\quad|\qquad$\textbf{\thepage}} % 在页眉中间显示当前章的标题
+	%\fancyhead[R]{\rightmark} % 在页眉右侧显示当前节的标题
+	%\renewcommand{\headrulewidth}{0.4pt} % 设置页眉下方横线的粗细为0.4pt
+	%\renewcommand{\footrulewidth}{0pt} % 页脚上方无横线
+}

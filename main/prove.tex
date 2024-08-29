@@ -985,19 +985,7 @@ $$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
 	$$m\leqslant \frac{1}{(b-a)}\int_{a}^{b}f(x)\ dx\leqslant M$$
 	$$\exists \xi\in\left[a,b\right], f(\xi)=\frac{1}{(b-a)}\int_{a}^{b}f(x)\ dx$$
 	$$f(\xi)(b-a)=\int_{a}^{b}f(x)\ dx$$
-\textbf{\large \ref{integral_upper_limit_function_1}}
-\begin{align*}
-	\phi'(x)&=\lim\limits_{\vartriangle x\to 0}\frac{\phi(x+\vartriangle x)-\phi(x)=\begin{cases}
-			&\int_{a}^{x+\vartriangle x}f(u)\ du-\int_{a}^{x}f(u)\ du\\
-			&\int_{a}^{x}f(u)\ du+\int_{x}^{x+\vartriangle x}f(u)\ du-\int_{a}^{x}f(u)\ du\\
-			&\int_{x}^{x+\vartriangle x}f(u)\ du\\
-			&f(\xi)(x+\vartriangle x-x)\qquad(\xi\in\left[x,x+\vartriangle x\right])\\
-			&f(\xi)\vartriangle x
-	\end{cases}}{\vartriangle x}\\
-	&=\lim\limits_{\vartriangle x\to 0}\frac{f(\xi)\vartriangle x}{\vartriangle x}\\
-	&=\lim\limits_{\vartriangle x\to 0}f(\xi)\quad(\vartriangle x\rightarrow 0,\mbox{时},\xi \rightarrow x)\\
-	&=f(x)
-\end{align*}
+\textbf{\large \ref{integral_upper_limit_function_1}}\\
 \begin{minipage}{.4\textwidth}
 	\begin{align*}
 		\phi'(x)&=\lim\limits_{\vartriangle x\to 0}\frac{\phi(x+\vartriangle x)-\phi(x)}{\vartriangle x}\\
@@ -1031,4 +1019,124 @@ $$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
 	\frac{d}{dx}\left[\int_{v(x)}^{\psi(x)}f(u)\ du\right]&=\frac{d}{dx}\left[\int_{0}^{\psi(x)}f(u)\ du+\int_{v(x)}^{0}f(u)\ du\right]\\
 	&=\frac{d}{dx}\left[\int_{0}^{\psi(x)}f(u)\ du\right]-\frac{d}{dx}\left[\int_{0}^{v(x)}f(u)\ du\right]\\
 	&=f\left[\psi(x)\right]\psi'(x)-f\left[v(x)\right]v'(x)
+\end{align*}
+\textbf{\large \ref{Leibniz_formula}}
+\begin{center}
+	$\begin{cases}
+		F(x)\mbox{是}f(x)\mbox{的原函数}\\
+		\phi(x)=\int_{a}^{x}f(u)\ du\mbox{也是}f(x)\mbox{的原函数}
+	\end{cases}\Rightarrow F(x)-\phi(x)\equiv C$
+	\begin{align*}
+		x=a\qquad F(a)-\phi(a)=C\\
+		F(a)=C
+	\end{align*}
+	\begin{align*}
+		F(x)-\phi(x)&=C\\
+		\phi(x)&=F(x)-C\\
+		x=b\qquad \phi(b)&=F(b)-F(a)\\
+		\int_{a}^{b}f(x)\ dx&=F(b)-F(a)
+	\end{align*}
+\end{center}
+ \textbf{\large \ref{Fixed_integral_substitution_method}}
+ \begin{align*}
+	\int_{a}^{b}f(x)\ dx&=F(b)-F(a) \\
+	&=F\left[\phi(\beta)\right]-F\left[\phi(\alpha)\right]\\
+	&=\left.F\left[\phi(t)\right]\right|_\alpha^\beta\\
+	&=\int_{\alpha}^{\beta}\frac{d F\left[\phi(t)\right]}{dt} \ dt\\
+	&=\int_{\alpha}^{\beta} f\left[\varphi(t)\right]\phi'(t)\ dt\\
+\end{align*}
+ \textbf{\large \ref{Definite_integral_identity_1}}
+\begin{center}
+	\mbox{记}$\phi (x)=\int_{a}^{x}f(t)\ dt,\quad a\leqslant x\leqslant b$\\
+	$\phi(a)= 0,\quad \phi(b)=\int_{a}^{b}f(t)\ dt=\int_{a}^{b}f(x)\ dx$\\
+	$\phi'(x)=f(x)\geqslant 0,\quad \mbox{在}\left[a,b\right]\mbox{单调非降}，\phi(a)=0,\phi(b)=0$\\
+	$\phi(x)\equiv 0,x\in\left[a,b\right],\phi'(x)=f(x)\equiv 0$
+\end{center}
+\textbf{\large \ref{Definite_integral_identity_2}}
+\begin{center}
+	为\ref{Definite_integral_identity_1}的逆否命题
+\end{center} 
+\textbf{\large \ref{Definite_integral_identity_3}}
+\begin{center}
+	$h(x)=g(x)-f(x)\geqslant 0,\quad x\in(a,b)$\\
+	$\int_{a}^{b}h(x)\ dx=\int_{a}^{b}g(x)\ dx-\int_{a}^{b}f(x)\ dx=0$\\
+	$h(x)\equiv 0\Rightarrow f(x)=g(x)$
+\end{center}
+\begin{minipage}{.4\textwidth}
+	\textbf{\large \ref{Odd_even_function_integral_1}}\\
+	\begin{align*}
+	\int_{-a}^{a}f(x)\ dx&=\int_{0}^{a}f(-x)+f(x)\ dx\\
+	&=\int_{0}^{a}2f(x)\ dx\\
+	&=2\int_{0}^{a}f(x)\ dx
+	\end{align*}
+	\textbf{\large \ref{Odd_even_function_integral_2}}\\
+	\begin{align*}
+		\int_{-a}^{a}f(x)\ dx&=\int_{0}^{a}f(-x)+f(x)\ dx\\
+		&=\int_{0}^{a}-f(x)+f(x)\ dx\\
+		&=0
+	\end{align*}
+\end{minipage}
+\hfill
+\hspace{0.5mm}
+\vline
+\hspace{0.5mm}
+\begin{minipage}{.4\textwidth}
+	\begin{align*}
+		\int_{-a}^{0}f(x)\ dx&\xlongequal{x=-t}-\int_{a}^{0}f(-t)\ dt\\
+		&=\int_{0}^{a}f(-t)\ dt\\
+		&=\int_{0}^{a}f(-x)\ dx\\
+\int_{-a}^{a}f(x)\ dx&=\int_{-a}^{0}f(x)\ dx+\int_{0}^{a}f(x)\ dx\\
+&=\int_{0}^{a}f(-x)\ dx+\int_{0}^{a}f(x)\ dx\\
+&=\int_{0}^{a}f(-x)+f(x)\ dx
+	\end{align*}
+\end{minipage}
+\textbf{\large \ref{Periodic_function_integral_1}}
+	$$G(x)=\int_{x}^{x+T}f(x)\ dx$$
+	$$G'(x)=f(x+T)-f(x)=0\Rightarrow G(x)\equiv C$$
+	$$G(a)=G(0)=\int_{0}^{T}f(x)\ dx$$
+\textbf{\large \ref{Periodic_function_integral_2}}
+\begin{align*}
+	\int_{x}^{x+nT}f(x)\ dx&=\int_{a}^{T}f(x)\ dx+\int_{a+T}^{a+2T}f(x)\ dx+\cdots+\int_{a+(n-1)T}^{a+nT}f(x)\ dx\\
+	&=\int_{0}^{T}f(x)\ dx+\int_{0}^{T}f(x)\ dx+\cdots+\int_{0}^{T}f(x)\ dx\\
+	&=n\int_{0}^{T}f(x)\ dx
+\end{align*}
+\textbf{\large \ref{Definite_integral_theorem_1}}
+\begin{align*}
+	\int_{0}^{\frac{\pi}{2}}f(\sin x)\ dx&\xlongequal{\frac{\pi}{2}-x=t}-\int_{\frac{\pi}{2}}^{0}f\left[\sin \left(\frac{\pi}{2}-t\right)\right]\ dt\\
+	&=\int_{0}^{\frac{\pi}{2}}f(\cos t)\ dt\\
+	&=\int_{0}^{\frac{\pi}{2}}f(\cos x)\ dx
+\end{align*}
+\textbf{\large \ref{Definite_integral_theorem_2}}
+\begin{align*}
+	I_n=\int_{0}^{\frac{\pi}{2}}\sin^n x\ dx&=\int_{0}^{\frac{\pi}{2}}\sin^{n-1} x\sin x\ dx\\
+	&=-\int_{0}^{\frac{\pi}{2}}\sin^{n-1} x\ d\cos x\\
+	&=-\left[sin^{n-1}x\cos x\right]_0^{\frac{\pi}{2}}+(n-1)\int_{0}^{\frac{\pi}{2}}\cos x\cdot\sin^{n-2}x\cdot\cos x\ dx\\
+	&=(n-1)\int_{0}^{\frac{\pi}{2}}\cos^2 x\cdot\sin^{n-2}x\ dx\\
+	&=(n-1)\int_{0}^{\frac{\pi}{2}}(1-\sin^2x)\cdot\sin^{n-2}x\ dx\\
+	&=(n-1)\int_{0}^{\frac{\pi}{2}}\sin^{n-2}x\ dx-(n-1)\int_{0}^{\frac{\pi}{2}}\sin^nx\ dx\\
+	n\int_{0}^{\frac{\pi}{2}}\sin^nx\ dx&=(n-1)\int_{0}^{\frac{\pi}{2}}\sin^{n-2}x\ dx\\
+	\int_{0}^{\frac{\pi}{2}}\sin^nx\ dx&=\frac{n-1}{n}\int_{0}^{\frac{\pi}{2}}\sin^{n-2}x\ dx\\
+	I_n&=\frac{n-1}{n}I_{n-2}\\
+	\int_{0}^{\frac{\pi}{2}}1\ dx&=\left[x\right]_0^{\frac{\pi}{2}}=\frac{\pi}{2}\\
+	\int_{0}^{\frac{\pi}{2}}\sin x\ dx&=-\left[\cos x\right]_0^{\frac{\pi}{2}}=1\\
+	(\mbox{n是偶数})I_n&=\frac{n-1}{n}\cdot\frac{n-3}{n-2}\cdots\frac{3}{4}\cdot\frac{1}{2}\cdot\frac{\pi}{2}\\
+	(\mbox{n是奇数})I_n&=\frac{n-1}{n}\cdot\frac{n-3}{n-2}\cdots\frac{4}{5}\cdot\frac{2}{3}\cdot 1
+\end{align*}
+\textbf{\large \ref{Definite_integral_inequality_1}}
+\begin{align*}
+	\left[f(x)+tg(x)\right]^2 &\geqslant 0\\
+	\int_{a}^{b}\left[f(x)+tg(x)\right]^2\ dx&\geqslant 0\\
+	\int_{a}^{b}f^2(x)+2tf(x)g(x)+t^2g^2(x)\ dx&\geqslant 0\\
+	\int_{a}^{b}f^2(x)\ dx+2t\int_{a}^{b}f(x)g(x)\ dx+t^2\int_{a}^{b}g^2(x)\ dx&\geqslant 0\qquad(b^2-4ac\leqslant 0)\\
+	\vartriangle =\left[\int_{a}^{b}f(x)g(x)\ dx\right]^2-\int_{a}^{b}f^2(x)\ dx\cdot \int_{a}^{b}g^2(x)\ dx&\leqslant 0\\
+	\left[\int_{a}^{b}f(x)g(x)\ dx\right]^2 &\leqslant \int_{a}^{b}f^2(x)\ dx\cdot \int_{a}^{b}g^2(x)\ dx \\
+\end{align*}
+\textbf{\large \ref{Definite_integral_inequality_2}}
+\begin{align*}
+	\left[\int_{a}^{b}f(x)g(x)\ dx\right]^2&\leqslant \int_{a}^{b}f^2(x)\ dx\cdot \int_{a}^{b}g^2(x)\ dx\\
+	\int_{a}^{b}f(x)g(x)\ dx&\leqslant \left[\int_{a}^{b}f^2(x)\ dx\cdot \int_{a}^{b}g^2(x)\ dx\right]^{\frac{1}{2}}\\
+	\int_{a}^{b}2f(x)g(x)\ dx&\leqslant 2\left[\int_{a}^{b}f^2(x)\ dx\cdot \int_{a}^{b}g^2(x)\ dx\right]^{\frac{1}{2}}\\
+	\int_{a}^{b}\left[f(x)+g(x)\right]^2 \ dx&\leqslant \int_{a}^{b}f^2(x)\ dx+2\left[\int_{a}^{b}f^2(x)\ dx\cdot 
+	\int_{a}^{b}g^2(x)\ dx\right]^{\frac{1}{2}}+\int_{a}^{b}g^2(x)\ dx\\
+	\left\{\int_{a}^{b}\left[f(x)+g(x)\right]^2 \ dx\right\}^{\frac{1}{2}}&\leqslant \left[\int_{a}^{b}f^2(x)\ dx\right]^{\frac{1}{2}}+\left[\int_{a}^{b}g^2(x)\ dx\right]^{\frac{1}{2}}
 \end{align*}
