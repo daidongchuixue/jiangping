@@ -689,7 +689,129 @@ $\mbox{此时}\lim\limits_{x\to x_0}f(x)=0=f(x_0)\quad\lim\limits_{x\to x_0}F(x)
       &=\frac{1}{n}\cdot 0\\
       &=0
 \end{align*}
-
+\subsection{\centering 第\ref{differential_equations}章}
+\textbf{\large \ref{First_order_linear_differential_equation_1}}
+\begin{align*}
+	\frac{dy}{dx}+P(x)y&=0\\
+	\frac{dy}{y}&=-P(x)\ dx\\
+	\int \frac{dy}{y}&=\int -P(x)\ dx\\
+	\ln\left|y\right|&=-\int P(x)\ dx+C_2\\
+	\left|y\right|&=C_1e^{-\int P(x)\ dx}\\
+	y&=Ce^{-\int P(x)\ dx}
+\end{align*}
+\textbf{\large \ref{First_order_linear_differential_equation_2}}\\
+\centerline{\textbf{常数变异法:假设一个解，包含关于$x$的未知函数$u(x)$}}
+\begin{align*}
+	y&=Ce^{-\int P(x)\ dx}\\
+	y&=u(x)e^{-\int P(x)\ dx}\\
+	\frac{dy}{dx}&=u'(x)e^{-\int P(x)\ dx}+u(x)e^{-\int P(x)\ dx}\cdot\left[-P(x)\right]\\
+	\frac{dy}{dx}&=u'(x)e^{-\int P(x)\ dx}-P(x)u(x)e^{-\int P(x)\ dx}
+\end{align*}
+\centerline{\textbf{$u(x)$的表达式带入原方程，求出$u(x)$与$Q(x)$的关系}}
+\begin{align*}
+	\frac{dy}{dx}+P(x)y&=Q(x)\\
+	u'(x)e^{-\int P(x)\ dx}-P(x)u(x)e^{-\int P(x)\ dx}+P(x)u(x)e^{-\int P(x)\ dx}&=Q(x)\\
+	u'(x)e^{-\int P(x)\ dx}&=Q(x)\\
+	u'(x)&=Q(x)e^{\int P(x)\ dx}\\
+	u(x)&=\int Q(x)e^{\int P(x)\ dx}\ dx+C
+\end{align*}
+\centerline{\textbf{求出$u(x)$与$Q(x)$的关系，在带回假设的解}}
+\begin{align*}
+	y&=u(x)e^{-\int P(x)\ dx}\\
+	y&=e^{-\int P(x)\ dx}\left[\int Q(x)e^{\int P(x)\ dx}\ dx+C\right]
+\end{align*}
+\textbf{\large \ref{second_order_linear_differential_equation_1}}\\
+\begin{minipage}{.5\textwidth}
+	\begin{align*}
+y_1''(x)+P_1(x)y_1'+P_2(x)y_1\equiv 0\\
+y_2''(x)+P_1(x)y_2'+P_2(x)y_2\equiv 0
+	\end{align*}
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.5\textwidth}
+	\begin{align*}
+	y&=C_1y_1+C_2y_2\\
+	y'&=C_1y_1'+C_2y_2'\\
+	y''&=C_1y_1''+C_2y_2''
+	\end{align*}
+\end{minipage}
+\begin{align*}
+	&y''+P_1(x)y'+P_2(x)y\\
+	=&C_1y_1''+C_2y_2''+P_1(x)\left(C_1y_1'+C_2y_2'\right)+P_2(x)\left(C_1y_1+C_2y_2\right)\\
+	=&C_1\left[y_1''(x)+P_1(x)y_1'+P_2(x)y_1\right]+C_2\left[y_2''(x)+P_1(x)y_2'+P_2(x)y_2\right]\\
+	\equiv &0
+\end{align*}
+\textbf{\large \ref{Second_order_homogeneous_differential_equation_with_constant_coefficients}}\\
+\begin{minipage}{.2\textwidth}
+	\centerline{\textbf{特征方程}}
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.8\textwidth}
+	\begin{align*}
+		y''+py'+qy=0\\
+		r^2e^{rx}+pre^{rx}+qe^{rx}=0\\
+		e^{rx}(r^2+pr+q)=0\\
+		r^2+pr+q=0
+	\end{align*}
+\end{minipage}
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+\begin{minipage}{.2\textwidth}
+	\begin{align*}
+		p^2-4q>0
+	\end{align*}
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.8\textwidth}
+	\begin{align*}
+		\mbox{两个不同实根解：}r_1,r_2\\
+		\frac{e^{r_1x}}{e^{r_2x}}=e^{(r_1-r_2)x}\not\equiv\mbox{常数}\qquad\mbox{线性无关}\\
+		y=C_1y_1+C_2y_2=C_1e^{r_1x}+C_2e^{r_2x}
+	\end{align*}
+\end{minipage}
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+\begin{minipage}{.2\textwidth}
+	\begin{align*}
+		p^2-4q=0
+	\end{align*}
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.8\textwidth}
+	$$\mbox{两个相同解：}r_1=r_2=-\frac{p}{2}\ \mbox{设}y_2=u(x)e^{r_1x}\mbox{是另一个解}$$
+	\begin{align*}
+		y_2'&=u'e^{r_1x}+r_1ue^{r_1x}=(u'+r_1u)e^{r_1x}\\
+		y_2''&=(u''+r_1)e^(r_1x)+(u'+r_1u)e^{r_1x}r_1=(u''+2r_1u'+r_1^2u)e^{r_1x}
+	\end{align*}
+	\begin{align*}
+		y''+py'+qy=0\\
+		(u''+2r_1u'+r_1^2u)e^{r_1x}+p(u'+r_1u)e^{r_1x}+que^{r_1x}=0\\
+		e^{r_1x}\left[u''+(2r_1+p)+(r_1^2+pr_1+q)u\right]=0\\
+		u''=0
+	\end{align*}
+	$$u=C_1x+C_2 \quad\mbox{取：}u(x)=x\quad\frac{e^{r_1x}}{xe^{r_1x}}=xe^{(r_1-r_2)x}\not\equiv\mbox{常数}$$
+	$$y=C_1y_1+C_2y_2=C_1e^{r_1x}+C_2xe^{r_1x}$$
+\end{minipage}
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+\begin{minipage}{.2\textwidth}
+	\begin{align*}
+		p^2-4q<0
+	\end{align*}
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.8\textwidth}
+	$$\mbox{两个共轭复根解：}r_{1,2}=\alpha\pm i\beta$$
+	$$y_1=e^{(\alpha+i\beta)x}=e^{\alpha x}(\cos\beta x+i\sin\beta x)$$
+	$$y_2=e^{(\alpha=i\beta)x}=e^{\alpha x}(\cos\beta x-i\sin\beta x)$$
+	$$\overline{y_1}=\frac{1}{2}(y_1+y_2)=e^{\alpha x}\cos\beta x$$
+	$$\overline{y_2}=\frac{1}{2i}(y_1-y_2)=e^{\alpha x}\sin\beta x$$
+	$$\frac{\overline{y_1}}{\overline{y_2}}=\cot\beta x\not\equiv\mbox{常数}$$
+	$$y=C_1\overline{y_1}+C_2\overline{y_2}=e^{\alpha x}(C_1\cos\beta x+C_2\sin\beta x)$$
+\end{minipage}
+\noindent\rule[\fill]{\textwidth}{0.4pt}
 \subsection{\centering 第\ref{chapter_Indefinite_integral}章}
 \textbf{\large \ref{Indefinite_integral_operation_1}}
 \begin{align*}

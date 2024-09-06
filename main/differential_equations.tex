@@ -1,1 +1,188 @@
 \begin{center}\section{微分方程}\label{differential_equations}\end{center}
+\subsection{基本概念}
+\begin{center}
+	微分方程，含有自变量，未知函数及导数的方程，称为微分方程。\\
+	微分方程$\begin{cases}
+		\mbox{未知函数为一元函数}\qquad\mbox{常微分方程}\\
+		\mbox{未知函数为多元函数}\qquad\mbox{偏微分方程(数理方程)}
+	\end{cases}$
+\end{center}
+\subsubsection{微分方程的阶}
+\centerline{方程中的未知函数的最高阶的导数，阶数称为发挥嗯称的阶。}
+\subsubsection{$n$阶微分方程解}
+$$F(x,y,y',y'',\cdots,y^{(n)})=0,\  y=\varphi(x)$$ $$F(x,\varphi(x),\varphi'(x),\quad\varphi''(x),\cdots,\varphi^{(n)})\equiv0$$
+\begin{center}	
+	$x\in I,$称$\varphi$为方程在区间$I$上的解$\begin{cases}
+		\mbox{包含有n个任意常数称y=$\varphi(x)$是方程的通解}\\
+		\mbox{不含任意常数称y=$\varphi(x)$是方程的特解}
+	\end{cases}$
+\end{center}
+ \subsubsection{齐次方程}
+\centerline{如果一阶微分方程可化为$\frac{dy}{dx}=\varphi\left(\frac{y}{x}\right)$则称原方程为齐次方程}
+ \subsection{一阶线性微分方程}
+ $$\frac{dy}{dx}+P(x)y=Q(x)\begin{cases}
+ 	Q(x)\equiv 0,\quad\mbox{称一阶线性齐次方程}\\
+ 	Q(x)\not\equiv 0,\quad\mbox{称一阶线性非齐次方程}
+  \end{cases}$$
+\begin{align}                                          
+	\mbox{齐次通解}\qquad y&=Ce^{-\int P(x)\ dx} \label{First_order_linear_differential_equation_1}\\
+	\mbox{非齐次通解}\qquad y&=e^{-\int P(x)\ dx}\left[\int Q(x)e^{\int P(x)\ dx}\ dx+C\right] \label{First_order_linear_differential_equation_2}
+\end{align}
+\subsection{二阶线性微分方程}
+$$y''+P_1(x)y'+P_2(x)y=f(X)\begin{cases}
+	f(x)\equiv 0,\quad\mbox{称二阶阶线性齐次方程}\\
+	f(x)\not\equiv 0,\quad\mbox{称二阶阶线性非齐次方程}
+\end{cases}$$
+\subsubsection{二阶线性齐次微分方程}
+\begin{equation} \label{second_order_linear_differential_equation_1}
+		\begin{split}
+			&\mbox{$y_1(x),y_2(x)$是任意的两个解，$C_1,C_2$是任意常数，则}\\
+			&y=C_1y_1(x)+C_2y_2(x)\quad\mbox{也是的解}
+		\end{split}
+\end{equation}
+\begin{equation}
+	\begin{split}
+	&\mbox{$y_1,y_2$是两个线性无关解，$C_1,C_2$是任意常数，则}\\
+	&\mbox{通解为,\quad}y=C_1y_1+C_2y_2
+	\end{split}
+\end{equation}
+\subsubsection{二阶线性非齐次微分方程}
+$$\mbox{非齐次通解}\ y=Y+y^*\begin{cases}
+	y^*\ \mbox{非其次特解}\\
+	Y=C_1y_1+C_2y_2\ \mbox{齐次通解}
+\end{cases}$$
+\begin{align}
+	y=y_1-y_2\mbox{是对应齐次方程的解}\\
+	y=\alpha y_1+(1-\alpha)y_2\mbox{也是解}
+\end{align}
+\begin{align*}
+	&(1)\quad y''+P(x)y'+Q(X)y=f_1(x)+f_2(x) \\
+	&(2)\quad y''+P(x)y'+Q(X)y=f_1(x)\\
+	&(3)\quad y''+P(x)y'+Q(X)y=f_2(x)\\
+	&(2)\ \mbox{特解为}y_1^*\quad(3)\ \mbox{特解为}y_2^*\Rightarrow \quad (1)\ \mbox{特解为}y_1^*+y_2^*
+\end{align*}
+\subsubsection{二阶常系数齐次线性微分方程}
+\begin{center}
+	$y''+py'+qy=0\qquad (p,q\ \mbox{属于常数})$\\
+	$y=e^{rx}\qquad y'=re^{rx}\qquad y''=r^2e^{rx}$
+\end{center}
+\begin{equation}\label{Second_order_homogeneous_differential_equation_with_constant_coefficients}
+	\mbox{特征方程：}r^2+pr+q=0\begin{cases}
+		p^2-4q>0\quad\mbox{通解：} C_1e^{r_1x}+C_2e^{r_2x}\\
+		p^2-4q=0\quad\mbox{通解：}C_1e^{r_1x}+C_2xe^{r_1x}\\
+		p^2-4q<0\quad\mbox{通解：}e^{\alpha x}(C_1\cos\beta x+C_2\sin\beta x)
+	\end{cases}
+\end{equation}
+\subsubsection{二阶常系数非齐次线性微分方程}
+\begin{center}
+	$y''+py'+qy=f(x)\qquad(p,q,\mbox{为常数})$\\
+	$y''+py'+qy=0\qquad (\mbox{对应的齐次方程})$\\
+	$\mbox{通解} =\mbox{齐次方程通解}+\mbox{非齐次特解}$
+\end{center}
+	$$f(x)=\begin{cases}
+		P_m(x)e^{\lambda x}&(P_m(x)\mbox{是$x$的$m$次多项式})\\
+		\left[P_l(x)\cos\omega x+P_n(x)\sin\omega x\right]e^{\lambda x}\quad&(P_l(x),P_n(x)\mbox{是$x$的$l.n$次多项式})
+	\end{cases}$$
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+	$$f(x)=P_m(x)e^{\lambda x}\mbox{型}\begin{cases}
+		y&=Q(x)e^{\lambda x}\\
+		y'&=Q'(x)e^{\lambda x}+\lambda Q(x)e^{\lambda x}\\
+		&=\left[Q'(x)+\lambda Q(x)\right]e^{\lambda x}\\
+		y''&=\left[Q''(x)+\lambda Q'(x)\right]e^{\lambda x}+\left[Q'(x)+\lambda Q(x)\right]\lambda e^{\lambda x}\\
+		&=\left[Q''(x)+2\lambda Q'(x)+\lambda^2Q(x)\right]e^{\lambda x}
+	\end{cases}$$
+\begin{align*}
+	\left[Q''(x)+2\lambda Q'(x)+\lambda^2Q(x)\right]e^{\lambda x}+p\left[Q'(x)+\lambda Q(x)\right]e^{\lambda x}+qQ(x)e^{\lambda x}&=P_m(x)e^{\lambda x}\\
+	\left[Q''(x)+2\lambda Q'(x)+\lambda^2Q(x)\right]+p\left[Q'(x)+\lambda Q(x)\right]+qQ(x)&=P_m(x)\\
+	Q''(x)+(2\lambda+p)Q'(x)+(\lambda^2+p\lambda+q)Q(x)&=P_m(x)
+\end{align*}
+$$\lambda^2+p\lambda+q\begin{cases}
+	\neq 0\ (0\mbox{重根})\Rightarrow\begin{cases}
+	 	Q(x)=Q_m(x)\\
+	 	Q_m(x)=b_0+b_1x+b_2x^2+\cdots+b_mx^m\quad(b_m\neq 0)\\
+	 	b_0,b_1,b_2\cdots,b_m\mbox{待定系数}\\
+	 	y^*=Q_m(x)e^{\lambda x}
+	 \end{cases}\\
+ 	=0\quad 2\lambda+p\begin{cases}
+ 		\neq 0\ (1\mbox{重根})\Rightarrow\begin{cases}
+ 			Q(x)=xQ_m(x)\\
+ 			y^*=xQ_m(x)e^{\lambda x}
+ 		\end{cases}\\
+ 	= 0\ (2\mbox{重根})\Rightarrow\begin{cases}
+ 			Q(x)=x^2Q_m(x)\\
+ 			y^*=x^2Q_m(x)e^{\lambda x}
+ 		\end{cases}
+ 	\end{cases}
+\end{cases}$$
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+$$\left[P_l(x)\cos\omega x+P_n(x)\sin\omega x\right]e^{\lambda x}\quad\mbox{型}\begin{cases}
+	\lambda \mbox{是常数}\quad P_l(x)\mbox{是$x$的$l$次多项式}\\
+	\omega\ \mbox{是常数}\quad P_n(x)\mbox{是$x$的$n$次多项式}
+\end{cases}$$
+$$y^*=x^ke^{\lambda x}\left[R_n(x)\cos\omega x+R_n(x)\sin\omega x\right]\begin{cases}
+	n=\max\{l,m\}\\
+	\mbox{特征方程：}r^2+pr+q=0\\
+	\lambda+i\omega\begin{cases}
+		\mbox{不是特征根}\ k=0\\
+		\mbox{是特征根}\ k=1
+	\end{cases}
+\end{cases}$$
+\subsection{n阶线性微分方程}
+$$y^{(n)}+P_1(x)y^{(n-1)}+\cdots+a_ny=f(X)\begin{cases}
+	f(x)\equiv 0,\quad\mbox{称n阶阶线性齐次方程}\\
+	f(x)\not\equiv 0,\quad\mbox{称n阶阶线性非齐次方程}
+\end{cases}$$
+\begin{equation}
+	\begin{split}
+		&\mbox{$y_1,y_2,\cdots,y_n$是$n$个线性无关解，$C_1,C_2,\cdots,C_n$是任意常数，则}\\
+		&\mbox{通解为,\quad}y=C_1y_1+C_2y_2+\cdots+C_ny_n
+	\end{split}
+\end{equation}
+$$\mbox{非齐次通解}\ y=Y+y^*\begin{cases}
+	y^*\ \mbox{非其次特解}\\
+	Y=C_1y_1+C_2y_2+\cdots+C_ny_n\ \mbox{齐次通解}\end{cases}$$
+\subsubsection{n阶常系数线性齐次微分方程}
+$$y^{(n)}+a_1y{(n-1)}+a_2y^{(n-2)}+\cdots+a_ny=0$$
+$$\mbox{特征方程：}r^n+a_1r{n-1}+a_2r^{n-2}+\cdots+a_n=0$$
+\centerline{\textbf{不同根对应的通解}}
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+\begin{minipage}{.2\textwidth}
+$$\mbox{单根(实)}$$
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.8\textwidth}
+	$$Ce^{rx}$$
+\end{minipage}
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+\begin{minipage}{.2\textwidth}
+	$$\mbox{$k$个根(实)}$$
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.8\textwidth}
+	$$(C_1+C_2x+C_3x^2+\cdots+C_kx^{k-1})e^{rx}$$
+\end{minipage}
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+\begin{minipage}{.2\textwidth}
+	$$\mbox{单共轭复根}$$
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.8\textwidth}
+	$$e^{\alpha x}(C_1\cos\beta x+C_2\sin\beta x)$$
+\end{minipage}
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+\begin{minipage}{.2\textwidth}
+	$$\mbox{$k$个共轭复根}$$
+\end{minipage}
+\hfill
+\vline
+\begin{minipage}{.8\textwidth}
+	$$e^{\alpha x}\left\{\left[C_1+C_2x\cdots C_kx^{k-1}\right]\cos\beta x+\left[D_1+D_2x\cdots D_kx^{k-1}\right]\sin\beta x\right\}$$
+\end{minipage}\\ 
+\noindent\rule[\fill]{\textwidth}{0.4pt}
+\subsubsection{n阶常系数线性非齐次微分方程}
+$$y^{(n)}+P_1(x)y^{(n-1)}+\cdots+a_ny=f(X)=P_m(x)e^{\lambda x}$$
+$$n\mbox{阶通解}=n\mbox{阶齐次通解}+n\mbox{非齐次特解}$$
+$$\mbox{特解：}y^*=x^kQ_m(x)e^{\lambda x}\quad\mbox{其中k为特征根的重数}$$

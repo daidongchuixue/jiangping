@@ -36,133 +36,147 @@
 \contentsline {subsubsection}{\numberline {5.3.2}弧微分}{10}{}%
 \contentsline {subsubsection}{\numberline {5.3.3}曲率}{11}{}%
 \contentsline {subsubsection}{\numberline {5.3.4}曲率圆，曲率半径}{11}{}%
-\contentsline {section}{\numberline {6} 图像}{13}{}%
-\contentsline {section}{\numberline {7} 并集，交集}{14}{}%
-\contentsline {subsection}{\numberline {7.1}定义}{14}{}%
-\contentsline {subsection}{\numberline {7.2}运算}{14}{}%
-\contentsline {subsection}{\numberline {7.3}性质}{14}{}%
-\contentsline {subsection}{\numberline {7.4}gustus De Morgan定理}{15}{}%
-\contentsline {subsection}{\numberline {7.5}德摩根律\ 定理}{15}{}%
-\contentsline {section}{\numberline {8} 群，环，域}{16}{}%
-\contentsline {subsection}{\numberline {8.1}群}{16}{}%
-\contentsline {subsubsection}{\numberline {8.1.1}M1}{16}{}%
-\contentsline {subsubsection}{\numberline {8.1.2}M2}{16}{}%
-\contentsline {subsubsection}{\numberline {8.1.3}M3}{16}{}%
-\contentsline {subsubsection}{\numberline {8.1.4}M4}{16}{}%
-\contentsline {subsubsection}{\numberline {8.1.5}sdas}{16}{}%
-\contentsline {subsection}{\numberline {8.2}环}{16}{}%
-\contentsline {subsection}{\numberline {8.3}域}{16}{}%
-\contentsline {section}{\numberline {9} 极限}{17}{}%
-\contentsline {subsection}{\numberline {9.1}数列极限}{17}{}%
-\contentsline {subsubsection}{\numberline {9.1.1}数列的定义}{17}{}%
-\contentsline {subsubsection}{\numberline {9.1.2}数列极限的定义}{17}{}%
-\contentsline {subsubsection}{\numberline {9.1.3}极限的唯一性}{17}{}%
-\contentsline {subsubsection}{\numberline {9.1.4}有界数列}{17}{}%
-\contentsline {subsubsection}{\numberline {9.1.5}收敛数列与有界性}{17}{}%
-\contentsline {subsubsection}{\numberline {9.1.6}收敛数列的保号性}{17}{}%
-\contentsline {subsubsection}{\numberline {9.1.7}收敛数列和子数列 }{18}{}%
-\contentsline {subsection}{\numberline {9.2}函数极限}{18}{}%
-\contentsline {subsubsection}{\numberline {9.2.1}极限的定义}{18}{}%
-\contentsline {subsubsection}{\numberline {9.2.2}极限的性质}{18}{}%
-\contentsline {subsection}{\numberline {9.3}无穷小与无穷大}{19}{}%
-\contentsline {subsubsection}{\numberline {9.3.1}无穷小定义}{19}{}%
-\contentsline {subsubsection}{\numberline {9.3.2}函数极限与无穷小的关系}{19}{}%
-\contentsline {subsubsection}{\numberline {9.3.3}无穷大与无穷小的关系}{19}{}%
-\contentsline {subsubsection}{\numberline {9.3.4}无穷大定义}{20}{}%
-\contentsline {subsection}{\numberline {9.4}运算}{20}{}%
-\contentsline {subsubsection}{\numberline {9.4.1}有限个无穷小的和仍为无穷小}{20}{}%
-\contentsline {subsubsection}{\numberline {9.4.2}有界函数与无穷小的乘积仍为无穷小}{21}{}%
-\contentsline {subsubsection}{\numberline {9.4.3}极限的四则运算}{21}{}%
-\contentsline {subsubsection}{\numberline {9.4.4}夹逼定理(三明治定理)}{22}{}%
-\contentsline {subsubsection}{\numberline {9.4.5}重要极限}{22}{}%
-\contentsline {subsubsection}{\numberline {9.4.6}无穷小比较}{23}{}%
-\contentsline {subsubsection}{\numberline {9.4.7}等价无穷小代换，因子代换}{23}{}%
-\contentsline {section}{\numberline {10} 连续与间断点}{24}{}%
-\contentsline {subsection}{\numberline {10.1}定义}{24}{}%
-\contentsline {subsubsection}{\numberline {10.1.1}点连续}{24}{}%
-\contentsline {subsubsection}{\numberline {10.1.2}区间连续}{24}{}%
-\contentsline {subsubsection}{\numberline {10.1.3}间断点}{25}{}%
-\contentsline {subsection}{\numberline {10.2}连续函数的运算}{25}{}%
-\contentsline {subsection}{\numberline {10.3}零点定理}{25}{}%
-\contentsline {subsection}{\numberline {10.4}介质定理}{26}{}%
-\contentsline {section}{\numberline {11} 导数}{27}{}%
-\contentsline {subsection}{\numberline {11.1}定义}{27}{}%
-\contentsline {subsubsection}{\numberline {11.1.1}导数定义}{27}{}%
-\contentsline {subsubsection}{\numberline {11.1.2}导函数定义}{27}{}%
-\contentsline {subsubsection}{\numberline {11.1.3}闭区间可导定义}{28}{}%
-\contentsline {subsubsection}{\numberline {11.1.4}导数与连续}{28}{}%
-\contentsline {subsection}{\numberline {11.2}幂数，指数，对数}{28}{}%
-\contentsline {subsection}{\numberline {11.3}三角函数}{29}{}%
-\contentsline {subsection}{\numberline {11.4}导数运算}{29}{}%
-\contentsline {subsection}{\numberline {11.5}反函数求导}{30}{}%
-\contentsline {subsection}{\numberline {11.6}复合函数求导}{30}{}%
-\contentsline {subsection}{\numberline {11.7}高阶求导}{30}{}%
-\contentsline {subsection}{\numberline {11.8}高阶求导公式}{31}{}%
-\contentsline {subsection}{\numberline {11.9}高阶求导运算法则}{31}{}%
-\contentsline {subsection}{\numberline {11.10}隐函数求导}{31}{}%
-\contentsline {subsection}{\numberline {11.11}参数方程求导}{31}{}%
-\contentsline {section}{\numberline {12} 微分}{32}{}%
-\contentsline {subsection}{\numberline {12.1}定义}{32}{}%
-\contentsline {subsection}{\numberline {12.2}微分法则}{32}{}%
-\contentsline {subsubsection}{\numberline {12.2.1}核心根本}{32}{}%
-\contentsline {subsubsection}{\numberline {12.2.2}四则运算}{32}{}%
-\contentsline {subsubsection}{\numberline {12.2.3}复合运算}{33}{}%
-\contentsline {subsubsection}{\numberline {12.2.4}近似计算公式}{33}{}%
-\contentsline {subsubsection}{\numberline {12.2.5}奇偶函数导数}{33}{}%
-\contentsline {subsubsection}{\numberline {12.2.6}区间恒为0}{33}{}%
-\contentsline {subsection}{\numberline {12.3}中值定理}{33}{}%
-\contentsline {subsubsection}{\numberline {12.3.1}费马引理}{33}{}%
-\contentsline {subsubsection}{\numberline {12.3.2}罗尔定理}{34}{}%
-\contentsline {subsubsection}{\numberline {12.3.3}拉格朗日定理$\left (\mbox {微分中值定理}\right )$}{34}{}%
-\contentsline {subsubsection}{\numberline {12.3.4}柯西定理}{35}{}%
-\contentsline {subsubsection}{\numberline {12.3.5}三个定理关系}{35}{}%
-\contentsline {subsection}{\numberline {12.4}洛必达法则}{35}{}%
-\contentsline {subsection}{\numberline {12.5}泰勒公式}{36}{}%
-\contentsline {subsubsection}{\numberline {12.5.1}泰勒多项式}{36}{}%
-\contentsline {subsubsection}{\numberline {12.5.2}泰勒中值定理}{37}{}%
-\contentsline {subsection}{\numberline {12.6}麦克劳林公式}{37}{}%
-\contentsline {subsubsection}{\numberline {12.6.1}常用的麦克劳林展开}{37}{}%
-\contentsline {section}{\numberline {13}微分方程}{38}{}%
-\contentsline {section}{\numberline {14}不定积分}{39}{}%
-\contentsline {subsection}{\numberline {14.1}概念}{39}{}%
-\contentsline {subsubsection}{\numberline {14.1.1}原函数}{39}{}%
-\contentsline {subsubsection}{\numberline {14.1.2}不定积分}{39}{}%
-\contentsline {subsubsection}{\numberline {14.1.3}不定积分性质}{39}{}%
-\contentsline {subsection}{\numberline {14.2}积分运算}{40}{}%
-\contentsline {subsubsection}{\numberline {14.2.1}分部积分法}{40}{}%
-\contentsline {subsection}{\numberline {14.3}有理函数积分}{40}{}%
-\contentsline {subsubsection}{\numberline {14.3.1}普通多项式}{40}{}%
-\contentsline {subsubsection}{\numberline {14.3.2}三角函数多项式}{41}{}%
-\contentsline {subsection}{\numberline {14.4}积分公式}{41}{}%
-\contentsline {subsubsection}{\numberline {14.4.1}幂数，指数，对数}{41}{}%
-\contentsline {subsubsection}{\numberline {14.4.2}三角函数}{42}{}%
-\contentsline {subsubsection}{\numberline {14.4.3}分式}{43}{}%
-\contentsline {section}{\numberline {15}定积分}{44}{}%
-\contentsline {subsection}{\numberline {15.1}定积分的定义}{44}{}%
-\contentsline {subsection}{\numberline {15.2}可积的充分条件}{44}{}%
-\contentsline {subsection}{\numberline {15.3}定积分的性质}{45}{}%
-\contentsline {subsection}{\numberline {15.4}积分估值公式}{45}{}%
-\contentsline {subsection}{\numberline {15.5}积分中值定理}{45}{}%
-\contentsline {subsection}{\numberline {15.6}积分上限函数}{46}{}%
-\contentsline {subsubsection}{\numberline {15.6.1}定义}{46}{}%
-\contentsline {subsubsection}{\numberline {15.6.2}性质}{46}{}%
-\contentsline {subsection}{\numberline {15.7}微积分基本公式(牛顿莱布兹尼公式)}{46}{}%
-\contentsline {subsection}{\numberline {15.8}换元法}{47}{}%
-\contentsline {subsection}{\numberline {15.9}分部积分法}{47}{}%
-\contentsline {subsection}{\numberline {15.10}奇偶函数积分}{47}{}%
-\contentsline {subsection}{\numberline {15.11}周期函数积分}{47}{}%
-\contentsline {subsection}{\numberline {15.12}积分定理}{47}{}%
-\contentsline {subsection}{\numberline {15.13}积分不等式}{48}{}%
-\contentsline {subsection}{\numberline {15.14}一些废话(显而易见的东西)}{48}{}%
-\contentsline {section}{\numberline {16}反常积分(瞎积分)}{49}{}%
-\contentsline {subsection}{\numberline {16.1}有界反常积分}{49}{}%
-\contentsline {subsection}{\numberline {16.2}有界反常积分}{49}{}%
-\contentsline {section}{\numberline {17} 零散的一些}{50}{}%
-\contentsline {section}{\numberline {18}证明}{52}{}%
-\contentsline {subsection}{\numberline {18.1}\centering 第\ref {chapter_trigonometric_function}章}{52}{}%
-\contentsline {subsection}{\numberline {18.2}\centering 第\ref {chapter_function}章}{53}{}%
-\contentsline {subsection}{\numberline {18.3}\centering 第\ref {chapter_limit}章}{56}{}%
-\contentsline {subsection}{\numberline {18.4}\centering 第\ref {chapter_derivative}章}{63}{}%
-\contentsline {subsection}{\numberline {18.5}\centering 第\ref {chapter_differential}章}{69}{}%
-\contentsline {subsection}{\numberline {18.6}\centering 第\ref {chapter_Indefinite_integral}章}{72}{}%
-\contentsline {subsection}{\numberline {18.7}\centering 第\ref {chapter_definite_integral}章}{78}{}%
+\contentsline {section}{\numberline {6} 图像}{12}{}%
+\contentsline {section}{\numberline {7} 并集，交集}{13}{}%
+\contentsline {subsection}{\numberline {7.1}定义}{13}{}%
+\contentsline {subsection}{\numberline {7.2}运算}{13}{}%
+\contentsline {subsection}{\numberline {7.3}性质}{13}{}%
+\contentsline {subsection}{\numberline {7.4}gustus De Morgan定理}{14}{}%
+\contentsline {subsection}{\numberline {7.5}德摩根律\ 定理}{14}{}%
+\contentsline {section}{\numberline {8} 群，环，域}{15}{}%
+\contentsline {subsection}{\numberline {8.1}群}{15}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}M1}{15}{}%
+\contentsline {subsubsection}{\numberline {8.1.2}M2}{15}{}%
+\contentsline {subsubsection}{\numberline {8.1.3}M3}{15}{}%
+\contentsline {subsubsection}{\numberline {8.1.4}M4}{15}{}%
+\contentsline {subsubsection}{\numberline {8.1.5}sdas}{15}{}%
+\contentsline {subsection}{\numberline {8.2}环}{15}{}%
+\contentsline {subsection}{\numberline {8.3}域}{15}{}%
+\contentsline {section}{\numberline {9} 极限}{16}{}%
+\contentsline {subsection}{\numberline {9.1}数列极限}{16}{}%
+\contentsline {subsubsection}{\numberline {9.1.1}数列的定义}{16}{}%
+\contentsline {subsubsection}{\numberline {9.1.2}数列极限的定义}{16}{}%
+\contentsline {subsubsection}{\numberline {9.1.3}极限的唯一性}{16}{}%
+\contentsline {subsubsection}{\numberline {9.1.4}有界数列}{16}{}%
+\contentsline {subsubsection}{\numberline {9.1.5}收敛数列与有界性}{16}{}%
+\contentsline {subsubsection}{\numberline {9.1.6}收敛数列的保号性}{16}{}%
+\contentsline {subsubsection}{\numberline {9.1.7}收敛数列和子数列 }{17}{}%
+\contentsline {subsection}{\numberline {9.2}函数极限}{17}{}%
+\contentsline {subsubsection}{\numberline {9.2.1}极限的定义}{17}{}%
+\contentsline {subsubsection}{\numberline {9.2.2}极限的性质}{17}{}%
+\contentsline {subsection}{\numberline {9.3}无穷小与无穷大}{18}{}%
+\contentsline {subsubsection}{\numberline {9.3.1}无穷小定义}{18}{}%
+\contentsline {subsubsection}{\numberline {9.3.2}函数极限与无穷小的关系}{18}{}%
+\contentsline {subsubsection}{\numberline {9.3.3}无穷大与无穷小的关系}{18}{}%
+\contentsline {subsubsection}{\numberline {9.3.4}无穷大定义}{19}{}%
+\contentsline {subsection}{\numberline {9.4}运算}{19}{}%
+\contentsline {subsubsection}{\numberline {9.4.1}有限个无穷小的和仍为无穷小}{19}{}%
+\contentsline {subsubsection}{\numberline {9.4.2}有界函数与无穷小的乘积仍为无穷小}{20}{}%
+\contentsline {subsubsection}{\numberline {9.4.3}极限的四则运算}{20}{}%
+\contentsline {subsubsection}{\numberline {9.4.4}夹逼定理(三明治定理)}{21}{}%
+\contentsline {subsubsection}{\numberline {9.4.5}重要极限}{21}{}%
+\contentsline {subsubsection}{\numberline {9.4.6}无穷小比较}{22}{}%
+\contentsline {subsubsection}{\numberline {9.4.7}等价无穷小代换，因子代换}{22}{}%
+\contentsline {section}{\numberline {10} 连续与间断点}{23}{}%
+\contentsline {subsection}{\numberline {10.1}定义}{23}{}%
+\contentsline {subsubsection}{\numberline {10.1.1}点连续}{23}{}%
+\contentsline {subsubsection}{\numberline {10.1.2}区间连续}{23}{}%
+\contentsline {subsubsection}{\numberline {10.1.3}间断点}{24}{}%
+\contentsline {subsection}{\numberline {10.2}连续函数的运算}{24}{}%
+\contentsline {subsection}{\numberline {10.3}零点定理}{24}{}%
+\contentsline {subsection}{\numberline {10.4}介质定理}{25}{}%
+\contentsline {section}{\numberline {11} 导数}{26}{}%
+\contentsline {subsection}{\numberline {11.1}定义}{26}{}%
+\contentsline {subsubsection}{\numberline {11.1.1}导数定义}{26}{}%
+\contentsline {subsubsection}{\numberline {11.1.2}导函数定义}{26}{}%
+\contentsline {subsubsection}{\numberline {11.1.3}闭区间可导定义}{27}{}%
+\contentsline {subsubsection}{\numberline {11.1.4}导数与连续}{27}{}%
+\contentsline {subsection}{\numberline {11.2}幂数，指数，对数}{27}{}%
+\contentsline {subsection}{\numberline {11.3}三角函数}{28}{}%
+\contentsline {subsection}{\numberline {11.4}导数运算}{28}{}%
+\contentsline {subsection}{\numberline {11.5}反函数求导}{29}{}%
+\contentsline {subsection}{\numberline {11.6}复合函数求导}{29}{}%
+\contentsline {subsection}{\numberline {11.7}高阶求导}{29}{}%
+\contentsline {subsection}{\numberline {11.8}高阶求导公式}{30}{}%
+\contentsline {subsection}{\numberline {11.9}高阶求导运算法则}{30}{}%
+\contentsline {subsection}{\numberline {11.10}隐函数求导}{30}{}%
+\contentsline {subsection}{\numberline {11.11}参数方程求导}{30}{}%
+\contentsline {section}{\numberline {12} 微分}{31}{}%
+\contentsline {subsection}{\numberline {12.1}定义}{31}{}%
+\contentsline {subsection}{\numberline {12.2}微分法则}{31}{}%
+\contentsline {subsubsection}{\numberline {12.2.1}核心根本}{31}{}%
+\contentsline {subsubsection}{\numberline {12.2.2}四则运算}{31}{}%
+\contentsline {subsubsection}{\numberline {12.2.3}复合运算}{32}{}%
+\contentsline {subsubsection}{\numberline {12.2.4}近似计算公式}{32}{}%
+\contentsline {subsubsection}{\numberline {12.2.5}奇偶函数导数}{32}{}%
+\contentsline {subsubsection}{\numberline {12.2.6}区间恒为0}{32}{}%
+\contentsline {subsection}{\numberline {12.3}中值定理}{32}{}%
+\contentsline {subsubsection}{\numberline {12.3.1}费马引理}{32}{}%
+\contentsline {subsubsection}{\numberline {12.3.2}罗尔定理}{33}{}%
+\contentsline {subsubsection}{\numberline {12.3.3}拉格朗日定理$\left (\mbox {微分中值定理}\right )$}{33}{}%
+\contentsline {subsubsection}{\numberline {12.3.4}柯西定理}{34}{}%
+\contentsline {subsubsection}{\numberline {12.3.5}三个定理关系}{34}{}%
+\contentsline {subsection}{\numberline {12.4}洛必达法则}{34}{}%
+\contentsline {subsection}{\numberline {12.5}泰勒公式}{35}{}%
+\contentsline {subsubsection}{\numberline {12.5.1}泰勒多项式}{35}{}%
+\contentsline {subsubsection}{\numberline {12.5.2}泰勒中值定理}{36}{}%
+\contentsline {subsection}{\numberline {12.6}麦克劳林公式}{36}{}%
+\contentsline {subsubsection}{\numberline {12.6.1}常用的麦克劳林展开}{36}{}%
+\contentsline {section}{\numberline {13}微分方程}{37}{}%
+\contentsline {subsection}{\numberline {13.1}基本概念}{37}{}%
+\contentsline {subsubsection}{\numberline {13.1.1}微分方程的阶}{37}{}%
+\contentsline {subsubsection}{\numberline {13.1.2}$n$阶微分方程解}{37}{}%
+\contentsline {subsubsection}{\numberline {13.1.3}齐次方程}{37}{}%
+\contentsline {subsection}{\numberline {13.2}一阶线性微分方程}{37}{}%
+\contentsline {subsection}{\numberline {13.3}二阶线性微分方程}{37}{}%
+\contentsline {subsubsection}{\numberline {13.3.1}二阶线性齐次微分方程}{38}{}%
+\contentsline {subsubsection}{\numberline {13.3.2}二阶线性非齐次微分方程}{38}{}%
+\contentsline {subsubsection}{\numberline {13.3.3}二阶常系数齐次线性微分方程}{38}{}%
+\contentsline {subsubsection}{\numberline {13.3.4}二阶常系数非齐次线性微分方程}{38}{}%
+\contentsline {subsection}{\numberline {13.4}n阶线性微分方程}{40}{}%
+\contentsline {subsubsection}{\numberline {13.4.1}n阶常系数线性齐次微分方程}{40}{}%
+\contentsline {subsubsection}{\numberline {13.4.2}n阶常系数线性非齐次微分方程}{40}{}%
+\contentsline {section}{\numberline {14}不定积分}{41}{}%
+\contentsline {subsection}{\numberline {14.1}概念}{41}{}%
+\contentsline {subsubsection}{\numberline {14.1.1}原函数}{41}{}%
+\contentsline {subsubsection}{\numberline {14.1.2}不定积分}{41}{}%
+\contentsline {subsubsection}{\numberline {14.1.3}不定积分性质}{41}{}%
+\contentsline {subsection}{\numberline {14.2}积分运算}{42}{}%
+\contentsline {subsubsection}{\numberline {14.2.1}分部积分法}{42}{}%
+\contentsline {subsection}{\numberline {14.3}有理函数积分}{42}{}%
+\contentsline {subsubsection}{\numberline {14.3.1}普通多项式}{42}{}%
+\contentsline {subsubsection}{\numberline {14.3.2}三角函数多项式}{43}{}%
+\contentsline {subsection}{\numberline {14.4}积分公式}{43}{}%
+\contentsline {subsubsection}{\numberline {14.4.1}幂数，指数，对数}{43}{}%
+\contentsline {subsubsection}{\numberline {14.4.2}三角函数}{44}{}%
+\contentsline {subsubsection}{\numberline {14.4.3}分式}{45}{}%
+\contentsline {section}{\numberline {15}定积分}{46}{}%
+\contentsline {subsection}{\numberline {15.1}定积分的定义}{46}{}%
+\contentsline {subsection}{\numberline {15.2}可积的充分条件}{46}{}%
+\contentsline {subsection}{\numberline {15.3}定积分的性质}{47}{}%
+\contentsline {subsection}{\numberline {15.4}积分估值公式}{47}{}%
+\contentsline {subsection}{\numberline {15.5}积分中值定理}{47}{}%
+\contentsline {subsection}{\numberline {15.6}积分上限函数}{48}{}%
+\contentsline {subsubsection}{\numberline {15.6.1}定义}{48}{}%
+\contentsline {subsubsection}{\numberline {15.6.2}性质}{48}{}%
+\contentsline {subsection}{\numberline {15.7}微积分基本公式(牛顿莱布兹尼公式)}{48}{}%
+\contentsline {subsection}{\numberline {15.8}换元法}{49}{}%
+\contentsline {subsection}{\numberline {15.9}分部积分法}{49}{}%
+\contentsline {subsection}{\numberline {15.10}奇偶函数积分}{49}{}%
+\contentsline {subsection}{\numberline {15.11}周期函数积分}{49}{}%
+\contentsline {subsection}{\numberline {15.12}积分定理}{49}{}%
+\contentsline {subsection}{\numberline {15.13}积分不等式}{50}{}%
+\contentsline {subsection}{\numberline {15.14}一些废话(显而易见的东西)}{50}{}%
+\contentsline {section}{\numberline {16}反常积分(瞎积分)}{51}{}%
+\contentsline {subsection}{\numberline {16.1}有界反常积分}{51}{}%
+\contentsline {subsection}{\numberline {16.2}有界反常积分}{51}{}%
+\contentsline {section}{\numberline {17} 零散的一些}{52}{}%
+\contentsline {section}{\numberline {18}证明}{54}{}%
+\contentsline {subsection}{\numberline {18.1}\centering 第\ref {chapter_trigonometric_function}章}{54}{}%
+\contentsline {subsection}{\numberline {18.2}\centering 第\ref {chapter_function}章}{55}{}%
+\contentsline {subsection}{\numberline {18.3}\centering 第\ref {chapter_limit}章}{58}{}%
+\contentsline {subsection}{\numberline {18.4}\centering 第\ref {chapter_derivative}章}{65}{}%
+\contentsline {subsection}{\numberline {18.5}\centering 第\ref {chapter_differential}章}{71}{}%
+\contentsline {subsection}{\numberline {18.6}\centering 第\ref {differential_equations}章}{74}{}%
+\contentsline {subsection}{\numberline {18.7}\centering 第\ref {chapter_Indefinite_integral}章}{77}{}%
+\contentsline {subsection}{\numberline {18.8}\centering 第\ref {chapter_definite_integral}章}{82}{}%
