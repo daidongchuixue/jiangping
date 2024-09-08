@@ -1,4 +1,4 @@
-\begin{center}\section{ 区间与映射}label{}\end{center}
+\begin{center}\section{ 区间与映射}\end{center}
 \subsection{区间定义}
 $$\mbox{区间定义}\begin{cases}
     (a,b)=\{x|a<x<b\} \\
@@ -8,51 +8,55 @@ $$\mbox{区间定义}\begin{cases}
 \end{cases}
 $$ 
 \subsection{领域定义}
-
-点a的领域
-\begin{figure}[htp]
-   % \centering
-    \begin{tikzpicture}[>=latex]
-        \node at (-6,0){$U(a,\delta)=\begin{cases}
-        \{x|a-\delta<x<a+\delta\}\\
-        \{x|\ \left|x-a\right|<\delta\}
-        \end{cases}$};
-        \draw[->] (-3,0)--(3,0);
-        \draw (0,0)--(0,.1);
-        \foreach \x in {-2,2}
-        {
-            \draw (\x,-.6)--(\x,.1);
-        }
-        \draw[|<->|] (-2,-.6)--node[fill=white]{$U$}(2,-.6);
-        \node at (0,.1)[above]{$a$};
-        \draw[<->|] (-2,-.3)--node[fill=white]{$a-\delta$}(0,-.3);
-        \draw[<->] (0,-.3)--node[fill=white]{$a+\delta$}(2,-.3);
-    \end{tikzpicture}
-    %\caption{asd}\label{dsa}
-\end{figure}
-
-点a的去心领域\par
-\begin{figure}[htp]
-    \begin{tikzpicture}[>=latex]
-        \node at (-6,0){$\mathring{U}(a,\delta)=\begin{cases}
-        \{x|a-\delta<x<a+\delta\land x\neq 0\}\\
-        \{x|0<\left|x-a\right|<\delta\}
-        \end{cases}$};
-        \draw[->] (-3,0)--(3,0);
-        \draw (0,0)--(0,.1);
-        \foreach \x in {-2,2}
-        {
-            \draw (\x,-.6)--(\x,.1);
-        }
-        \draw[|<->|] (-2,-.6)--node[fill=white]{$U$}(2,-.6);
-        \node at (0,.1)[above]{$a$};
-        \draw (0,0)circle(.1);
-        \draw[|<->|] (-2,-.3)--node[fill=white]{$a-\delta$}(0,-.3);
-        \draw[|<->|] (0,-.3)--node[fill=white]{$a+\delta$}(2,-.3);
-    \end{tikzpicture}
-\end{figure}
-点a的左领域$\qquad(a-\delta,a)$\par
-点a的右领域$\qquad(a,a+\delta)$
+\begin{minipage}{.5\textwidth}
+	$$\mbox{点a的领域：}U(a,\delta)\begin{cases}
+		\{x|a-\delta<x<a+\delta\}\\
+		\{x|\ \left|x-a\right|<\delta\}
+	\end{cases}$$
+\end{minipage}
+\hfill
+\begin{minipage}{.5\textwidth}
+	\begin{center}
+		\begin{tikzpicture}[>=latex]
+			\draw[->] (-3,0)--(3,0);
+			\draw (0,0)--(0,.1);
+			\foreach \x in {-2,2}
+			{
+				\draw (\x,-.6)--(\x,.1);
+			}
+			\draw[|<->|] (-2,-.6)--node[fill=white]{$U$}(2,-.6);
+			\node at (0,.1)[above]{$a$};
+			\draw[<->|] (-2,-.3)--node[fill=white]{$a-\delta$}(0,-.3);
+			\draw[<->] (0,-.3)--node[fill=white]{$a+\delta$}(2,-.3);
+		\end{tikzpicture}
+	\end{center}
+\end{minipage}
+\begin{minipage}{.6\textwidth}
+	$$\mbox{点a的去心领域：}\mathring{U}(a,\delta)=\begin{cases}
+		\{x|a-\delta<x<a+\delta\land x\neq 0\}\\
+		\{x|0<\left|x-a\right|<\delta\}
+	\end{cases}$$
+\end{minipage}
+\hfill
+\begin{minipage}{.4\textwidth}
+	\begin{center}
+	    \begin{tikzpicture}[>=latex]
+			\draw[->] (-3,0)--(3,0);
+			\draw (0,0)--(0,.1);
+			\foreach \x in {-2,2}
+			{
+				\draw (\x,-.6)--(\x,.1);
+			}
+			\draw[|<->|] (-2,-.6)--node[fill=white]{$U$}(2,-.6);
+			\node at (0,.1)[above]{$a$};
+			\draw (0,0)circle(.1);
+			\draw[|<->|] (-2,-.3)--node[fill=white]{$a-\delta$}(0,-.3);
+			\draw[|<->|] (0,-.3)--node[fill=white]{$a+\delta$}(2,-.3);
+		\end{tikzpicture}
+	\end{center}
+\end{minipage}
+点a的左领域：$\qquad(a-\delta,a)$\par
+点a的右领域：$\qquad(a,a+\delta)$
 \subsection{映射定义}
 定义:X与Y是两个非空集合,如果存在一个法则对任一$x\in X$, 都有确定的y与之对应。
 则称f为从X到Y的一个映射。

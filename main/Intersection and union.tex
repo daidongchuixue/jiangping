@@ -29,30 +29,18 @@ $$\begin{cases}
     $A = B \Leftrightarrow A\subset B\land A\supset B$  \\
     $A\cup\varnothing = A {\qquad}A\cap\varnothing = \varnothing $
 \end{center}
-
-
 \subsection{性质}
-性质\ 1.
 \begin{equation}
-A\subset(A\cup B) {\qquad}A\supset(A\cap B)
+	A\subset(A\cup B) {\qquad}A\supset(A\cap B)
 \end{equation}
-性质\ 2.
-\begin{equation}
-A\cup B = B\Leftrightarrow A\subset B
-\end{equation}
-性质\ 3.
-\begin{equation}
-A\cap B = A\Leftrightarrow A\subset B
-\end{equation}
-性质\ 4.\ (\(n\in N\) )
-\begin{equation}
-A\cup(B_1\cap B_2\cap\cdots\cap B_n) = (A\cup B_1)\cap(A\cup B_2)\cap\cdots\cap(A\cup B_n)
-\end{equation}
-性质\ 5.\ (\(n\in N\) )
-\begin{equation}
-A\cap(B_1\cup B_2\cup\cdots\cup B_n) = (A\cap B_1)\cup(A\cap B_2)\cup\cdots\cup(A\cap B_n)
-\end{equation}
-
+\begin{align}
+	A\cup B = B\Leftrightarrow A\subset B\\
+	A\cap B = A\Leftrightarrow A\subset B
+\end{align}
+\begin{align}
+&(n\in N)\quad&A\cup(B_1\cap B_2\cap\cdots\cap B_n) = (A\cup B_1)\cap(A\cup B_2)\cap\cdots\cap(A\cup B_n)\\
+&(n\in N)&A\cap(B_1\cup B_2\cup\cdots\cup B_n) = (A\cap B_1)\cup(A\cap B_2)\cup\cdots\cup(A\cap B_n)
+\end{align}
 \subsection{gustus De Morgan定理}
 $$\neg(A\vee B)\Leftrightarrow(\neg A)\land(\neg B)$$
 $$\neg(A\land B)\Leftrightarrow(\neg A)\vee(\neg B)$$

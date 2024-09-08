@@ -1,0 +1,159 @@
+\begin{center}\section{向量}\label{chapter_vector}\end{center}
+\subsection{向量的概念}
+\begin{minipage}{.7\textwidth}
+	\begin{align*}
+		\mbox{向量：}&\mbox{既有大小又有方向的量}\\
+		\mbox{向量表示：}&\overrightarrow{AB}\ \mbox{或}\ \overrightarrow{a}\\
+		\mbox{自由向量：}&\mbox{与起点无关的向量}\\
+		\mbox{向量的模：}&|\overrightarrow{AB}|\quad|\overrightarrow{a}|\\
+		\mbox{单位向量：}&|\overrightarrow{a}|=1\\
+		\overrightarrow{a}\mbox{单位向量：}&\begin{cases}
+			\overrightarrow{e_{\overrightarrow{a}}}=\frac{\overrightarrow{a}}{|\overrightarrow{a}|}=\frac{1}{|\overrightarrow{a}|}\overrightarrow{a}\\
+			\overrightarrow{a}=|\overrightarrow{a}|\overrightarrow{e}_{\overrightarrow{a}}
+		\end{cases}\\
+		\overrightarrow{0}\mbox{向量：}&\begin{cases}
+			|\overrightarrow{a}|=0\mbox{记作：}\overrightarrow{a}=\overrightarrow{0}\mbox{方向任意}\\
+			\overrightarrow{0}\mbox{与任何向量平行}\\
+			\overrightarrow{0}\mbox{与任何向量垂直}
+		\end{cases}\\
+		\mbox{向量夹角：}&0\leqslant\varphi\leqslant \pi\quad (\overrightarrow{a}\textasciicircum\overrightarrow{b})=\varphi\\
+		\mbox{向量平行：}&\overrightarrow{a}//\overrightarrow{b}\Leftrightarrow\begin{cases}
+			(\overrightarrow{a}\textasciicircum\overrightarrow{b})=0\mbox{或}(\overrightarrow{a}\textasciicircum\overrightarrow{b})=\pi\\
+			\overrightarrow{a}=\lambda \overrightarrow{b}\quad(\mbox{存在唯一}\lambda)
+		\end{cases}\\
+		\mbox{向量平行：}&\overrightarrow{a}\perp\overrightarrow{b}\mbox{或}(\overrightarrow{a}\textasciicircum\overrightarrow{b})=\frac{\pi}{2}
+	\end{align*}
+\subsection{向量的线性运算}
+	$\mbox{三角不等式：}\begin{cases}
+	|\overrightarrow{a}+\overrightarrow{b}|\leqslant|\overrightarrow{a}|+|\overrightarrow{b}|\\
+	|\overrightarrow{a}-\overrightarrow{b}|\leqslant|\overrightarrow{a}|+|\overrightarrow{b}|
+\end{cases}$\\
+	$\mbox{向量的加法：}\begin{cases}
+		\overrightarrow{a}+\overrightarrow{b}\\
+		\mbox{交换律：}\overrightarrow{a}+\overrightarrow{b}=\overrightarrow{b}+\overrightarrow{a}\\
+		\mbox{结合律：}(\overrightarrow{a}+\overrightarrow{b})+\overrightarrow{c}=\overrightarrow{a}+(\overrightarrow{b}+\overrightarrow{v})
+	\end{cases}$\\
+	$\mbox{向量的减法：}\begin{cases}
+		\mbox{负向量：}\mbox{与}\overrightarrow{a}\mbox{大小相等方向相反的向量}-\overrightarrow{a}\\
+		\overrightarrow{b}-\overrightarrow{a}=\overrightarrow{b}+(-\overrightarrow{a})\\
+		\overrightarrow{a}-\overrightarrow{a}=\overrightarrow{0}\\
+		\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}
+	\end{cases}$
+\end{minipage}
+\hfill
+\begin{minipage}{.3\textwidth}
+	\begin{center}
+		\begin{tikzpicture}[>=latex]
+			\draw[->](0,0)node[below]{$A$}--(2,1)node[above]{$B$};
+		\end{tikzpicture}\\
+		\begin{tikzpicture}[>=latex]
+			\draw[->](0,0)--node[above]{$\overrightarrow{a}$}(45:2);
+			\draw[->](0,0)--node[below]{$\overrightarrow{b}$}(2,0);
+			\draw(1,0) arc (0:45:1);
+			\node at (22.5:1)[right]{$\varphi$};
+		\end{tikzpicture}\\
+			\begin{tikzpicture}[>=latex]
+		\draw[->](0,0)--node[above]{$\overrightarrow{a}+\overrightarrow{b}$}(3,2);
+		\draw[->](0,0)--node[below]{$\overrightarrow{a}$}(2,0);
+		\draw[->](1,2)--node[above]{$\overrightarrow{a}$}(3,2);
+		\draw[->](2,0)--node[right]{$\overrightarrow{b}$}(3,2);
+		\draw[->](0,0)--node[left]{$\overrightarrow{b}$}(1,2);
+	\end{tikzpicture}\\
+	\begin{tikzpicture}[>=latex,scale=1.5]
+	\draw[->] (0,2)coordinate (A)--node[left]{$\overrightarrow{a}$}(1,0)coordinate (B);
+	\draw[->] (B)--node[right]{$\overrightarrow{b}$}(2,1)coordinate (C);
+	\draw[->] (C)--node[right]{$\overrightarrow{c}$}(1.5,2)coordinate (D);
+	\draw[->,color=red] (A)--node[below]{$\overrightarrow{a}+\overrightarrow{b}$}(C);
+	\draw[->] (A)--node[above]{$(\overrightarrow{a}+\overrightarrow{b})+\overrightarrow{c}$}(D);
+\end{tikzpicture}\\
+	\begin{tikzpicture}[>=latex,scale=1.5]
+	\draw[->] (0,2)coordinate (A)--node[left]{$\overrightarrow{a}$}(1,0)coordinate (B);
+	\draw[->] (B)--node[right]{$\overrightarrow{b}$}(2,1)coordinate (C);
+	\draw[->] (C)--node[right]{$\overrightarrow{c}$}(1.5,2)coordinate (D);
+	\draw[->,color=red] (B)--node[above]{$\overrightarrow{b}+\overrightarrow{c}$}(D);
+	\draw[->] (A)--node[above]{$\overrightarrow{a}+(\overrightarrow{b}+\overrightarrow{c})$}(D);
+\end{tikzpicture}\\
+\begin{tikzpicture}[>=latex,scale=1.5]
+	\draw[->] (0,0)--node[left]{$\overrightarrow{a}$}(1,2);
+	\draw[<-] (.5,0)--node[right]{$-\overrightarrow{a}$}(1.5,2);
+\end{tikzpicture}
+	\end{center}
+\end{minipage}
+\mbox{向量的数乘：}$\begin{cases}
+	\mbox{大小：}|\lambda \overrightarrow{a}|=|\lambda||\overrightarrow{a}|\\
+	\mbox{方向：}\begin{cases}
+		\lambda>0\quad\mbox{时}\lambda\overrightarrow{a}\mbox{与}\overrightarrow{a}\mbox{方向一致}\\
+		\lambda<0\quad\mbox{时}\lambda\overrightarrow{a}\mbox{与}\overrightarrow{a}\mbox{方向相反不}
+	\end{cases}\\
+\mbox{特殊数相乘：}\begin{cases}
+	0\mbox{：}0\overrightarrow{a}=\overrightarrow{0}\\
+	1\mbox{：}1\overrightarrow{a}=\overrightarrow{a}\\
+	-1\mbox{：}(-1)\overrightarrow{a}=-\overrightarrow{a}
+\end{cases}\\
+\mbox{交换律：}\lambda(\mu\overrightarrow{a})=(\lambda\mu)\overrightarrow{a}=\mu(\lambda\overrightarrow{a})\\
+\mbox{结合律：}\begin{cases}
+	(\lambda+\mu)\overrightarrow{a}=\lambda\overrightarrow{a}+\mu\overrightarrow{a}\\
+	\lambda(\overrightarrow{a}+\overrightarrow{b})=\lambda\overrightarrow{a}+\lambda\overrightarrow{b}
+\end{cases}
+\end{cases}$
+\subsection{空间直角坐标系}
+\begin{minipage}{.6\textwidth}
+	\begin{align*}
+		\mbox{坐标原点：}&O\\
+		\mbox{坐标轴：}&\begin{cases}
+			x\mbox{轴}\quad\mbox{单位向量}\overrightarrow{i}\\
+			y\mbox{轴}\quad\mbox{单位向量}\overrightarrow{j}\\
+			z\mbox{轴}\quad\mbox{单位向量}\overrightarrow{k}
+		\end{cases}\\
+		\mbox{坐标面：}&x\circ y\mbox{面}\ y\circ z\mbox{面}\ z\circ x\mbox{面}\\
+		\mbox{坐标向量运算：}&\begin{cases}
+			\overrightarrow{a}=(a_x,a_y,a_z)\quad\overrightarrow{b}=(b_x,b_y,b_z)\\
+			\overrightarrow{a}+\overrightarrow{b}=(a_x+b_x,a_y+b_y,a_z+b_z)\\
+			\overrightarrow{a}-\overrightarrow{b}=(a_x-b_x,a_y-b_y,a_z-b_z)\\
+			\lambda\overrightarrow{a}=(\lambda a_x,\lambda a_y,\lambda a_z)
+		\end{cases}\\
+	\mbox{方向角：}&\begin{cases}
+		x\mbox{轴}\quad \cos\alpha=\frac{x}{|\overrightarrow{OM}|}=\frac{x}{\sqrt{x^2+y^2+z^2}}\\
+		y\mbox{轴}\quad \cos\beta=\frac{y}{|\overrightarrow{OM}|}=\frac{y}{\sqrt{x^2+y^2+z^2}}\\
+		z\mbox{轴}\quad \cos\gamma=\frac{z}{|\overrightarrow{OM}|}=\frac{z}{\sqrt{x^2+y^2+z^2}}
+	\end{cases}
+	\end{align*}
+\end{minipage}
+\hfill
+\begin{minipage}{.4\textwidth}
+	\begin{center}
+		\begin{tikzpicture}[>=latex,scale=1]
+			%(y,z,x)
+			\node at (.4,.4,0)[]{$O$};
+			\coordinate (N) at (3,0,1);\coordinate (P) at (0,0,1);\coordinate (Q) at (3,0,0);\coordinate (R) at (0,2,0);
+			\draw[->] (0,0,0)--(1,0,0)node[below]{$\overrightarrow{j}$};
+			\draw[->] (0,0,0)--(0,0,1)node[left]{$\overrightarrow{i}$};
+			\draw[->] (0,0,0)--(0,1,0)node[left]{$\overrightarrow{k}$};
+			\draw[->] (0,0,0)--(4,0,0)node[right]{$y$};
+			\draw[->] (0,0,0)--(0,0,4)node[left]{$x$};
+			\draw[->] (0,0,0)--(0,4,0)node[above]{$z$};
+			\draw[->] (0,0,0)--(3,2,2.5)node[above]{$M$};
+			\draw[dashed] (0,0,2.5)node[below]{$P$}--(3,0,2.5)node[below]{$N$}--(3,0,0)node[below]{$Q$};
+			\draw[dashed] (0,2,0)node[right]{$R$}--(0,2,2.5)--(3,2,2.5)--(3,2,0)--cycle;
+			\draw[dashed](0,0,2.5)--(0,2,2.5);
+			\draw[dashed](3,0,2.5)--(3,2,2.5);
+			\draw[dashed](3,0,0)--(3,2,0);
+			\draw[dashed](0,0,0)--(3,0,2.5);
+		\end{tikzpicture}
+	\end{center}
+\end{minipage}
+	\begin{align}
+	M\mbox{点坐标}(x,y,z)\Leftrightarrow\overrightarrow{OM}=x\overrightarrow{i}+y\overrightarrow{j}+z\overrightarrow{k}\label{Coordinate_representation_1}
+\end{align}
+\begin{align}
+	|\overrightarrow{OM}|=\sqrt{x^2+y^2+z^2}\label{Coordinate_representation_2}
+\end{align}
+\begin{align}
+A(x_1,y_1,z_1)\quad B(x_2,y_2,z_2)\quad |AB|=|\overrightarrow{AB}|=\sqrt{(x_2-x_1)^2,(y_2-y_1)^2,(z_2-z_1)^2}\label{Coordinate_representation_3}
+\end{align}
+\begin{equation}
+	(\cos\alpha,\cos\beta,\cos\gamma)=\frac{\overrightarrow{OM}}{|\overrightarrow{OM}|}=\overrightarrow{e}_{\overrightarrow{OM}}\label{Coordinate_representation_4}
+\end{equation}
+\begin{equation}
+	\cos^2\alpha+\cos^2\beta+\cos^2\gamma=1\label{Coordinate_representation_5}
+\end{equation}
