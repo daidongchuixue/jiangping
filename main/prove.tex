@@ -743,6 +743,7 @@ y_2''(x)+P_1(x)y_2'+P_2(x)y_2\equiv 0
 	\equiv &0
 \end{align*}
 \textbf{\large \ref{Second_order_homogeneous_differential_equation_with_constant_coefficients}}\\
+\noindent\rule[\fill]{\textwidth}{0.4pt}
 \begin{minipage}{.2\textwidth}
 	\centerline{\textbf{特征方程}}
 \end{minipage}
@@ -1108,7 +1109,7 @@ $$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
 	$$\exists \xi\in\left[a,b\right], f(\xi)=\frac{1}{(b-a)}\int_{a}^{b}f(x)\ dx$$
 	$$f(\xi)(b-a)=\int_{a}^{b}f(x)\ dx$$
 \textbf{\large \ref{integral_upper_limit_function_1}}\\
-\begin{minipage}{.4\textwidth}
+\begin{minipage}{.5\textwidth}
 	\begin{align*}
 		\phi'(x)&=\lim\limits_{\vartriangle x\to 0}\frac{\phi(x+\vartriangle x)-\phi(x)}{\vartriangle x}\\
 		&=\lim\limits_{\vartriangle x\to 0}\frac{f(\xi)\vartriangle x}{\vartriangle x}\\
@@ -1117,10 +1118,8 @@ $$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
 	\end{align*}
 \end{minipage}
 \hfill
-\hspace{0.5mm}
 \vline
-\hspace{0.5mm}
-\begin{minipage}{.4\textwidth}
+\begin{minipage}{.5\textwidth}
 	\begin{align*}
 		&\phi(x+\vartriangle x)-\phi(x)\\
 		=&\int_{a}^{x+\vartriangle x}f(u)\ du-\int_{a}^{x}f(u)\ du\\
@@ -1184,7 +1183,7 @@ $$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
 	$\int_{a}^{b}h(x)\ dx=\int_{a}^{b}g(x)\ dx-\int_{a}^{b}f(x)\ dx=0$\\
 	$h(x)\equiv 0\Rightarrow f(x)=g(x)$
 \end{center}
-\begin{minipage}{.4\textwidth}
+\begin{minipage}{.5\textwidth}
 	\textbf{\large \ref{Odd_even_function_integral_1}}\\
 	\begin{align*}
 	\int_{-a}^{a}f(x)\ dx&=\int_{0}^{a}f(-x)+f(x)\ dx\\
@@ -1199,10 +1198,8 @@ $$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
 	\end{align*}
 \end{minipage}
 \hfill
-\hspace{0.5mm}
 \vline
-\hspace{0.5mm}
-\begin{minipage}{.4\textwidth}
+\begin{minipage}{.5\textwidth}
 	\begin{align*}
 		\int_{-a}^{0}f(x)\ dx&\xlongequal{x=-t}-\int_{a}^{0}f(-t)\ dt\\
 		&=\int_{0}^{a}f(-t)\ dt\\
@@ -1277,8 +1274,177 @@ $$m\leqslant f(x)\leqslant M,x\in\left[a,b\right]$$
 	=&x^2+y^2+z^2\\
 	|OM|=&\sqrt{x^2+y^2+z^2}
 \end{align*}
+\textbf{\large \ref{Coordinate_representation_4}}
 \begin{align*}
 			(\cos\alpha,\cos\beta,\cos\gamma)=(\frac{x}{|\overrightarrow{OM}|},\frac{y}{|\overrightarrow{OM}|},\frac{z}{|\overrightarrow{OM}|})\\
 			=\frac{1}{|\overrightarrow{OM}|}(x,y,z)\\
 			=\frac{\overrightarrow{OM}}{|\overrightarrow{OM}|}
+\end{align*}
+	\begin{minipage}{.6\textwidth}
+		\textbf{\large \ref{Inner_product_coordinate}}
+		$$\overrightarrow{i}\bullet\overrightarrow{j}=0\qquad\overrightarrow{j}\bullet\overrightarrow{k}=0\qquad\overrightarrow{k}\bullet\overrightarrow{i}=0$$
+		\begin{align*}
+			\overrightarrow{a}\bullet\overrightarrow{b}&=(a_x\overrightarrow{i}+a_y\overrightarrow{j}+a_z\overrightarrow{k})\bullet(b_x\overrightarrow{i}+b_y\overrightarrow{j}+b_z\overrightarrow{k})\\
+			&=a_xb_x\overrightarrow{i}+a_yb_y\overrightarrow{j}+a_zb_z\overrightarrow{k}+0\\
+			&=a_xb_x+a_yb_y+a_zb_z
+		\end{align*}
+	\textbf{\large \ref{Vector_product_coordinate}}
+	\begin{align*}
+		\overrightarrow{a}\times\overrightarrow{b}=&(a_x\overrightarrow{i}+a_y\overrightarrow{j}+a_z\overrightarrow{k})\times(b_x\overrightarrow{i}+b_y\overrightarrow{j}+b_z\overrightarrow{k})\\
+		=&a_xb_x\overrightarrow{i}\overrightarrow{i}+a_xb_y\overrightarrow{i}\overrightarrow{j}+a_xb_z\overrightarrow{i}\overrightarrow{z}\\
+		+&a_yb_x\overrightarrow{j}\overrightarrow{i}+a_yb_y\overrightarrow{j}\overrightarrow{j}+a_yb_z\overrightarrow{j}\overrightarrow{z}\\
+		+&a_zb_x\overrightarrow{z}\overrightarrow{i}+a_zb_y\overrightarrow{z}\overrightarrow{j}+a_zb_z\overrightarrow{z}\overrightarrow{z}\\
+		=&a_xb_y\overrightarrow{k}+a_xb_z(-\overrightarrow{j})\\
+		+&a_yb_x(-\overrightarrow{k})+a_yb_z\overrightarrow{i}\\
+		+&a_zb_x\overrightarrow{j}+a_zb_y(-\overrightarrow{i})\\
+		=&(a_yb_z-a_zb_y)\overrightarrow{i}+(a_zb_x-a_xb_z)\overrightarrow{j}+(a_xb_y-a_yb_x)\overrightarrow{k}\\
+		=&\begin{vmatrix}
+			a_y & a_z\\
+			b_y & b_z
+		\end{vmatrix}\overrightarrow{i}-\begin{vmatrix}
+			a_x & a_z\\
+			b_x & b_z
+		\end{vmatrix}\overrightarrow{j}+\begin{vmatrix}
+			a_x & a_y\\
+			b_x & b_y
+		\end{vmatrix}\overrightarrow{k}
+	\end{align*}
+\end{minipage}
+\vline
+\begin{minipage}{.4\textwidth}
+	$$\overrightarrow{a}=(a_x,a_y,a_z)=a_x\overrightarrow{i}+a_y\overrightarrow{j}+a_z\overrightarrow{k}$$
+	$$\overrightarrow{b}=(b_x,b_y,b_z)=b_x\overrightarrow{i}+b_y\overrightarrow{j}+b_z\overrightarrow{k}$$
+\end{minipage}
+\textbf{\large \ref{Total_differential}}\\
+\begin{minipage}{.4\textwidth}
+	\begin{align*}
+		\varDelta z=&f(x+\varDelta x,y+\varDelta y)-f(x,y)\\
+		\varDelta z=&A\varDelta x+B\varDelta y+\circ(\rho)\\
+		=&\frac{\partial z}{\partial x}\varDelta x+\frac{\partial z}{\partial y}\varDelta y
+	\end{align*}
+\end{minipage}
+\vline
+\begin{minipage}{.6\textwidth}
+	\centering
+	$\mbox{取}\varDelta y =0$
+	\begin{align*}
+		f(x+\varDelta x,y)-f(x,y)=&A\varDelta x+\circ(|\varDelta x|)\\
+		\frac{f(x+\varDelta x,y)-f(x,y)}{\varDelta x}=&A+\frac{\circ(|\varDelta x|)}{\varDelta x}\\
+		A=&\lim\limits_{\varDelta x\to 0}\frac{f(x+\varDelta x,y)-f(x,y)}{\varDelta x}\\
+		A=&\frac{\partial z}{\partial x}
+	\end{align*}
+	\noindent\rule{\textwidth}{0.4pt}
+	$\mbox{取}\varDelta x =0$
+	\begin{align*}
+		f(x,y+\varDelta y)-f(x,y)=&B\varDelta y+\circ(|\varDelta y|)\\
+		\frac{f(x,y+\varDelta y)-f(x,y)}{\varDelta y}=&B+\frac{\circ(|\varDelta y|)}{\varDelta y}\\
+		B=&\lim\limits_{\varDelta y\to 0}\frac{f(x,y+\varDelta y)-f(x,y)}{\varDelta y}\\
+		B=&\frac{\partial z}{\partial y}
+	\end{align*}
+\end{minipage}
+\textbf{\large \ref{Multivariate_equation_system_1}}\\
+$$\begin{cases}
+	F(x,y,z)=0\\
+	G(x,y,z)=0
+\end{cases}\qquad\begin{cases}
+	y=y(x)\\
+	z=z(x)
+\end{cases}\Rightarrow\begin{cases}
+	F(x,y(x),z(x))\equiv0\\
+	G(x,y(x),z(x))\equiv0
+\end{cases}$$
+$$\begin{cases}
+	F'_x+F'_y\frac{dy}{dx}+F'_z\frac{dz}{dx}=0\\
+	G'_x+G'_y\frac{dy}{dx}+G'_z\frac{dz}{dx}=0	
+\end{cases}\Rightarrow\begin{cases}
+	F'_y\frac{dy}{dx}+F'_z\frac{dz}{dx}=-F'_x\\
+	G'_y\frac{dy}{dx}+G'_z\frac{dz}{dx}=-G'_x
+\end{cases}$$
+$$J=\begin{vmatrix}
+	F'_y & F'_z\\
+	G'_y & G'_z
+\end{vmatrix}=\begin{vmatrix}
+	\frac{\partial F}{\partial y} & \frac{\partial F}{\partial z}\\
+	\frac{\partial G}{\partial y} & \frac{\partial G}{\partial z}
+\end{vmatrix}\triangleq\frac{\partial(F,G)}{\partial(y,z)}\quad(\mbox{不等于0时有唯一解})$$
+\begin{align*}
+	\frac{dy}{dx}=\frac{\begin{vmatrix}
+			-F'_x & F'_z\\
+			-G'_x & G'_z
+	\end{vmatrix}}{\begin{vmatrix}
+			F'_y & F'_z\\
+			G'_y & G'_z
+	\end{vmatrix}}=-\frac{\begin{vmatrix}
+			F'_x & F'_z\\
+			G'_x & G'_z
+	\end{vmatrix}}{\begin{vmatrix}
+			F'_y & F'_z\\
+			G'_y & G'_z
+	\end{vmatrix}}=-\frac{\frac{\partial(F,G)}{\partial(x,z)}}{\frac{\partial(F,G)}{\partial(y,z)}}\\
+	\frac{dz}{dx}=\frac{\begin{vmatrix}
+			F'_y & -F'_x\\
+			G'_y & -G'_x
+	\end{vmatrix}}{\begin{vmatrix}
+			F'_y & F'_z\\
+			G'_y & G'_z
+	\end{vmatrix}}=-\frac{\begin{vmatrix}
+			F'_y & F'_x\\
+			G'_y & G'_x
+	\end{vmatrix}}{\begin{vmatrix}
+			F'_y & F'_z\\
+			G'_y & G'_z
+	\end{vmatrix}}=-\frac{\frac{\partial(F,G)}{\partial(y,x)}}{\frac{\partial(F,G)}{\partial(y,z)}}
+\end{align*}
+\textbf{\large \ref{Multivariate_equation_system_2}}\\
+$$\begin{cases}
+	F(x,y,u,v)=0\\
+	G(x,y,u,v)=0
+\end{cases}\qquad\begin{cases}
+	u=u(x,y)\\
+	v=v(x,y)
+\end{cases}\Rightarrow\begin{cases}
+	F(x,y,u(x,y),v(x,y))\equiv0\\
+	G(x,y,u(x,y),v(x,y))\equiv0
+\end{cases}$$
+$$\begin{cases}
+	F'_x+F'_u\frac{\partial u}{dx}+F'_v\frac{\partial v}{dx}=0\\
+	G'_x+G'_v\frac{\partial u}{dx}+G'_v\frac{\partial v}{dx}=0	
+\end{cases}\Rightarrow\begin{cases}
+	F'_u\frac{\partial u}{dx}+F'_v\frac{\partial v}{dx}=-F'_x\\
+	G'_v\frac{\partial u}{dx}+G'_v\frac{\partial v}{dx}=-G'_x	
+\end{cases}$$
+$$J=\begin{vmatrix}
+	F'_u & F'_v\\
+	G'_u & G'_v
+\end{vmatrix}=\begin{vmatrix}
+	\frac{\partial F}{\partial u} & \frac{\partial F}{\partial v}\\
+	\frac{\partial G}{\partial u} & \frac{\partial G}{\partial v}
+\end{vmatrix}\triangleq\frac{\partial(F,G)}{\partial(u,v)}\quad(\mbox{不等于0时有唯一解})$$
+\begin{align*}
+	\frac{\partial u}{\partial x}=\frac{\begin{vmatrix}
+			-F'_x & F'_v\\
+			-G'_x & G'_v
+	\end{vmatrix}}{\begin{vmatrix}
+			F'_u & F'_v\\
+			G'_u & G'_v
+	\end{vmatrix}}=-\frac{\begin{vmatrix}
+			F'_u & F'_v\\
+			G'_u & G'_v
+	\end{vmatrix}}{\begin{vmatrix}
+			F'_u & F'_v\\
+			G'_u & G'_v
+	\end{vmatrix}}=-\frac{\frac{\partial(F,G)}{\partial(x,v)}}{\frac{\partial(F,G)}{\partial(u,v)}}\\
+	\frac{\partial v}{\partial x}=\frac{\begin{vmatrix}
+			F'_u & -F'_x\\
+			G'_u & -G'_x
+	\end{vmatrix}}{\begin{vmatrix}
+			F'_u & F'_v\\
+			G'_u & G'_v
+	\end{vmatrix}}=-\frac{\begin{vmatrix}
+			F'_u & F'_x\\
+			G'_u & G'_x
+	\end{vmatrix}}{\begin{vmatrix}
+			F'_u & F'_v\\
+			G'_u & G'_v
+	\end{vmatrix}}=-\frac{\frac{\partial(F,G)}{\partial(u,x)}}{\frac{\partial(F,G)}{\partial(u,v)}}
 \end{align*}

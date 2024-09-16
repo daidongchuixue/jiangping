@@ -1,0 +1,104 @@
+\begin{center}\section{多元函数}\label{chapter_Multivariate_function}\end{center}
+\subsection{概念}
+\subsubsection{二元函数定义}
+\mbox{平面点集}
+$R^2=R\cdot R=\{(x,y)|x\in R,y\in R\}$\\
+$\mbox{设}\{D\neq\emptyset\}\subset R^2,\forall P(x,y),\mbox{按照法则}f\mbox{都有唯一的实数值与之对应，称}f\mbox{是定义在}D\mbox{上的二元函数记作}$
+$$z=f(x,y)\begin{cases}
+	x,y\mbox{自变量}\\
+	z\mbox{因变量}\\
+	D\mbox{定义域}\\
+	f(D)\mbox{值域}
+\end{cases}$$
+\subsubsection{二元函数极限}
+$P(x,y)\rightarrow P_0(x_0,y_0)\mbox{时},f(x,y)\rightarrow A$\\
+$\forall \epsilon>0,\exists \delta>0,0<|PP_0|<\delta,\mbox{且}P\in D,|f(p)-A|<\delta\mbox{成立}$\\
+$\mbox{称当}P(x,y)\rightarrow P_0(x_0,y_0)\mbox{时},f(x,y)\mbox{的极限为} A$
+$$\lim\limits_{{(x,y)}\to{(x_0,y_0)}}f(x,y)=A\quad\mbox{或}\quad\lim\limits_{{P}\to{P_0}}f(P)=A\quad\mbox{或}\quad\lim\limits_{x\to x_0 \atop y\to y_0}f(x,y)=A$$
+\subsubsection{二元函数连续}
+$f(x,y)\mbox{的定义域为}D\quad P_0(x_0,y_0)\mbox{为}D内的一点，且为D的一个聚点$\\
+$$\mbox{如果}\lim\limits_{{(x,y)}\to{(x_0,y_0)}}f(x,y)=f(x_0,y_0)\ \mbox{则称}f(x,y)\mbox{在点}(x_0,y_0)\mbox{连续}$$
+连续函数的和差积商仍为连续函数。
+连续函数的复合函数仍为连续函数。\\
+多元函数的初等函数：由常数 ，一元初等函数(可以不同变量)，有限次四则运算，复合，用一个式子表达的函数。\\
+多元函数在其定义域内都是连续的\\
+$\mbox{断点：}f(x,y)\mbox{的定义域为}D,P_0(x_0,y_0)\mbox{是}D\mbox{的聚点}\\
+\mbox{如果}f(x,y)\mbox{在}P_0(x_0,y_0)\mbox{点不连续，}\mbox{称}P_0(x_0,y_0)\mbox{为}f(x,y)\mbox{的一个间断点}$
+\subsubsection{二元函数偏导}
+$f(x,y)$在$(x_0,y_0)$的某处有定义，固定$y_0,x$在$x_0$处增量$\varDelta x,$增量$f(x_0+\varDelta x,y_0)-f(x_0,y_0)，$如果
+$$\lim\limits_{\varDelta x\to 0}\frac{f(x_0+\varDelta x,y_0)-f(x_0,y_0)}{\varDelta x}$$
+存在则称此极限为$z=f(x,y)$在$(x_0,y_0)$点关于$x$的偏导数,记作
+$$\left.\frac{\partial z}{\partial x}\right|_{x=x_0\atop y=y_0}\quad\mbox{或}\quad\left.\frac{\partial f}{\partial x}\right|_{x=x_0\atop y=y_0}\quad\mbox{或}\quad f'_x(x_0,y_0)\quad\mbox{或}\quad f'_1(x_0,y_0)$$
+$$f'_x(x_0,y_0)\triangleq \lim\limits_{\varDelta x\to 0}\frac{f(x_0+\varDelta x,y_0)-f(x_0,y_0)}{\varDelta x}$$
+$$f'_y(x_0,y_0)\triangleq \lim\limits_{\varDelta y\to 0}\frac{f(x_0,y_0+\varDelta u)-f(x_0,y_0)}{\varDelta y}$$
+\subsection{高阶偏导}
+$$\frac{\partial^2z}{\partial x^2}\triangleq \frac{\partial}{\partial x}\left(\frac{\partial z}{\partial x}\right)\qquad\frac{\partial^2z}{\partial y^2}\triangleq \frac{\partial}{\partial y}\left(\frac{\partial z}{\partial y}\right)$$
+$$\frac{\partial^2z}{\partial x\partial y}\triangleq \frac{\partial}{\partial y}\left(\frac{\partial z}{\partial x}\right)\qquad\frac{\partial^2z}{\partial y\partial x}\triangleq \frac{\partial}{\partial x}\left(\frac{\partial z}{\partial y}\right)$$
+\begin{equation}
+	\frac{\partial^2z}{\partial x\partial y}=\frac{\partial^2z}{\partial y\partial x}
+\end{equation}
+\subsection{全微分}
+$z=f(x,y)\begin{cases}
+	f(x+\varDelta x,y)-f(x,y)\quad x\mbox{的偏增量}\\
+	f(x,y+\varDelta y)-f(x,y)\quad y\mbox{的偏增量}\\	
+\end{cases}$\\
+$\varDelta z \triangleq \ f(x+\varDelta x,y+\varDelta y)-f(x,y)\mbox{称为}z=f(x,y)\mbox{在点}(x,y)\mbox{处的全增量}$
+
+\subsubsection{定义}
+$z=f(x,y)$\mbox{在点}$(x,y)$\mbox{的某领域有定义},
+$\varDelta z=f(x+\varDelta x,y+\varDelta y)-f(x,y)$\\
+如果$\varDelta z=A\varDelta x+B\varDelta y+\circ(\rho)$,
+其中$\rho=\sqrt{(\varDelta x)^2+(\varDelta y)^2}$\\
+称$z=f(x,y)$在点$(x,y)$处可微分,$A\varDelta x+B\varDelta y$称为$z=f(x,y)$在$(x,y)$的全微分,记
+$$dz=A\varDelta x+B\varDelta y$$
+\begin{align}
+	dz=\frac{\partial z}{\partial x}\varDelta x+\frac{\partial z}{\partial y}\varDelta y\label{Total_differential}
+\end{align}
+\subsection{多元复合}
+$$z=f(u(t),v(t))\begin{cases}
+	\frac{\partial z}{\partial t}=\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}
+\end{cases}$$
+$$z=f(u(x,y),v(x,y))\begin{cases}
+	\frac{\partial z}{\partial x}=\frac{\partial z}{\partial u}\frac{du}{dx}+\frac{\partial z}{\partial v}\frac{dv}{dx}\\
+	\frac{\partial z}{\partial y}=\frac{\partial z}{\partial u}\frac{du}{dy}+\frac{\partial z}{\partial v}\frac{dv}{dy}
+\end{cases}\Rightarrow dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy=\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial v}dv$$
+\subsection{多元隐函数}
+\subsubsection{二元}
+$F(x,y)$在$(x_0,y_0)$的邻域内有连续的偏导数，且$F(x_0,y_0)=0,F_y'(x_0,y_0)\neq 0$则方程$F(x,y)=0$在点$(x_0,y_0)$的邻域内存在唯一的隐函数$y=y(x)$\\
+$F(x,y)=0,y=y(x)\Rightarrow F(x,y(x))\equiv0$
+$$\frac{dy}{dx}=-\frac{F'_x}{F'_y}$$
+\subsubsection{三元}
+$F(x,y,z)$在$(x_0,y_0,z_0)$的邻域内有连续的偏导数，且$F(x_0,y_0,z_0)=0,F_z'(x_0,y_0,z_0)\neq 0$则方程$F(x,y,z)=0$在点$(x_0,y_0,z_0)$的邻域内存在唯一的隐函数$z=z(x,y)$\\
+$F(x,y,z)=0,z=z(x,y)\Rightarrow F(x,y,z(x,y))\equiv0$
+$$\frac{\partial z}{\partial x}=-\frac{F'_x}{F'_z}\qquad\frac{\partial z}{\partial y}=-\frac{F'_y}{F'_z}$$
+\subsubsection{方程组}
+\begin{align}
+	\begin{cases}
+		F(x,y,z)=0\\
+		G(x,y,z)=0
+	\end{cases}\qquad
+	\frac{dy}{dx}=-\frac{\frac{\partial(F,G)}{\partial(x,z)}}{\frac{\partial(F,G)}{\partial(y,z)}}\qquad
+	\frac{dz}{dx}=-\frac{\frac{\partial(F,G)}{\partial(y,x)}}{\frac{\partial(F,G)}{\partial(y,z)}}\label{Multivariate_equation_system_1}
+\end{align}
+\begin{align}
+	\begin{cases}
+		F(x,y,u,v)=0\\
+		G(x,y,u,v)=0
+	\end{cases}\qquad
+	\frac{dy}{dx}=-\frac{\frac{\partial(F,G)}{\partial(x,v)}}{\frac{\partial(F,G)}{\partial(u,v)}}\qquad
+	\frac{dz}{dx}=-\frac{\frac{\partial(F,G)}{\partial(u,x)}}{\frac{\partial(F,G)}{\partial(u,v)}}\label{Multivariate_equation_system_2}
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
