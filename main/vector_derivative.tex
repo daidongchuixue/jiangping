@@ -1,7 +1,30 @@
 \begin{center}\section{向量导数}\label{chapter_vector_derivative}\end{center}
+$$\overrightarrow{r}=x\overrightarrow{i}+y\overrightarrow{j}+z\overrightarrow{k}=(x,y,z)\quad t\in[\alpha,\beta]\begin{cases}
+	x=f_1(t)\\
+	y=f_2(t)\\
+	z=f_3(t)
+\end{cases}$$
+$$\overrightarrow{f}(t)=f_1(t)\overrightarrow{i}+f_2(t)\overrightarrow{j}+f_3(t)\overrightarrow{k}=(f_1(t),f_2(t),f_3(t))$$
+$$\overrightarrow{r}=\overrightarrow{f}(t)\quad t\in[\alpha,\beta]$$
+\subsection{向量值函数}
+$$D\in R\quad f:D\rightarrow R^n,\mbox{称}f\mbox{为一元向量值函数,}\overrightarrow{r}=\overrightarrow{f}(t)\quad t\in D $$
+当$n=3$的情形\qquad$t\in D\rightarrow M(x,y,z)$\\
+$\overrightarrow{F}=\overrightarrow{OM}$\ t的变化，M点轨迹$\Gamma$(为空间曲线)，称为$\overrightarrow{r}=\overrightarrow{f}(t)$的图形，$\overrightarrow{r}=\overrightarrow{f}(t)$称为$\Gamma$的方程
 \subsection{极限}
+$\overrightarrow{F}=\overrightarrow{f}(t)$在某个区新领域有定义$\overrightarrow{r}_0$是一个常向量\\
+$$\forall\varepsilon>0.\exists\delta>0,0<|t-t_0|<\delta,|\overrightarrow{f}(t)-\overrightarrow{r}_0|<\varepsilon$$
+称$\overrightarrow{r}_0$为$\overrightarrow{r}=\overrightarrow{f}(t)$在$t=t_0$处的极限(向量)，记作
+$$\lim\limits_{t\to t_0}\overrightarrow{f}(t)=\overrightarrow{r}_0\Leftrightarrow \lim\limits_{t\to t_0}\overrightarrow{f}(t)=\left(\lim\limits_{t\to t_0}\overrightarrow{f}_1(t),\lim\limits_{t\to t_0}\overrightarrow{f}_2(t),\lim\limits_{t\to t_0}\overrightarrow{f}_3(t)\right)$$
 \subsection{连续}
+$\overrightarrow{r}=\overrightarrow{f}(t)$在$t=t_0$处连续
+$$\lim\limits_{t\to t_0}\overrightarrow{f}(t)=\lim\limits_{t\to t_0}\overrightarrow{f}(t_0)$$
+$\overrightarrow{r}=\overrightarrow{f}(t)$在$D_1\subset D,$上每一点连续，称$\overrightarrow{r}=\overrightarrow{f}(t)$在$D_1$上连续
 \subsection{导数}
+$\overrightarrow{r}=\overrightarrow{f}(t)$在$t=t_0$某邻域内有定义，如果
+$$\lim\limits_{\Delta t\to 0}\frac{\Delta\overrightarrow{r}}{\Delta t}=\lim\limits_{\Delta t\to 0}\frac{\overrightarrow{f}(t+\Delta t)-\overrightarrow{f}(t)}{\Delta t}$$
+称此极限为$\overrightarrow{r}=\overrightarrow{f}(t)$在$t=t_0$处的导向量，记作
+$$\overrightarrow{f}'(t_0)\quad\mbox{或}\quad \left.\frac{d\overrightarrow{r}}{dt}\right|_{t=t_0}$$
+$$\overrightarrow{f}'(t)=\left(\overrightarrow{f}_1'(t),\overrightarrow{f}'_2(t),\overrightarrow{f}'_3(t) \right)$$
 \subsection{向量函数求导法则}
 \begin{align}
 	\frac{d\overrightarrow{c}}{dt}&=\overrightarrow{0}\quad(\overrightarrow{c}\mbox{为常数})\\
@@ -12,3 +35,63 @@
 	\frac{d\left[\overrightarrow{u}(t)\times\overrightarrow{v}(t)\right]}{dt}&=\overrightarrow{u}'(t)\times\overrightarrow{v}(t)+\overrightarrow{u}(t)\times\overrightarrow{v}'(t)\\
 	\frac{d\overrightarrow{u}[\varphi(t)]}{dt}&=\overrightarrow{u}'(t)\varphi'(t)
 \end{align}
+\subsection{曲线的切线与法平面}
+$$\Gamma:\begin{cases}
+	x=x(t)\\
+	y=y(t)\\
+	z=z(t)
+\end{cases}t\in[\alpha,\beta],t=t_0\mbox{对应点}M(x_0,y_0,z_0)$$
+\begin{align*}
+	\mbox{切向量：}&\overrightarrow{\Gamma}=(x'(t_0),y'(t_0),z'(t_0))\\
+	\mbox{切线方程：}&\frac{x-x_0}{x'(t_0)}=\frac{y-y_0}{y'(t_0)}=\frac{z-z_0}{z'(t_0)}\\
+	\mbox{法平面方程：}&x'(t_0)(x-x_0)+y'(t_0)(y-y_0)+z'(t_0)(z-z_0)
+\end{align*}
+\subsection{曲面的切线与法平面}
+空间曲面$\Sigma,F(x,y,z)=0,M(x_0,y_0,z_0)$是$\Sigma$上的一点\\
+$$\Gamma\mbox{参数方程}:\begin{cases}
+	x=x(t)\\
+	y=y(t)\\
+	z=z(t)
+\end{cases}t\in[\alpha,\beta]$$
+$$\Gamma\mbox{在}\Sigma\mbox{上}，F(x(t),y(t),z(t))\equiv 0,t\in[\alpha,\beta]$$
+$$F'_xx'(t)+F'_yy(t)+F'_zz(t)=0$$
+$t=t_0$\mbox{对应点}M
+$$F'_x(x_0,y_0,z_0)x'(t_0)+F'_y(x_0,y_0,z_0)y(t_0)+F'_z(x_0,y_0,z_0)z(t_0)=0$$
+$\overrightarrow{T}=(x'(t_0),y'(t_0),z'(t_0))$是$\Gamma$过点M的一个切向量\\
+$\overrightarrow{n}=(F'_x(x_0,y_0,z_0),F'_y(x_0,y_0,z_0),F'_z(x_0,y_0,z_0))$
+$$\overrightarrow{n}\bullet\overrightarrow{T}=0\mbox{，即}\overrightarrow{n}\perp\overrightarrow{T}\quad\overrightarrow{n}\mbox{与所有切线垂直}\overrightarrow{n}\mbox{为切平面的法向量}$$
+\subsection{方向导数}
+$P_0(x_0,y_0)$以$P_0(x_0,y_0)$为始的的射线L，单位向量$\overrightarrow{e}_l$\\
+$\overrightarrow{e}_l(\cos\alpha,\cos\beta)=\cos\alpha\overrightarrow{i}+\cos\beta\overrightarrow{j}$\\
+$P_0(x,y)$是$L$上一点$\begin{cases}
+	x=x_0+t\cos\alpha\\
+	y=y_0+t\cos\beta
+\end{cases}\quad t>0$\\
+$P_0(x,y)$沿$L$方向趋于$P_0(x_0,y_0)\quad(t\to 0^+)\quad z=f(x,y)$\\
+$$\left.\frac{\partial f}{\partial L}\right|_{(x_0,y_0)}\triangleq\lim\limits_{t\to 0^+}\frac{f(x_0+t\cos\alpha,y_0+t\cos\beta)-f(x_0,y_0)}{t}$$
+$z=f(x,y)$在点$(x_0,y_0)$处沿L的方向导数
+\begin{align}
+	\left.\frac{\partial f}{\partial L}\right|_{(x_0,y_0)}=f'_x(x_0,y_0)\cos\alpha+f'_y(x_0,y_0)\cos\beta\label{Directional_derivative}
+\end{align}
+\subsection{梯度}
+$$\overrightarrow{\bigtriangledown} f(x_0.y_0)=\overrightarrow{grad}f(x_0.y_0)\triangleq\left(f'_x(x_0,y_0),f'_y(x_0,y_0)\right)$$
+$$\overrightarrow{\bigtriangledown} f(x_0.y_0,z_0)=\overrightarrow{grad}f(x_0.y_0,z_0)\triangleq\left(f'_x(x_0,y_0,z_0),f'_y(x_0,y_0,z_0),f'_z(x_0,y_0,z_0)\right)$$
+$$\frac{\partial f}{\partial L}_{(x_0,y_0)}=\overrightarrow{\bigtriangledown} f(x_0.y_0)\bullet\overrightarrow{e}_L\qquad\overrightarrow{e}_L=(\cos\alpha,\cos\beta)$$
+\subsection{极值}
+$$\mbox{驻点}\begin{cases}
+	f'_x(x,y)=0\\
+	f'_y(x,y)=0
+\end{cases}$$
+$$\mbox{记}\begin{cases}
+	A=f''_{xx}(x_0,y_0)\\
+	B=f''_{xy}(x_0,y_0)\\
+	C=f''_{yy}(y_0,y_0)
+\end{cases}\quad
+\Delta=AC-B^2\begin{cases}
+	\Delta>0,z=f(x,y)\mbox{在}(x_0,y_0)\mbox{点}\begin{cases}
+		A>0\quad\mbox{极小值}\\
+		A<0\quad\mbox{极大值}
+	\end{cases}\\
+	\Delta=0,\mbox{未定}\\
+	\Delta=0,z=f(x,y)\mbox{在}(x_0,y_0)\mbox{点无极值}
+\end{cases}$$

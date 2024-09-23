@@ -1,0 +1,21 @@
+\begin{center}\section{曲线积分}\label{chapter_curvilinear_integral}\end{center}
+\subsection{曲线积分定义}
+\subsubsection{弧长曲线积分}
+$x\circ y$面上曲线L(分段光滑)，$f(x,y)$在L上有界，对L进行分割，取积，求和，取极限，如果$\lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n}f(\xi_i,\eta_i)\Delta S_i$存在，称此极限为$f(x,y)$在L上对弧长的曲线积分，记作
+$$\int_{L}f(x,y)ds\triangleq \lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}f(\xi_i,\eta_i)\Delta S_i$$
+\subsubsection{封闭曲线积分}
+如果L是封闭曲线，记作\\
+$$\oint_Lf(x,y)ds$$
+\subsection{性质}
+$$\int_L[\alpha f(x,y)+\beta g(x,y)]ds=\alpha\int_L f(x,y)ds+\beta\int_L g(x,y)ds$$
+$$L=L_1+L_2\qquad \int_L f(x,y)ds=\int_{L1} f(x,y)ds+\int_{L2} f(x,y)ds$$
+$$f(x,y)\leqslant g(x,y)\qquad \int_L f(x,y)ds\leqslant \int_L g(x,y)ds$$
+$$\left|\int_L f(x,y)ds\right|\leqslant \int_L|f(x,y)|ds$$
+$$f(x,y)\mbox{在}L\mbox{上连续,则至少窜在一点}(\xi,\eta)\in L\mbox{使}\int_L f(x,y)ds=f(\xi,\eta)l$$
+\subsection{弧微分计算}
+$f(x,y)$在L上连续，L的参数方程$\begin{cases}
+	x=x(t)\\
+	y=y(t)
+\end{cases}$\quad ($\alpha\leqslant t\leqslant \beta$)\\
+若$\frac{dx}{dt},\frac{dy}{dt}$在$[\alpha,\beta]$上连续，且$\left(\frac{dx}{dt}\right)^2+\left(f\frac{dy}{dt}\right)^2=\neq 0$则\\
+$$\int_{L}f(x,y)ds=\int_{\alpha}^{\beta}f(x(t),y(t))\sqrt{[x'(t)]^2+[y'(t)]^2}dt$$

@@ -1,0 +1,44 @@
+\begin{center}\section{重积分}\label{chapter_multiple_integral}\end{center}
+\subsection{二重积分}
+\subsubsection{定义}
+区域$D$,$D$上函数$z=f(x,y)$,$D$分割成$\Delta \sigma_1,\Delta \sigma_2,\cdots,\Delta \sigma_n$,$(\xi_i,\eta_i)\sigma_i$\\
+如果$\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}f(\xi_i,\eta_i)\Delta\sigma_i$存在，称极限为$f(x,y)$在$D$上的二重积分，记作
+$$\lim\limits_{\lambda\to 0}\sum_{i=1}^{n}f(\xi_i,\eta_i)\Delta\sigma_i\triangleq\iint\limits_{D}f(x,y)d\sigma\begin{cases}
+	f(x,y)\quad &\mbox{被积函数}\\
+	D&\mbox{积分区域}\\
+	x,y&\mbox{积分变量}\\
+	f(x,y)d\sigma &\mbox{积分表达式}\\
+	d\sigma&\mbox{面积元素}=\begin{cases}
+		dxdy \quad\mbox{直角坐标坐标系}
+	\end{cases}
+\end{cases}$$
+\subsubsection{性质}
+	$$\iint\limits_{D}\alpha f(x,y)d\sigma=\alpha\iint\limits_{D} f(x,y)d\sigma \quad\alpha\mbox{为常数}$$
+	$$\iint\limits_{D} [f(x,y)\pm g(x,y)]d\sigma=\iint\limits_{D}f(x,y)d\sigma\pm\iint\limits_{D}g(x,y)d\sigma$$
+	$$\iint\limits_{D}f(x,y)d\sigma=\iint\limits_{D_1}f(x,y)d\sigma+\iint\limits_{D_2}f(x,y)d\sigma \quad D=D_1+D_2$$
+	$$\iint\limits_{D}d\sigma=\iint\limits_{D}1d\sigma=\sigma$$
+	$$f(x,y)\leqslant g(x,y)\Rightarrow \iint\limits_{D}f(x,y)d\sigma\leqslant\iint\limits_{D}g(x,y)d\sigma$$
+	$$\left|\iint\limits_{D}f(x,y)d\sigma\right|\leqslant\iint\limits_{D}|f(x,y)|d\sigma$$
+	$$m,M\mbox{分别为}f(x,y)\mbox{在}D\mbox{上的最小值与最大值，则}\quad m\sigma\leqslant\iint\limits_{D}f(x,y)d\sigma\leqslant M\sigma$$
+	$$f(x,y)\mbox{在}D\mbox{上连续，则至少存在一点}(\xi,\eta)\mbox{使}\iint\limits_{D}f(x,y)d\sigma=f(\xi,\eta)\sigma$$
+\subsubsection{换源法}
+$f(x,y)$在$D$上连续,\quad 变换$T\begin{cases}
+	x=x(u,v)\\
+	y=y(u,v)
+\end{cases}\quad D'\to D$\\
+满足$T: D'\to D$是一一对应的,\quad$x(u,v),y(uv)$在$D'$上有一阶连续偏导\\
+在$D‘$上$J(u,v)=\frac{\partial(x,y)}{\partial(u,v)}\neq 0$
+\begin{equation}
+	\iint\limits_{D}f(x,y)dxdy=\iint\limits_{D'}f(x(u,v),y(u,v))|J|dudv
+\end{equation}
+\subsubsection{奇偶性}
+$f(x,y)$关于x为奇函数，且D关于y轴对称，则
+$$\iint\limits_{D}f(x,y)dxdy=0$$
+$f(x,y)$关于x为偶函数，且D关于y轴对称，则\\
+$$D=D_1+D_2\qquad D_1,D_2 \mbox{关于y轴对称}\qquad
+\iint\limits_{D}f(x,y)dxdy=2\iint\limits_{D_1}f(x,y)dxdy$$
+\subsection{三重积分}
+空间区域$\Omega$,在一个有界函数$f(x,y,z)$分割$\Omega,\Delta v_1,\Delta v_2,\cdots\Delta V_n$任取$(\xi_i,\eta_i,\zeta_i)\in v_i$\\
+$\lim\limits_{\lambda\to 0}\sum\limits_{n}^{i=1}f(\xi_i,\eta_i,\zeta_i)\Delta v_i$\quad($\lambda$分割的直径)若极限存在\\
+则称其为$f(x,y,z)$在$\Omega$上的三重积分,记作
+$$\iiint\limits_{\Omega}f(x,y,z)d v\triangleq\lim\limits_{\lambda\to 0}\sum\limits_{n}^{i=1}f(\xi_i,\eta_i,\zeta_i)\Delta v_i$$

@@ -25,12 +25,12 @@ $$\mbox{如果}\lim\limits_{{(x,y)}\to{(x_0,y_0)}}f(x,y)=f(x_0,y_0)\ \mbox{则�
 $\mbox{断点：}f(x,y)\mbox{的定义域为}D,P_0(x_0,y_0)\mbox{是}D\mbox{的聚点}\\
 \mbox{如果}f(x,y)\mbox{在}P_0(x_0,y_0)\mbox{点不连续，}\mbox{称}P_0(x_0,y_0)\mbox{为}f(x,y)\mbox{的一个间断点}$
 \subsubsection{二元函数偏导}
-$f(x,y)$在$(x_0,y_0)$的某处有定义，固定$y_0,x$在$x_0$处增量$\varDelta x,$增量$f(x_0+\varDelta x,y_0)-f(x_0,y_0)，$如果
-$$\lim\limits_{\varDelta x\to 0}\frac{f(x_0+\varDelta x,y_0)-f(x_0,y_0)}{\varDelta x}$$
+$f(x,y)$在$(x_0,y_0)$的某处有定义，固定$y_0,x$在$x_0$处增量$\Delta x,$增量$f(x_0+\Delta x,y_0)-f(x_0,y_0)，$如果
+$$\lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}$$
 存在则称此极限为$z=f(x,y)$在$(x_0,y_0)$点关于$x$的偏导数,记作
 $$\left.\frac{\partial z}{\partial x}\right|_{x=x_0\atop y=y_0}\quad\mbox{或}\quad\left.\frac{\partial f}{\partial x}\right|_{x=x_0\atop y=y_0}\quad\mbox{或}\quad f'_x(x_0,y_0)\quad\mbox{或}\quad f'_1(x_0,y_0)$$
-$$f'_x(x_0,y_0)\triangleq \lim\limits_{\varDelta x\to 0}\frac{f(x_0+\varDelta x,y_0)-f(x_0,y_0)}{\varDelta x}$$
-$$f'_y(x_0,y_0)\triangleq \lim\limits_{\varDelta y\to 0}\frac{f(x_0,y_0+\varDelta u)-f(x_0,y_0)}{\varDelta y}$$
+$$f'_x(x_0,y_0)\triangleq \lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}$$
+$$f'_y(x_0,y_0)\triangleq \lim\limits_{\Delta y\to 0}\frac{f(x_0,y_0+\Delta u)-f(x_0,y_0)}{\Delta y}$$
 \subsection{高阶偏导}
 $$\frac{\partial^2z}{\partial x^2}\triangleq \frac{\partial}{\partial x}\left(\frac{\partial z}{\partial x}\right)\qquad\frac{\partial^2z}{\partial y^2}\triangleq \frac{\partial}{\partial y}\left(\frac{\partial z}{\partial y}\right)$$
 $$\frac{\partial^2z}{\partial x\partial y}\triangleq \frac{\partial}{\partial y}\left(\frac{\partial z}{\partial x}\right)\qquad\frac{\partial^2z}{\partial y\partial x}\triangleq \frac{\partial}{\partial x}\left(\frac{\partial z}{\partial y}\right)$$
@@ -39,20 +39,25 @@ $$\frac{\partial^2z}{\partial x\partial y}\triangleq \frac{\partial}{\partial y}
 \end{equation}
 \subsection{全微分}
 $z=f(x,y)\begin{cases}
-	f(x+\varDelta x,y)-f(x,y)\quad x\mbox{的偏增量}\\
-	f(x,y+\varDelta y)-f(x,y)\quad y\mbox{的偏增量}\\	
+	f(x+\Delta x,y)-f(x,y)\quad x\mbox{的偏增量}\\
+	f(x,y+\Delta y)-f(x,y)\quad y\mbox{的偏增量}\\	
 \end{cases}$\\
-$\varDelta z \triangleq \ f(x+\varDelta x,y+\varDelta y)-f(x,y)\mbox{称为}z=f(x,y)\mbox{在点}(x,y)\mbox{处的全增量}$
+$\Delta z \triangleq \ f(x+\Delta x,y+\Delta y)-f(x,y)\mbox{称为}z=f(x,y)\mbox{在点}(x,y)\mbox{处的全增量}$
 
 \subsubsection{定义}
 $z=f(x,y)$\mbox{在点}$(x,y)$\mbox{的某领域有定义},
-$\varDelta z=f(x+\varDelta x,y+\varDelta y)-f(x,y)$\\
-如果$\varDelta z=A\varDelta x+B\varDelta y+\circ(\rho)$,
-其中$\rho=\sqrt{(\varDelta x)^2+(\varDelta y)^2}$\\
-称$z=f(x,y)$在点$(x,y)$处可微分,$A\varDelta x+B\varDelta y$称为$z=f(x,y)$在$(x,y)$的全微分,记
-$$dz=A\varDelta x+B\varDelta y$$
+$\Delta z=f(x+\Delta x,y+\Delta y)-f(x,y)$\\
+如果$\Delta z=A\Delta x+B\Delta y+\circ(\rho)$,
+其中$\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$\\
+称$z=f(x,y)$在点$(x,y)$处可微分,$A\Delta x+B\Delta y$称为$z=f(x,y)$在$(x,y)$的全微分,记
+$$dz=A\Delta x+B\Delta y$$
+一阶全微分
 \begin{align}
-	dz=\frac{\partial z}{\partial x}\varDelta x+\frac{\partial z}{\partial y}\varDelta y\label{Total_differential}
+	dz=\frac{\partial z}{\partial x}\Delta x+\frac{\partial z}{\partial y}\Delta y\label{Total_differential}
+\end{align}
+二阶全微分
+\begin{align}
+	d^2z=\frac{\partial^2 z}{\partial x^2}dx^2+2\frac{\partial^2 z}{\partial x\partial y}dxdy+\frac{\partial^2 z}{\partial y^2}dy^2\label{Total_differential}
 \end{align}
 \subsection{多元复合}
 $$z=f(u(t),v(t))\begin{cases}

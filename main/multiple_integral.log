@@ -1,14 +1,14 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  17 SEP 2024 02:39
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  20 SEP 2024 03:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**vector_derivative.tex
-(./vector_derivative.tex
+**multiple_integral.tex
+(./multiple_integral.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 )
 ! Emergency stop.
-<*> vector_derivative.tex
+<*> multiple_integral.tex
                          
 *** (job aborted, no legal \end found)
 
