@@ -64,8 +64,8 @@ $$z=f(u(t),v(t))\begin{cases}
 	\frac{\partial z}{\partial t}=\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}
 \end{cases}$$
 $$z=f(u(x,y),v(x,y))\begin{cases}
-	\frac{\partial z}{\partial x}=\frac{\partial z}{\partial u}\frac{du}{dx}+\frac{\partial z}{\partial v}\frac{dv}{dx}\\
-	\frac{\partial z}{\partial y}=\frac{\partial z}{\partial u}\frac{du}{dy}+\frac{\partial z}{\partial v}\frac{dv}{dy}
+	\frac{\partial z}{\partial x}=\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x}\\
+	\frac{\partial z}{\partial y}=\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y}
 \end{cases}\Rightarrow dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy=\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial v}dv$$
 \subsection{多元隐函数}
 \subsubsection{二元}

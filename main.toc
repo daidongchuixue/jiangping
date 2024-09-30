@@ -216,20 +216,30 @@
 \contentsline {subsubsection}{\numberline {19.1.3}换源法}{60}{}%
 \contentsline {subsubsection}{\numberline {19.1.4}奇偶性}{60}{}%
 \contentsline {subsection}{\numberline {19.2}三重积分}{60}{}%
-\contentsline {section}{\numberline {20}曲线积分}{61}{}%
+\contentsline {section}{\numberline {20}曲线及曲面积分}{61}{}%
 \contentsline {subsection}{\numberline {20.1}曲线积分定义}{61}{}%
 \contentsline {subsubsection}{\numberline {20.1.1}弧长曲线积分}{61}{}%
 \contentsline {subsubsection}{\numberline {20.1.2}封闭曲线积分}{61}{}%
 \contentsline {subsection}{\numberline {20.2}性质}{61}{}%
 \contentsline {subsection}{\numberline {20.3}弧微分计算}{61}{}%
-\contentsline {section}{\numberline {21} 零散的一些}{62}{}%
-\contentsline {section}{\numberline {22}证明}{64}{}%
-\contentsline {subsection}{\numberline {22.1}\centering 第\ref {chapter_trigonometric_function}章}{64}{}%
-\contentsline {subsection}{\numberline {22.2}\centering 第\ref {chapter_function}章}{65}{}%
-\contentsline {subsection}{\numberline {22.3}\centering 第\ref {chapter_limit}章}{67}{}%
-\contentsline {subsection}{\numberline {22.4}\centering 第\ref {chapter_derivative}章}{73}{}%
-\contentsline {subsection}{\numberline {22.5}\centering 第\ref {chapter_differential}章}{80}{}%
-\contentsline {subsection}{\numberline {22.6}\centering 第\ref {differential_equations}章}{83}{}%
-\contentsline {subsection}{\numberline {22.7}\centering 第\ref {chapter_Indefinite_integral}章}{85}{}%
-\contentsline {subsection}{\numberline {22.8}\centering 第\ref {chapter_definite_integral}章}{90}{}%
-\contentsline {subsection}{\numberline {22.9}\centering 第\ref {chapter_vector}章}{97}{}%
+\contentsline {subsection}{\numberline {20.4}对坐标曲线积分}{62}{}%
+\contentsline {subsubsection}{\numberline {20.4.1}定义}{62}{}%
+\contentsline {subsubsection}{\numberline {20.4.2}推广}{62}{}%
+\contentsline {subsubsection}{\numberline {20.4.3}性质}{62}{}%
+\contentsline {subsubsection}{\numberline {20.4.4}计算}{63}{}%
+\contentsline {subsection}{\numberline {20.5}两类曲线积分的关系}{63}{}%
+\contentsline {subsection}{\numberline {20.6}格林公式}{63}{}%
+\contentsline {subsection}{\numberline {20.7}格林公式求面积}{63}{}%
+\contentsline {subsection}{\numberline {20.8}曲面积分}{64}{}%
+\contentsline {subsection}{\numberline {20.9}坐标曲面积分}{64}{}%
+\contentsline {section}{\numberline {21} 零散的一些}{65}{}%
+\contentsline {section}{\numberline {22}证明}{67}{}%
+\contentsline {subsection}{\numberline {22.1}\centering 第\ref {chapter_trigonometric_function}章}{67}{}%
+\contentsline {subsection}{\numberline {22.2}\centering 第\ref {chapter_function}章}{68}{}%
+\contentsline {subsection}{\numberline {22.3}\centering 第\ref {chapter_limit}章}{70}{}%
+\contentsline {subsection}{\numberline {22.4}\centering 第\ref {chapter_derivative}章}{76}{}%
+\contentsline {subsection}{\numberline {22.5}\centering 第\ref {chapter_differential}章}{83}{}%
+\contentsline {subsection}{\numberline {22.6}\centering 第\ref {differential_equations}章}{86}{}%
+\contentsline {subsection}{\numberline {22.7}\centering 第\ref {chapter_Indefinite_integral}章}{88}{}%
+\contentsline {subsection}{\numberline {22.8}\centering 第\ref {chapter_definite_integral}章}{93}{}%
+\contentsline {subsection}{\numberline {22.9}\centering 第\ref {chapter_vector}章}{100}{}%

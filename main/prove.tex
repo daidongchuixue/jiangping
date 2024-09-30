@@ -1461,3 +1461,22 @@ $$J=\begin{vmatrix}
 	\lim\limits_{t\to 0^+}\frac{f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)}{t}=&\lim\limits_{t\to 0^+}\left[f_x'(x_0,y_0)\cos\alpha+f_y'(x_0,y_0)\cos\beta+\frac{\circ(\rho)}{t}\right]\\
 	\lim\limits_{t\to 0^+}\frac{f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)}{t}=&f_x'(x_0,y_0)\cos\alpha+f_y'(x_0,y_0)\cos\beta
 \end{align*}
+
+\textbf{\large \ref{Green's_formula_1}}
+\begin{align*}
+	\oint_LQdy=&\int_{L_1}Qdy+\int_{L_2}Qdy\\
+	=&\int_{d}^{c}Q(\phi_1(y),y)dy+\int_{c}^{d}Q(\phi_2(y),y)dy\\
+	=&\int_{c}^{d}Q(\phi_2(y),y)dy-\int_{c}^{d}Q(\phi_1(y),y)dy\\
+	=&\int_{c}^{d}\left[Q(\phi_2(y),y)-\int_{c}^{d}Q(\phi_1(y),y)\right]dy\\
+	=&\int_{c}^{d}dy\int_{\phi_2}^{\phi_1}\frac{\partial Q}{\partial x}dx\\
+	=&\iint\limits_D\frac{\partial Q}{\partial x}dxdy
+\end{align*}
+$$\mbox{同理}\quad\oint_LPdx=-=\iint\limits_D\frac{\partial P}{\partial y}dxdy\qquad\iint\limits_{D}\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dxdy=\oint_{L}Pdx+Qdy$$
+\textbf{\large \ref{Green's_formula_2}}
+	$$P=-y,Q=x$$
+\begin{align*}
+	\iint\limits_{D}\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dxdy=&\oint_{L}Pdx+Qdy\\
+	\iint\limits_{D}\left[1-(-1)\right]dxdy=&\oint_{L}xdy-ydx\\
+	2A=&\oint_{L}xdy-ydx\\
+	A=&\frac{1}{2}\oint_{L}xdy-ydx
+\end{align*}

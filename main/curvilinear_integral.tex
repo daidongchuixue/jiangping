@@ -1,4 +1,4 @@
-\begin{center}\section{曲线积分}\label{chapter_curvilinear_integral}\end{center}
+\begin{center}\section{曲线及曲面积分}\label{chapter_curvilinear_integral}\end{center}
 \subsection{曲线积分定义}
 \subsubsection{弧长曲线积分}
 $x\circ y$面上曲线L(分段光滑)，$f(x,y)$在L上有界，对L进行分割，取积，求和，取极限，如果$\lim\limits_{\lambda\to 0}\sum\limits_{i=0}^{n}f(\xi_i,\eta_i)\Delta S_i$存在，称此极限为$f(x,y)$在L上对弧长的曲线积分，记作
@@ -17,5 +17,95 @@ $f(x,y)$在L上连续，L的参数方程$\begin{cases}
 	x=x(t)\\
 	y=y(t)
 \end{cases}$\quad ($\alpha\leqslant t\leqslant \beta$)\\
-若$\frac{dx}{dt},\frac{dy}{dt}$在$[\alpha,\beta]$上连续，且$\left(\frac{dx}{dt}\right)^2+\left(f\frac{dy}{dt}\right)^2=\neq 0$则\\
+若$\frac{dx}{dt},\frac{dy}{dt}$在$[\alpha,\beta]$上连续，且$\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2\neq 0$则\\
 $$\int_{L}f(x,y)ds=\int_{\alpha}^{\beta}f(x(t),y(t))\sqrt{[x'(t)]^2+[y'(t)]^2}dt$$
+$$L\mbox{极坐标参数方程}\begin{cases}
+	x=\rho(\theta)\cos\theta\\
+	y=\rho(\theta)\sin\theta
+\end{cases}
+ds=\sqrt{(\rho d\theta)^2+(d\rho)^2}=\sqrt{\rho^2+\left(\frac{d\rho}{d\theta}\right)^2}d\theta$$
+\subsection{对坐标曲线积分}
+\subsubsection{定义}
+L是$x\circ y$面上的有向光滑曲线，$P(x,y),Q(x,y)$在$L$有界，若$\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}P(\xi_i,\eta_i)\Delta x_i$存在则称此处极限为$P(x,y)$在L上对坐标x的曲线积分，记作
+$$\int_{L}P(x,y)dx\triangleq\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}P(\xi_i,\eta_i)\Delta x_i$$
+同理定义$Q(x,y)$在L上对坐标y的曲线积分，记作
+$$\int_{L}Q(x,y)dy\triangleq\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}Q(\xi_i,\eta_i)\Delta y_i$$
+$$w=\int_{L}P(x,y)dx+Q(x,y)dy$$
+对坐标的曲线积分称为第二类曲线积分
+$$\overrightarrow{r}=\overrightarrow{OM}\qquad d\overrightarrow{r}=(dx,dy)=dx\overrightarrow{i}+dy\overrightarrow{i}$$
+$$\int_LPdx+Qdy=\int_L\overrightarrow{F}\bullet d\overrightarrow{r三}$$
+\subsubsection{推广}
+\begin{align*}
+	\overrightarrow{F}=&P(x,y,z)\overrightarrow{i}+Q(x,y,z)\overrightarrow{j}+R(x,y,z)\overrightarrow{k}\\
+	w=&\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}\overrightarrow{F}\bullet d\overrightarrow{r}\\
+	=&\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}\overrightarrow{F}(\xi_i,\eta_i,\zeta_i)\bullet d\overrightarrow{M_{i-1}M_i}\\
+	=&\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}P(\xi_i,\eta_i,\zeta_i)\Delta x_i+Q(\xi_i,\eta_i,\zeta_i)\Delta y_i+R(\xi_i,\eta_i,\zeta_i)\Delta z_i\\
+	=&\int_\tau Pdx+Qdy+Rdz
+\end{align*}
+\subsubsection{性质}
+$$\int_{L}\left[\alpha\overrightarrow{F_1}(x,y)+\beta\overrightarrow{F_2}(x,y)\right]\bullet d\overrightarrow{r}=\alpha\int_{L}\overrightarrow{F_1}\bullet d\overrightarrow{r}+\beta\int_{L}\overrightarrow{F_2}\bullet d\overrightarrow{r}$$
+$$L+L_1+L_2\qquad \int_L Pdx+Qdy=\int_{L_1} Pdx+Qdy+\int_{L_2} Pdx+Qdy$$
+$$L^-\mbox{为有向曲线}L\mbox{的反向曲线}\qquad \int_{L^-}\overrightarrow{F}d\overrightarrow{r}=-\int_{L}\overrightarrow{F}d\overrightarrow{r}$$
+\subsubsection{计算}
+$P(x,y),Q(x,y)$在有向光滑曲线$L$上连续，$L$的参数方程为$\begin{cases}
+	x=x(t)\\
+	y=y(t)
+\end{cases}$\\
+$ t:\ \alpha\mapsto\beta$起点对应$\alpha$,终点对应$\beta,\  x'(t),y'(t)$在$\alpha$到$\beta$区间连续，且$\left[x'(t)\right]^2+\left[y'(t)\right]^2\neq 0$则
+$$\int_{L}P(x,y)dx+Q(x,y)dy=\int\limits_{\alpha}^{\beta}P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)dt$$
+\subsection{两类曲线积分的关系}
+$L\mbox{曲线的参数方程}\begin{cases}
+	x=x(t)\\
+	y=y(t)
+\end{cases}\quad t:\ A \mapsto B$\\
+$\left[x'(t)\right]^2+\left[y'(t)\right]^2\neq 0\quad \overrightarrow{\tau}=(x'(t),y'(t))$\mbox{为}$L$\mbox{在}$(x(t),y(t))$\mbox{处的一个切向量，方向与增加方向一致}
+$$\overrightarrow{T}\triangleq\frac{\overrightarrow{\tau}}{|\overrightarrow{\tau}|}=\left(\frac{x'(t)}{\sqrt{\left[x'(t)\right]^2+\left[y'(t)\right]^2}},\frac{y'(t)}{\sqrt{\left[x'(t)\right]^2+\left[y'(t)\right]^2}}\right)=(\cos\alpha,\cos\beta)$$
+	$\int_{L}P(x,y)dx+Q(x,y)dy$\\
+	$=\int\limits_{A}^{B}[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt$\\
+	$=\int\limits_{A}^{B}\left[P(x(t),y(t))\frac{x'(t)}{\sqrt{\left[x'(t)\right]^2+\left[y'(t)\right]^2}}+Q(x(t),y(t))\frac{y'(t)}{\sqrt{\left[x'(t)\right]^2+\left[y'(t)\right]^2}}\right]\sqrt{\left[x'(t)\right]^2+\left[y'(t)\right]^2}dt$\\
+	$=\int_L[P\cos \alpha+Q\cos\beta]ds$
+\subsection{格林公式}
+$\mbox{区域的正向}\begin{cases}
+	\mbox{单连通区域}\quad\mbox{逆时针方向}\\
+	\mbox{复连通区域}\quad\begin{cases}
+		\mbox{外边界\quad 逆时针}\\
+		\mbox{内边界\quad 顺时针}
+	\end{cases}
+\end{cases}$\\
+	$D$是由分段光滑曲线$L$围成，P(x,y),Q(x,y)在D上有一阶连续偏导，则
+	\begin{align}
+		\iint\limits_{D}\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dxdy=\oint_{L}Pdx+Qdy \label{Green's_formula_1}
+	\end{align}
+	\subsection{格林公式求面积}
+	\begin{align}
+		A=\frac{1}{2}\oint_{L}xdy-ydx \label{Green's_formula_2}
+	\end{align}
+\subsection{曲面积分}
+$z=z(x,y)$
+\begin{align}
+	ds=\sqrt{1+\left(\frac{\partial z}{\partial x}\right)^2+\left(\frac{\partial z}{\partial y}\right)^2}dxdy
+\end{align}
+\subsection{坐标曲面积分}
+规定了曲面法向量方向的曲面称为：有向曲面，双侧曲面$\begin{cases}
+	\mbox{外侧，内侧}\\
+	\mbox{上侧，内侧}\\
+	\mbox{左侧，右侧}\\
+	\mbox{前侧，后侧}
+\end{cases}$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
