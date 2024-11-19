@@ -232,14 +232,18 @@
 \contentsline {subsection}{\numberline {20.7}格林公式求面积}{63}{}%
 \contentsline {subsection}{\numberline {20.8}曲面积分}{64}{}%
 \contentsline {subsection}{\numberline {20.9}坐标曲面积分}{64}{}%
-\contentsline {section}{\numberline {21} 零散的一些}{65}{}%
-\contentsline {section}{\numberline {22}证明}{67}{}%
-\contentsline {subsection}{\numberline {22.1}\centering 第\ref {chapter_trigonometric_function}章}{67}{}%
-\contentsline {subsection}{\numberline {22.2}\centering 第\ref {chapter_function}章}{68}{}%
-\contentsline {subsection}{\numberline {22.3}\centering 第\ref {chapter_limit}章}{70}{}%
-\contentsline {subsection}{\numberline {22.4}\centering 第\ref {chapter_derivative}章}{76}{}%
-\contentsline {subsection}{\numberline {22.5}\centering 第\ref {chapter_differential}章}{83}{}%
-\contentsline {subsection}{\numberline {22.6}\centering 第\ref {differential_equations}章}{86}{}%
-\contentsline {subsection}{\numberline {22.7}\centering 第\ref {chapter_Indefinite_integral}章}{88}{}%
-\contentsline {subsection}{\numberline {22.8}\centering 第\ref {chapter_definite_integral}章}{93}{}%
-\contentsline {subsection}{\numberline {22.9}\centering 第\ref {chapter_vector}章}{100}{}%
+\contentsline {subsection}{\numberline {20.10}高斯积分}{64}{}%
+\contentsline {subsection}{\numberline {20.11}总结}{64}{}%
+\contentsline {section}{\numberline {21}极数}{66}{}%
+\contentsline {subsection}{\numberline {21.1}常数项级数的概念与性质}{66}{}%
+\contentsline {section}{\numberline {22} 零散的一些}{67}{}%
+\contentsline {section}{\numberline {23}证明}{69}{}%
+\contentsline {subsection}{\numberline {23.1}\centering 第\ref {chapter_trigonometric_function}章}{69}{}%
+\contentsline {subsection}{\numberline {23.2}\centering 第\ref {chapter_function}章}{70}{}%
+\contentsline {subsection}{\numberline {23.3}\centering 第\ref {chapter_limit}章}{72}{}%
+\contentsline {subsection}{\numberline {23.4}\centering 第\ref {chapter_derivative}章}{78}{}%
+\contentsline {subsection}{\numberline {23.5}\centering 第\ref {chapter_differential}章}{85}{}%
+\contentsline {subsection}{\numberline {23.6}\centering 第\ref {differential_equations}章}{88}{}%
+\contentsline {subsection}{\numberline {23.7}\centering 第\ref {chapter_Indefinite_integral}章}{90}{}%
+\contentsline {subsection}{\numberline {23.8}\centering 第\ref {chapter_definite_integral}章}{95}{}%
+\contentsline {subsection}{\numberline {23.9}\centering 第\ref {chapter_vector}章}{102}{}%

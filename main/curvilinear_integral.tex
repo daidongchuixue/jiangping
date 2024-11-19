@@ -92,20 +92,63 @@ $z=z(x,y)$
 	\mbox{左侧，右侧}\\
 	\mbox{前侧，后侧}
 \end{cases}$
+\subsection{高斯积分}
+$$\oiint\limits_{\Sigma}Pdydz+Qdzdx+Rdxdy=\iiint\limits_{\Omega}\left(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\right)dxdydz$$
 	
+	\subsection{总结}
+	线
+	$\alpha\leqslant t\leqslant\beta\begin{cases}
+		x=x(t)\\
+		y=y(t)
+	\end{cases}$
+	$$\int_L f(x,y)ds=\int_\alpha^\beta f(x(t),y(t))\sqrt{(x_t')^2+（y_t')^2}dt$$
+	$a\leqslant t\leqslant b\begin{cases}
+	x=x\\
+	y=y(t)
+\end{cases}$	
+		$$\int_L f(x,y)ds=\int_a^b f(x,y(t))\sqrt{1+（y_t')^2}dt$$
 	
+		$\alpha\leqslant t\leqslant\beta\begin{cases}
+		x=x(t)\\
+		y=y(t)\\
+		z=z(t)
+	\end{cases}$
+	$$\int_L f(x,y,z)ds=\int_\alpha^\beta f(x(t),y(t))\sqrt{(x_t')^2+（y_t')^2+(z_t')^2}dt$$
+	坐标曲线积分
+$$\int_{L^-}P(x.y)dx+Q(x,y)dy=-\int_LP(x.y)dx+Q(x,y)dy$$
+		$\alpha\leqslant t\leqslant\beta\begin{cases}
+		x=x(t)\\
+		y=y(t)
+	\end{cases}$
+	$$\int_LP(x.y)dx+Q(x,y)dy=\int_\alpha^\beta\left[P(x(t).y(t))x'(t)+Q(x(t),y(t))y'(t)\right]dt$$
+	面
+	$z=z(x,y)\ z-z(x,y)=0$
+	$$\iint\limits_\Sigma f(x,y,z)ds=\iint_{Dxy} f(x,y,z(x,y))\sqrt{1+(z_x')^2+(z_y)'^2}dxdy$$
+	坐标
+	$\iint\limits_{\Sigma^-} P(x,y,z)dydz+Q(x,y,z)dzdx +R(x,y,z)dxdy=\\
+	-\iint\limits_\Sigma P(x,y,z)dydz+Q(x,y,z)dzdx +R(x,y,z)dxdy$\\
+	$\overrightarrow{v}=P\overrightarrow{i}+Q\overrightarrow{j}+R\overrightarrow{k}$
+	$$z=z(xy)\ \iint_\Sigma R(x,y,z)dxdy=\pm \int_{Dxy}R(x,y,z(xy))dxd$$
+	关系
+	$$\int_L P(x,y)dx+Q(x,y)dy=\int_L\left[P(x,y)\cos\alpha+Q(x,y)\cos\beta\right]ds$$
+	$\overrightarrow{T}=(\cos\alpha,\cos\beta)$
+		$$\int_L P(x,y,z)dx+Q(x,y,z)dy+R(x,y,z)dz=\int_L\left[P(x,y,z)\cos\alpha+Q(x,y,z)\cos\beta+R(x,y,z)\gamma\right]ds$$
+	$\overrightarrow{T}=(\cos\alpha,\cos\beta,\cos\gamma)$
+	$$\iint_\sigma Pdydz+Qdzdx+Rdxdy=\iint\limits_\sigma\left(P\cos\alpha+Q\cos\beta+R\cos\gamma\right)ds$$
+	$\overrightarrow{n}=(\cos\alpha,\cos\beta,\cos\gamma)$
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+曲线与二重积分之间的关系
+格林公式
+$$\oint\limits_L Pdx+Qdy=\iint\limits_D\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dxdy$$
+1)L是D的正向边界
+2）PQ在D上有连续一阶偏导
+曲面积分与三重积分之间的关系
+高斯公式
+$$\oint\limits_\sigma Pdx+Qdy Rdz=\iint\limits_\omega\left(\frac{\partial P}{\partial x}-\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\right)dxdydz$$
+1)$\sigma$是$\omega$的正向边界曲面\\
+2）PQR在$\omega$上有连续的一阶偏导\\
+下面4个命题等价(单连通情况下)\\
+1）$\int_L Pdx+Qdy$在D上路径无关\\
+2)$\oint_LPdx+Qdy=0$\\
+3)$\frac{\partial P}{\partial y}\equiv\frac{\partial Q}{\partial x}\ (x,y)\in D$\\
+4)存在$u(x,y)$使$du(x,y)=pdx+Qdy$

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  30 SEP 2024 16:37
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.24)  19 NOV 2024 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,6 +718,10 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup9
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/cases/cases.sty
 Package: cases 2020/03/29 ver 3.2
 \numc@numwid=\dimen305
@@ -813,7 +817,8 @@ LaTeX Warning: Label `chapter_definite_integral' multiply defined.
 LaTeX Warning: Label `Total_differential' multiply defined.
 
 ) (./main/vector_derivative.aux) (./main/multiple_integral.aux)
-(./main/curvilinear_integral.aux) (./main/scattered.aux) (./main/prove.aux))
+(./main/curvilinear_integral.aux) (./main/number_of_poles.aux)
+(./main/scattered.aux) (./main/prove.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -836,7 +841,7 @@ LaTeX Font Info:    ... okay on input line 4.
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup9
+\symlegacymaths=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 4.
 LaTeX Font Info:    Redeclaring math accent \acute on input line 4.
@@ -952,7 +957,13 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
 .
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
+(/usr/local/texlive/2024/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 5
+.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+) [1
 
 
 ] [2]
@@ -1909,7 +1920,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[63])
+[63]
+Missing character: There is no （ (U+FF08) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no （ (U+FF08) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no （ (U+FF08) in font [lmroman10-regular]:mapping=t
+ex-text;!
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1918,35 +1935,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[64]
+[64])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[65]
+\openout2 = `./main/number_of_poles.aux'.
+
+ (./main/number_of_poles.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[66
+
+
+
+]
 \openout2 = `./main/scattered.aux'.
 
  (./main/scattered.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[65
-
-
-
-])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[66]
-\openout2 = `./main/prove.aux'.
-
- (./main/prove.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1959,7 +1976,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-]
+])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1969,6 +1986,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [68]
+\openout2 = `./main/prove.aux'.
+
+ (./main/prove.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1977,7 +1997,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[69]
+[69
+
+
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2122,6 +2146,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [85]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[86]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[87]
 Overfull \hbox (2.8309pt too wide) in paragraph at lines 722--739
 []$  |$[]$ 
  []
@@ -2134,44 +2176,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[86]
-Overfull \hbox (2.83089pt too wide) in paragraph at lines 744--816
-[]$  |$[]$
- []
-
-
-Overfull \hbox (2.83089pt too wide) in paragraph at lines 744--816
-[]$  |$[]$
- []
-
-
-Overfull \hbox (2.83089pt too wide) in paragraph at lines 744--816
-[]$  |$[]$
- []
-
-
-Overfull \hbox (2.83089pt too wide) in paragraph at lines 744--816
-[]$  |$[]$
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[87]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [88]
+Overfull \hbox (2.83089pt too wide) in paragraph at lines 744--816
+[]$  |$[]$
+ []
+
+
+Overfull \hbox (2.83089pt too wide) in paragraph at lines 744--816
+[]$  |$[]$
+ []
+
+
+Overfull \hbox (2.83089pt too wide) in paragraph at lines 744--816
+[]$  |$[]$
+ []
+
+
+Overfull \hbox (2.83089pt too wide) in paragraph at lines 744--816
+[]$  |$[]$
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2235,6 +2259,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [95]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[96]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[97]
 Overfull \hbox (2.8309pt too wide) in paragraph at lines 1110--1133
 []$  |$[]$
  []
@@ -2247,7 +2289,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[96]
+[98]
 Missing character: There is no ， (U+FF0C) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
@@ -2258,7 +2300,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[97]
+[99]
 Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
 
  []
@@ -2281,7 +2323,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[98]
+[100]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2290,7 +2332,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[99]
+[101]
 Overfull \hbox (8.5368pt too wide) detected at line 1311
 []
  []
@@ -2318,7 +2360,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[100]
+[102]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2327,7 +2369,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[101]
+[103]
 Underfull \hbox (badness 10000) in paragraph at lines 1397--1399
 
  []
@@ -2340,7 +2382,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[102])
+[104])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2349,7 +2391,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[103] (./main.aux (./setting/contents.aux)
+[105] (./main.aux (./setting/contents.aux)
 (./elementary/trigonometric_function.aux) (./elementary/inequality.aux)
 (./elementary/permutation_combination.aux) (./main/interval_mapping.aux)
 (./main/function.aux) (./main/Intersection and union.aux)
@@ -2360,7 +2402,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (./main/Improper_integral.aux) (./main/vector.aux)
 (./main/Multivariate_function.aux) (./main/vector_derivative.aux)
 (./main/multiple_integral.aux) (./main/curvilinear_integral.aux)
-(./main/scattered.aux) (./main/prove.aux))
+(./main/number_of_poles.aux) (./main/scattered.aux) (./main/prove.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
@@ -2371,12 +2413,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 37724 strings out of 474773
- 835179 string characters out of 5757724
+ 37843 strings out of 474773
+ 838363 string characters out of 5757724
  1984839 words of memory out of 5000000
- 59276 multiletter control sequences out of 15000+600000
- 573926 words of font info for 127 fonts, out of 8000000 for 9000
+ 59380 multiletter control sequences out of 15000+600000
+ 574395 words of font info for 134 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,29n,110p,437b,742s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (113 pages).
+Output written on main.pdf (115 pages).

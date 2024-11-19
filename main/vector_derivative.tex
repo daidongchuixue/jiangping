@@ -33,7 +33,7 @@ $$\overrightarrow{f}'(t)=\left(\overrightarrow{f}_1'(t),\overrightarrow{f}'_2(t)
 	\frac{d\left[\varphi(t)\overrightarrow{u}(t)\right]}{dt}&=\phi'(t)\overrightarrow{u}(t)+\varphi(t)\overrightarrow{u}'(t)\\
 	\frac{d\left[\overrightarrow{u}(t)\bullet\overrightarrow{v}(t)\right]}{dt}&=\overrightarrow{u}'(t)\bullet\overrightarrow{v}(t)+\overrightarrow{u}(t)\bullet\overrightarrow{v}'(t)\\
 	\frac{d\left[\overrightarrow{u}(t)\times\overrightarrow{v}(t)\right]}{dt}&=\overrightarrow{u}'(t)\times\overrightarrow{v}(t)+\overrightarrow{u}(t)\times\overrightarrow{v}'(t)\\
-	\frac{d\overrightarrow{u}[\varphi(t)]}{dt}&=\overrightarrow{u}'(t)\varphi'(t)
+	\frac{d\overrightarrow{u}[\varphi(t)]}{dt}&=\overrightarrow{u}'(\varphi(t))\varphi'(t)
 \end{align}
 \subsection{曲线的切线与法平面}
 $$\Gamma:\begin{cases}
@@ -54,9 +54,9 @@ $$\Gamma\mbox{参数方程}:\begin{cases}
 	z=z(t)
 \end{cases}t\in[\alpha,\beta]$$
 $$\Gamma\mbox{在}\Sigma\mbox{上}，F(x(t),y(t),z(t))\equiv 0,t\in[\alpha,\beta]$$
-$$F'_xx'(t)+F'_yy(t)+F'_zz(t)=0$$
+$$F'_xx'(t)+F'_yy'(t)+F'_zz'(t)=0$$
 $t=t_0$\mbox{对应点}M
-$$F'_x(x_0,y_0,z_0)x'(t_0)+F'_y(x_0,y_0,z_0)y(t_0)+F'_z(x_0,y_0,z_0)z(t_0)=0$$
+$$F'_x(x_0,y_0,z_0)x'(t_0)+F'_y(x_0,y_0,z_0)y'(t_0)+F'_z(x_0,y_0,z_0)z'(t_0)=0$$
 $\overrightarrow{T}=(x'(t_0),y'(t_0),z'(t_0))$是$\Gamma$过点M的一个切向量\\
 $\overrightarrow{n}=(F'_x(x_0,y_0,z_0),F'_y(x_0,y_0,z_0),F'_z(x_0,y_0,z_0))$
 $$\overrightarrow{n}\bullet\overrightarrow{T}=0\mbox{，即}\overrightarrow{n}\perp\overrightarrow{T}\quad\overrightarrow{n}\mbox{与所有切线垂直}\overrightarrow{n}\mbox{为切平面的法向量}$$

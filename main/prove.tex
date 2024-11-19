@@ -615,14 +615,14 @@ $$A(u)\mbox{在}u_o\mbox{处连续,既有,}\ \lim\limits_{u\to u_o}A(u)=A(u_0)=f
 
 \textbf{\large \ref{Fermat_Lemma}}
 \begin{center}
-    $\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\vartriangle x)}{\vartriangle x}=f'(x_0)$\\
-    $f(x_0+\vartriangle x)-f(x_0)\leqslant 0$\\
+    $\lim\limits_{\vartriangle x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}=f'(x_0)$\\
+    $f(x_0+\Delta x)-f(x_0)\leqslant 0$\\
     $\begin{cases}
-        \vartriangle x>0\begin{cases}
-            \frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\leqslant 0\Rightarrow f'(x_0^+) =\lim\limits_{\vartriangle x \to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\leqslant 0
+        \Delta x>0\begin{cases}
+            \frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}\leqslant 0\Rightarrow f'(x_0^+) =\lim\limits_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}\leqslant 0
         \end{cases}\\
-        \vartriangle x<0\begin{cases}
-            \frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\geqslant 0\Rightarrow f'(x_0^-) =\lim\limits_{\vartriangle x \to 0}\frac{f(x_0+\vartriangle x)-f(x_0)}{\vartriangle x}\geqslant 0
+        \Delta x<0\begin{cases}
+            \frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}\geqslant 0\Rightarrow f'(x_0^-) =\lim\limits_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}\geqslant 0
         \end{cases}
     \end{cases}$\\
     $f'(x_0)=f'(x_0^+)=f'(x_0^-)\Rightarrow f'(x_0)= 0$
@@ -635,7 +635,7 @@ $$A(u)\mbox{在}u_o\mbox{处连续,既有,}\ \lim\limits_{u\to u_o}A(u)=A(u_0)=f
         M=m\Rightarrow M=m=f(a)=f(b),\mbox{此时}f(x)\mbox{为常数},\forall \xi \in(a,b),f'(\xi)=0\\
         M>m \begin{cases}
             f(a)>m \Rightarrow \exists \xi \in(a,b),f(\xi)=m,\mbox{根据费马引理},f'(\xi)=0\\
-            f(a)<M5 \Rightarrow \exists \xi \in(a,b),f(\xi)=M,\mbox{根据费马引理},f'(\xi)=0\\
+            f(a)<M \Rightarrow \exists \xi \in(a,b),f(\xi)=M,\mbox{根据费马引理},f'(\xi)=0\\
         \end{cases}
     \end{cases}$
 \end{center}
@@ -646,7 +646,7 @@ $$A(u)\mbox{在}u_o\mbox{处连续,既有,}\ \lim\limits_{u\to u_o}A(u)=A(u_0)=f
         \varphi(b)&=f(b)-\frac{f(b)-f(a)}{b-a}b=\frac{bf(a)-af(b)}{b-a}\\
         \varphi(a)&=\varphi(b),\exists \xi\in(a,b),\varphi'(\xi)=0\\
         f'(\xi)&=\frac{f(b)-f(a)}{b-a}\\
-        f'(\xi)(b-a)&7=f(b)-f(a)
+        f'(\xi)(b-a)&=f(b)-f(a)
 \end{align*}
 
 \textbf{\large \ref{cauchy_theorem}}
